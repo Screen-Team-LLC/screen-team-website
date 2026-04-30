@@ -613,8 +613,35 @@ ul { list-style: none; }
   margin-bottom: 3px;
 }
 
+.footer-cities {
+  font-size: 0.75rem;
+  opacity: 0.55;
+  letter-spacing: 0.02em;
+}
+
 .footer-info strong { color: var(--ink); }
 .footer-info a { color: var(--accent); }
+
+/* Service area strip */
+.areas-strip {
+  background: rgba(61, 168, 216, 0.04);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0;
+  text-align: center;
+}
+.areas-strip .eyebrow {
+  margin-bottom: 10px;
+}
+.areas-strip p:last-child {
+  font-size: 0.91rem;
+  color: var(--muted);
+  max-width: 740px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+.areas-strip strong { color: var(--ink); }
+.areas-strip a { color: var(--accent); }
 
 .footer-copy-bar {
   border-top: 1px solid var(--border);
