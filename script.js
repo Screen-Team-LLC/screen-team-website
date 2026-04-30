@@ -102,3 +102,53 @@ document.querySelectorAll('.faq-question').forEach((btn) => {
     if (answer) answer.setAttribute('aria-hidden', String(expanded));
   });
 });
+
+// ---- Hamburger mobile nav ----
+const hamburgerBtn     = document.getElementById('hamburger-btn');
+const mobileNav        = document.getElementById('mobile-nav');
+const navOverlay       = document.getElementById('nav-overlay');
+const mobileNavClose   = document.getElementById('mobile-nav-close');
+const mobileServToggle = document.getElementById('mobile-services-toggle');
+const mobileServicesSub = document.getElementById('mobile-services-sub');
+
+function openMobileNav() {
+  mobileNav.classList.add('is-open');
+  navOverlay.classList.add('is-open');
+  hamburgerBtn.classList.add('is-open');
+  hamburgerBtn.setAttribute('aria-expanded', 'true');
+  mobileNav.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileNav() {
+  mobileNav.classList.remove('is-open');
+  navOverlay.classList.remove('is-open');
+  hamburgerBtn.classList.remove('is-open');
+  hamburgerBtn.setAttribute('aria-expanded', 'false');
+  mobileNav.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.classList.contains('is-open') ? closeMobileNav() : openMobileNav();
+  });
+}
+if (mobileNavClose) mobileNavClose.addEventListener('click', closeMobileNav);
+if (navOverlay)     navOverlay.addEventListener('click', closeMobileNav);
+
+// Close mobile nav when a link is tapped
+if (mobileNav) {
+  mobileNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMobileNav);
+  });
+}
+
+// Services sub-menu accordion in mobile drawer
+if (mobileServToggle && mobileServicesSub) {
+  mobileServToggle.addEventListener('click', () => {
+    const open = mobileServToggle.classList.toggle('is-open');
+    mobileServicesSub.classList.toggle('is-open', open);
+    mobileServToggle.setAttribute('aria-expanded', String(open));
+  });
+}
