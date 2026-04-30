@@ -83,3 +83,22 @@ if (dropdownBtn && dropdownMenu) {
     dropdownBtn.setAttribute('aria-expanded', 'false');
   });
 }
+
+// ---- FAQ accordion ----
+document.querySelectorAll('.faq-question').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    const answer   = document.getElementById(btn.getAttribute('aria-controls'));
+
+    // Close all others
+    document.querySelectorAll('.faq-question').forEach((otherBtn) => {
+      const otherAnswer = document.getElementById(otherBtn.getAttribute('aria-controls'));
+      otherBtn.setAttribute('aria-expanded', 'false');
+      if (otherAnswer) otherAnswer.setAttribute('aria-hidden', 'true');
+    });
+
+    // Toggle clicked
+    btn.setAttribute('aria-expanded', String(!expanded));
+    if (answer) answer.setAttribute('aria-hidden', String(expanded));
+  });
+});
