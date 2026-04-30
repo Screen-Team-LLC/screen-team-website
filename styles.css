@@ -713,7 +713,7 @@ ul { list-style: none; }
   }
 
   .sp-hero {
-    background-image: url("Images/ScreenTeamBanner-mobile.png");
+    background-image: url("Images/servicehero.png");
     background-position: top center;
   }
 
@@ -810,7 +810,7 @@ a.service-card {
    ============================================= */
 .sp-hero {
   position: relative;
-  background: url("Images/ScreenTeamBanner.png") center / cover no-repeat;
+  background: url("Images/servicehero.png") center / cover no-repeat;
   border-bottom: 1px solid var(--border);
   padding: 70px 0 55px;
 }
@@ -821,9 +821,9 @@ a.service-card {
   inset: 0;
   background: linear-gradient(
     108deg,
-    rgba(4, 9, 20, 0.97)  0%,
-    rgba(4, 9, 20, 0.90)  50%,
-    rgba(4, 9, 20, 0.75) 100%
+    rgba(4, 9, 20, 0.93)  0%,
+    rgba(4, 9, 20, 0.80)  45%,
+    rgba(4, 9, 20, 0.45) 100%
   );
   pointer-events: none;
 }
