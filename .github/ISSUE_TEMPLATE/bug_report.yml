@@ -1,0 +1,71 @@
+name: Bug report
+description: Report a broken page, bad deployment state, SEO defect, or UI bug.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is broken?
+      placeholder: Describe the issue clearly.
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Affected page or URL
+      placeholder: https://screenteamllc.com/contact.html
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Blocking
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser / device / environment
+      placeholder: Chrome on Windows, Safari on iPhone, GitHub Pages production, etc.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Paste screenshots, clips, or related notes if available.

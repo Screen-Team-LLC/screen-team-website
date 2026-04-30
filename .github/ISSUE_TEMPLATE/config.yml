@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Live website
+    url: https://screenteamllc.com
+    about: View the current production website.
+  - name: Business contact page
+    url: https://screenteamllc.com/contact.html
+    about: Use the business contact page for non-technical service inquiries.

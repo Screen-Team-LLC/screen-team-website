@@ -29,7 +29,7 @@ jobs:
           import xml.etree.ElementTree as ET
 
           key = "179d5215d4024cb2ab566ef995d72afd"
-          host = "www.screenteamllc.com"
+          host = "screenteamllc.com"
           key_location = f"https://{host}/{key}.txt"
           sitemap_path = pathlib.Path("sitemap.xml")
 

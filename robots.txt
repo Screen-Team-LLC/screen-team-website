@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.screenteamllc.com/sitemap.xml
+Sitemap: https://screenteamllc.com/sitemap.xml

@@ -1,0 +1,36 @@
+name: Link Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  schedule:
+    - cron: "0 14 * * 1"
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check links in site files
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: >
+            --verbose
+            --no-progress
+            --exclude-mail
+            --exclude '^tel:'
+            --exclude '^javascript:'
+            --exclude 'https://screenteamllc.com'
+            --exclude 'https://www.screenteamllc.com'
+            './**/*.html'
+            './README.md'
+            './robots.txt'
+            './sitemap.xml'

@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest a new page improvement, SEO enhancement, or workflow improvement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What business, UX, or SEO problem are we trying to solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the ideal solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: Conversion, trust, SEO, content clarity, maintenance, or deployment benefit.
+
+  - type: textarea
+    id: pages
+    attributes:
+      label: Affected pages or files
+      placeholder: index.html, contact.html, sitemap.xml, repo settings, etc.
+
+  - type: textarea
+    id: assets
+    attributes:
+      label: Content or assets needed
+      placeholder: Logos, screenshots, business copy, before/after photos, updated phone number, etc.
