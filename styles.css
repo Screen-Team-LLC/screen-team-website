@@ -713,7 +713,7 @@ ul { list-style: none; }
   }
 
   .sp-hero {
-    background-image: url("Images/servicehero.png");
+    background-image: url("Images/service-hero-bg.jpg");
     background-position: top center;
   }
 
@@ -1224,6 +1224,8 @@ a.service-card {
   position: fixed;
   inset: 0;
   z-index: 201;
+}
+.lightbox:not([hidden]) {
   display: flex;
   align-items: center;
   justify-content: center;
