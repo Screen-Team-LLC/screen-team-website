@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Screen Team LLC | Rescreens &amp; Pool Enclosures | Tampa Bay</title>
+  <meta name="description" content="The Screen Team LLC — rescreens, pool enclosures, screen lanais, window screens, garage screens, and gutter work in Tampa Bay. Call Chris Westcott for a free quote.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="The Screen Team LLC home">
+        <img src="Images/Logo.png" alt="The Screen Team LLC" class="brand-logo">
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-dropdown-wrap">
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            Services
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="rescreens.html" role="menuitem">Rescreens</a>
+            <a href="pool-enclosures.html" role="menuitem">Pool Enclosures</a>
+            <a href="screen-lanais.html" role="menuitem">Screen Lanais</a>
+            <a href="window-screens.html" role="menuitem">Window Screens</a>
+            <a href="garage-screens.html" role="menuitem">Garage Screens</a>
+            <a href="gutter-work.html" role="menuitem">Gutter Work</a>
+          </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="header-cta" href="tel:5550100000">
+        <span class="header-cta-label">Call or Text</span>
+        <span class="header-cta-number">(555) 010-0000</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+
+        <div class="hero-copy">
+          <p class="eyebrow">Rescreens · Pool Enclosures · Lanais · Windows · Garages · Gutters</p>
+          <h1>The Screen<br>Team <span class="h1-accent">LLC</span></h1>
+          <p class="hero-sub">
+            Tampa Bay's reliable screen repair and enclosure specialists.
+            Call Chris Westcott directly — no middleman, no runaround, just the work done right.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:5550100000">Call Chris Now</a>
+            <a class="btn btn-ghost" href="#services">Our Services</a>
+          </div>
+          <div class="trust-row">
+            <div class="trust-item">
+              <strong>6+</strong>
+              <span>Services offered</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <strong>Direct</strong>
+              <span>Owner contact</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <strong>Local</strong>
+              <span>Tampa Bay area</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Get a free quote">
+          <p class="card-eyebrow">Get a free quote</p>
+          <h2 class="card-name">Talk to Chris Today</h2>
+          <p class="card-note">Fill out the form and Chris will get back to you to discuss the job.</p>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/nickknight488@gmail.com"
+            method="POST"
+            id="hero-contact-form"
+          >
+            <div class="form-group">
+              <label for="cf-name">Your Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="First and last name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">Phone Number</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="(813) 000-0000" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="cf-service">Service Needed</label>
+              <select id="cf-service" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option>Rescreens</option>
+                <option>Pool Enclosures</option>
+                <option>Screen Lanais</option>
+                <option>Window Screens</option>
+                <option>Garage Screens</option>
+                <option>Gutter Work</option>
+                <option>Not sure — need advice</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cf-message">Tell us about the job</label>
+              <textarea id="cf-message" name="message" placeholder="What needs to be done? Location, size, condition..." rows="3"></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New quote request — The Screen Team LLC">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <button type="submit" class="btn btn-primary btn-full">Send My Request</button>
+            <p class="form-note">Or call directly: <a href="tel:5550100000">(555) 010-0000</a></p>
+          </form>
+
+          <div class="form-success" id="form-success" aria-live="polite" hidden>
+            <p class="form-success-msg">Thanks! Chris will be in touch shortly.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ====== SERVICES ====== -->
+    <section id="services" class="services-section section-shell">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">What we do</p>
+          <h2>Professional Screen &amp; Enclosure Services</h2>
+          <p>Quality materials and clean workmanship on every job, start to finish.</p>
+        </div>
+        <div class="services-grid">
+
+          <a class="service-card" href="rescreens.html" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
+              </svg>
+            </div>
+            <h3>Rescreens</h3>
+            <p>Replace worn, torn, or weathered screening on pool cages, lanais, porches, and enclosures — done right the first time.</p>
+          </a>
+
+          <a class="service-card" href="pool-enclosures.html" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Pool Enclosures</h3>
+            <p>Refresh your pool cage screening to keep bugs out, debris down, and the enclosure looking sharp year-round.</p>
+          </a>
+
+          <a class="service-card" href="screen-lanais.html" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              </svg>
+            </div>
+            <h3>Screen Lanais</h3>
+            <p>Restore your lanai screen panels — clean lines, no torn sections, no flapping edges catching the Florida breeze.</p>
+          </a>
+
+          <a class="service-card" href="window-screens.html" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3>Window Screens</h3>
+            <p>Repair or replace window screens that have torn, warped, or come loose due to Florida's heat and storms.</p>
+          </a>
+
+          <a class="service-card" href="garage-screens.html" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/>
+              </svg>
+            </div>
+            <h3>Garage Screens</h3>
+            <p>Add or repair garage screen systems that let airflow in while keeping pests and debris outside where they belong.</p>
+          </a>
+
+          <a class="service-card" href="gutter-work.html" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12H2"/><path d="M5 12V6a1 1 0 011-1h12a1 1 0 011 1v6"/><path d="M2 12v2a2 2 0 002 2h16a2 2 0 002-2v-2"/>
+              </svg>
+            </div>
+            <h3>Gutter Work</h3>
+            <p>Gutter-related exterior work handled as part of a complete service call — ask Chris about your specific situation.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="about-section section-shell">
+      <div class="container about-grid">
+
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow">Why choose us</p>
+          <h2>Straight talk.<br>Quality work.<br>No runaround.</h2>
+          <p>Chris Westcott runs The Screen Team LLC as a direct-contact operation. When you call, you're talking to the person doing the work — not a call center, not a subcontractor chain.</p>
+          <p>The focus is screen repair and enclosure work throughout the Tampa Bay area, built on clean, reliable workmanship one job at a time.</p>
+        </div>
+
+        <div class="about-card" data-reveal>
+          <h3>What to expect</h3>
+          <ul class="about-list">
+            <li>Direct line to Chris — no phone trees</li>
+            <li>Straight quotes, no inflated estimates</li>
+            <li>Clean workmanship on every job</li>
+            <li>Tampa Bay local — knows the climate and the work</li>
+            <li>Residential screen and enclosure specialist</li>
+          </ul>
+          <a class="btn btn-primary" href="tel:8134527059">Call (813) 452-7059</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="contact-section section-shell">
+      <div class="container contact-inner" data-reveal>
+        <p class="eyebrow">Ready to get started?</p>
+        <h2>Call or text Chris Westcott today.</h2>
+        <p>Pool enclosure, lanai screens, window screens, garage screens, rescreens, or gutter work — call to talk through what you need.</p>
+        <a class="btn btn-primary btn-lg" href="tel:5550100000">(555) 010-0000</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="Images/Logo.png" alt="The Screen Team LLC" class="footer-logo">
+      <div class="footer-info">
+        <p><strong>The Screen Team LLC</strong></p>
+        <p>Chris Westcott &nbsp;·&nbsp; <a href="tel:5550100000">(555) 010-0000</a></p>
+        <p>Tampa Bay, Florida</p>
+      </div>
+    </div>
+    <div class="footer-copy-bar">
+      <p class="footer-copy">&copy; <span id="current-year"></span> The Screen Team LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
