@@ -51,8 +51,13 @@ if (heroForm && formSuccess) {
       });
 
       if (res.ok) {
-        heroForm.hidden = true;
-        formSuccess.hidden = false;
+        submitBtn.textContent = "Sent! ✓";
+        setTimeout(() => {
+          heroForm.hidden = true;
+          formSuccess.hidden = false;
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+        }, 1800);
       } else {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
