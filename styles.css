@@ -3,7 +3,6 @@
    Dark navy professional theme
    ============================================= */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap");
 
 /* ---- CSS CUSTOM PROPERTIES ---- */
 :root {
@@ -615,12 +614,12 @@ ul { list-style: none; }
 
 .footer-cities {
   font-size: 0.75rem;
-  opacity: 0.55;
+  color: #7499b8;
   letter-spacing: 0.02em;
 }
 
 .footer-info strong { color: var(--ink); }
-.footer-info a { color: var(--accent); }
+.footer-info a { color: var(--accent); text-decoration: underline; }
 
 /* Service area strip */
 .areas-strip {
@@ -668,7 +667,7 @@ ul { list-style: none; }
 
 .footer-copy {
   font-size: 0.78rem;
-  color: rgba(116, 153, 184, 0.45);
+  color: #5a7a96;
 }
 
 /* =============================================
