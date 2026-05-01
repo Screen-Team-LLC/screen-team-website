@@ -667,7 +667,7 @@ ul { list-style: none; }
 
 .footer-copy {
   font-size: 0.78rem;
-  color: #5a7a96;
+  color: var(--muted);
 }
 
 /* =============================================
