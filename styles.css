@@ -131,7 +131,7 @@ ul { list-style: none; }
   min-height: 92vh;
   display: flex;
   align-items: center;
-  background: url("Images/ScreenTeamBanner.png") center / cover no-repeat;
+  background: url("Images/ScreenTeamBanner.webp") center / cover no-repeat;
 }
 
 /* Dark gradient — heavier left (text area) → lighter right (image visible) */
@@ -742,7 +742,7 @@ ul { list-style: none; }
   .section-shell { padding: 72px 0; }
 
   .hero {
-    background-image: url("Images/ScreenTeamBanner-mobile.png");
+    background-image: url("Images/ScreenTeamBanner-mobile.webp");
     background-position: top center;
   }
 
