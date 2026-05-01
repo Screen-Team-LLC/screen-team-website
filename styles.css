@@ -1027,6 +1027,8 @@ a.service-card {
    ============================================================ */
 .faq-section { background: var(--bg); }
 
+.map-embed { overflow: hidden; border-radius: 8px; box-shadow: 0 2px 16px rgba(0,0,0,.10); }
+
 .faq-list {
   margin-top: 48px;
   display: flex;
