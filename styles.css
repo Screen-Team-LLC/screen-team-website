@@ -720,10 +720,9 @@ ul { list-style: none; }
 
 @media (max-width: 940px) {
   .site-nav { display: none !important; }
-  .header-cta { display: none !important; }
   .hamburger-btn { display: flex !important; }
   .header-inner {
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 14px;
   }
 }
