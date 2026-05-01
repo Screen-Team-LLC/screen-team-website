@@ -719,9 +719,13 @@ ul { list-style: none; }
 }
 
 @media (max-width: 940px) {
-  .site-nav { display: none; }
-  .hamburger-btn { display: flex; }
-  .header-cta { display: none; }
+  .site-nav { display: none !important; }
+  .header-cta { display: none !important; }
+  .hamburger-btn { display: flex !important; }
+  .header-inner {
+    justify-content: flex-start;
+    gap: 14px;
+  }
 }
 
 @media (max-width: 720px) {
