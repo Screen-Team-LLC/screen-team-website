@@ -165,3 +165,44 @@ if (mobileServToggle && mobileServicesSub) {
     mobileServToggle.setAttribute('aria-expanded', String(open));
   });
 }
+
+// ---- Lazy analytics load ----
+(function initLazyAnalytics() {
+  const GA_ID = 'G-N5V1084LC6';
+  let loaded = false;
+
+  function loadGA() {
+    if (loaded) {
+      return;
+    }
+    loaded = true;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_ID);
+
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+    document.head.appendChild(s);
+
+    window.removeEventListener('pointerdown', onInteraction, interactionOpts);
+    window.removeEventListener('keydown', onInteraction, interactionOpts);
+    window.removeEventListener('touchstart', onInteraction, interactionOpts);
+    window.removeEventListener('scroll', onInteraction, interactionOpts);
+  }
+
+  function onInteraction() {
+    loadGA();
+  }
+
+  const interactionOpts = { once: true, passive: true };
+  window.addEventListener('pointerdown', onInteraction, interactionOpts);
+  window.addEventListener('keydown', onInteraction, interactionOpts);
+  window.addEventListener('touchstart', onInteraction, interactionOpts);
+  window.addEventListener('scroll', onInteraction, interactionOpts);
+
+  // Fallback so analytics still starts on non-interactive sessions.
+  window.setTimeout(loadGA, 15000);
+})();
