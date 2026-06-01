@@ -928,6 +928,16 @@ a.service-card {
   padding: 70px 0 55px;
 }
 
+@media (max-width: 768px) {
+  .sp-hero {
+    background-image: url("Images/service-hero-bg-mobile.webp");
+    background-image: image-set(
+      url("Images/service-hero-bg-mobile.webp") type("image/webp"),
+      url("Images/service-hero-bg.jpg") type("image/jpeg")
+    );
+  }
+}
+
 .sp-hero::before {
   content: "";
   position: absolute;
