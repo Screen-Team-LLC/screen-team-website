@@ -915,7 +915,15 @@ a.service-card {
    ============================================= */
 .sp-hero {
   position: relative;
-  background: url("Images/service-hero-bg.jpg") center / cover no-repeat;
+  background-color: #08101d;
+  background-image: url("Images/service-hero-bg.jpg");
+  background-image: image-set(
+    url("Images/service-hero-bg.webp") type("image/webp"),
+    url("Images/service-hero-bg.jpg") type("image/jpeg")
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-bottom: 1px solid var(--border);
   padding: 70px 0 55px;
 }
