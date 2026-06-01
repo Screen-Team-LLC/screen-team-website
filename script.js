@@ -89,6 +89,51 @@ if (dropdownBtn && dropdownMenu) {
   });
 }
 
+// ---- Gallery filters ----
+const galleryFilters = document.querySelectorAll('.gallery-filter');
+const galleryItems = document.querySelectorAll('.gallery-item[data-category]');
+
+if (galleryFilters.length > 0 && galleryItems.length > 0) {
+  const validFilters = new Set(Array.from(galleryFilters, (button) => button.dataset.filter));
+
+  function applyGalleryFilter(filter, updateUrl) {
+    const activeFilter = validFilters.has(filter) ? filter : 'all';
+
+    galleryFilters.forEach((button) => {
+      const isActive = button.dataset.filter === activeFilter;
+      button.classList.toggle('active', isActive);
+      button.setAttribute('aria-selected', String(isActive));
+    });
+
+    galleryItems.forEach((item) => {
+      const isVisible = activeFilter === 'all' || item.dataset.category === activeFilter;
+      item.hidden = !isVisible;
+    });
+
+    if (!updateUrl) {
+      return;
+    }
+
+    const currentUrl = new URL(window.location.href);
+    if (activeFilter === 'all') {
+      currentUrl.searchParams.delete('filter');
+    } else {
+      currentUrl.searchParams.set('filter', activeFilter);
+    }
+
+    window.history.replaceState({}, '', currentUrl);
+  }
+
+  const initialFilter = new URLSearchParams(window.location.search).get('filter') || 'all';
+  applyGalleryFilter(initialFilter, false);
+
+  galleryFilters.forEach((button) => {
+    button.addEventListener('click', () => {
+      applyGalleryFilter(button.dataset.filter, true);
+    });
+  });
+}
+
 // ---- FAQ accordion ----
 document.querySelectorAll('.faq-question').forEach((btn) => {
   btn.addEventListener('click', () => {

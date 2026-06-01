@@ -87,7 +87,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="styles.css">
   <script>window.addEventListener('load',function(){setTimeout(function(){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wjl6hyr76v");},4000);},{once:true});</script>
 
@@ -104,10 +103,9 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="The Screen Team LLC home">
-        <img src="Images/Logo-175.webp" srcset="Images/Logo-175.webp 1x, Images/Logo.webp 2x" alt="The Screen Team LLC" class="brand-logo" width="175" height="175">
+        <img src="Images/Logo-175.webp" srcset="Images/Logo-175.webp 1x" sizes="175px" alt="" class="brand-logo" width="175" height="175" decoding="async">
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
         <div class="nav-dropdown-wrap">
           <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
             Services
@@ -166,7 +164,7 @@
             </div>
             <div class="form-group">
               <label for="cf-phone">Phone Number</label>
-              <input type="tel" id="cf-phone" name="phone" placeholder="(813) 000-0000" autocomplete="tel">
+              <input type="tel" id="cf-phone" name="phone" placeholder="(727) 000-0000" autocomplete="tel">
             </div>
             <div class="form-group">
               <label for="cf-service">Service Needed</label>
@@ -186,7 +184,10 @@
               <textarea id="cf-message" name="message" placeholder="What needs to be done? Location, size, condition..." rows="5"></textarea>
             </div>
             <input type="hidden" name="_subject" value="New contact - The Screen Team LLC">
-            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="honeypot-field" aria-hidden="true">
+              <label for="cf-gotcha">Leave this field blank</label>
+              <input type="text" id="cf-gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
             <button type="submit" class="btn btn-primary btn-full">Send My Request</button>
           </form>
 
@@ -224,18 +225,14 @@
           <h2>Our Service Area</h2>
           <p>Proudly serving St. Pete, Clearwater, Largo, Palm Harbor, Dunedin, Safety Harbor, Tarpon Springs, and surrounding Tampa Bay communities.</p>
         </div>
-        <div class="map-embed" data-reveal>
-          <iframe
-            src="https://maps.google.com/maps?q=Pinellas+County,+FL&t=&z=10&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="420"
-            style="border:0; border-radius:8px; display:block;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="The Screen Team LLC service area — Tampa Bay, FL"
-            aria-label="Google map showing Tampa Bay service area">
-          </iframe>
+        <div class="map-embed map-embed-card" data-reveal>
+          <p class="eyebrow">Need a fast answer?</p>
+          <h3>Call or text Chris to confirm your area.</h3>
+          <p>Screen Team works across St. Pete, Clearwater, Largo, Palm Harbor, Dunedin, Safety Harbor, Tarpon Springs, and surrounding Tampa Bay communities. The fastest way to confirm your location is covered is to call or text Chris directly.</p>
+          <div class="map-embed-actions">
+            <a class="btn btn-primary" href="tel:7273866562">Call (727) 386-6562</a>
+            <a class="btn btn-ghost" href="https://maps.google.com/?q=Pinellas+County,+FL" target="_blank" rel="noopener noreferrer">Open Area Map</a>
+          </div>
         </div>
       </div>
     </section>
@@ -256,7 +253,7 @@
               How quickly will Chris respond after I send the form?
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <div class="faq-answer" id="faq-a1" aria-hidden="true">
+            <div class="faq-answer" id="faq-a1" aria-hidden="true" inert>
               <div class="faq-answer-inner"><p>Typically within a few hours on business days. If you need a faster response, calling or texting (727) 386-6562 directly is the quickest route - that's Chris's direct line, not an answering service.</p></div>
             </div>
           </div>
@@ -266,7 +263,7 @@
               Do you need to come out to give a quote, or can you estimate over the phone?
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <div class="faq-answer" id="faq-a2" aria-hidden="true">
+            <div class="faq-answer" id="faq-a2" aria-hidden="true" inert>
               <div class="faq-answer-inner"><p>Many jobs can be roughly estimated over the phone if you can describe the scope - type of enclosure, approximate size, how many panels. An in-person look gives the most accurate quote, especially for larger or more complex enclosures.</p></div>
             </div>
           </div>
@@ -276,7 +273,7 @@
               What areas do you serve?
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <div class="faq-answer" id="faq-a3" aria-hidden="true">
+            <div class="faq-answer" id="faq-a3" aria-hidden="true" inert>
               <div class="faq-answer-inner"><p>The Screen Team serves the greater Tampa Bay area including St. Petersburg, Clearwater, Largo, Dunedin, Safety Harbor, Oldsmar, Palm Harbor, Tarpon Springs, Seminole, and surrounding Pinellas and Hillsborough County communities. Not sure if we reach you? Just call and ask.</p></div>
             </div>
           </div>
@@ -286,7 +283,7 @@
               What's the best way to reach Chris directly?
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <div class="faq-answer" id="faq-a4" aria-hidden="true">
+            <div class="faq-answer" id="faq-a4" aria-hidden="true" inert>
               <div class="faq-answer-inner"><p>Call or text <a href="tel:7273866562">(727) 386-6562</a>. That's Chris's direct number - no answering service, no phone tree. You'll get Chris.</p></div>
             </div>
           </div>
@@ -299,7 +296,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="Images/LogoMark-189.webp" srcset="Images/LogoMark-189.webp 1x, Images/LogoMark.webp 2x" alt="The Screen Team LLC" class="footer-logo" width="189" height="189">
+      <img src="Images/LogoMark-189.webp" srcset="Images/LogoMark-189.webp 1x" sizes="189px" alt="" class="footer-logo" width="189" height="189" loading="lazy" decoding="async">
       <div class="footer-info">
         <p><strong>The Screen Team LLC</strong></p>
         <p>Chris Westcott &nbsp;-&nbsp; <a href="tel:7273866562">(727) 386-6562</a></p>
@@ -332,7 +329,7 @@
   <!-- Mobile navigation drawer -->
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true" inert>
     <div class="mobile-nav-header">
-      <img src="Images/Logo-175.webp" srcset="Images/Logo-175.webp 1x, Images/Logo.webp 2x" alt="The Screen Team LLC" class="mobile-nav-logo" width="175" height="175">
+      <img src="Images/Logo-175.webp" srcset="Images/Logo-175.webp 1x" sizes="175px" alt="" class="mobile-nav-logo" width="175" height="175" loading="lazy" decoding="async">
       <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
