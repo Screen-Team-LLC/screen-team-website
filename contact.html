@@ -24,7 +24,37 @@
   <meta name="twitter:description" content="Call or text Chris Westcott at (727) 386-6562 for rescreens, pool enclosures, lanais, window screens, and more across Tampa Bay.">
   <meta name="twitter:image" content="https://screenteamllc.com/Images/ScreenTeamBanner.png">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://screenteamllc.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://screenteamllc.com/contact.html"}]}
+  {"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://screenteamllc.com/contact.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://screenteamllc.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://screenteamllc.com/contact.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPoint",
+    "@id": "https://screenteamllc.com/contact.html#contact-point",
+    "contactType": "customer service",
+    "telephone": "+1-727-386-6562",
+    "email": "chris@screenteamllc.com",
+    "availableLanguage": ["en-US"],
+    "areaServed": [
+      "New Port Richey, FL",
+      "St. Petersburg, FL",
+      "Clearwater, FL",
+      "Largo, FL",
+      "Palm Harbor, FL",
+      "Safety Harbor, FL",
+      "Dunedin, FL",
+      "Oldsmar, FL",
+      "Tarpon Springs, FL",
+      "Seminole, FL",
+      "Tampa, FL"
+    ],
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  }
   </script>
   <script type="application/ld+json">
   {
@@ -34,10 +64,19 @@
     "url": "https://screenteamllc.com/contact.html",
     "name": "Contact The Screen Team LLC",
     "description": "Contact Chris Westcott at The Screen Team LLC for screen repair, pool enclosure, lanai, window screen, garage screen, and related exterior work in Tampa Bay.",
-    "mainEntity": {
-      "@type": "HomeAndConstructionBusiness",
+    "isPartOf": {
+      "@id": "https://screenteamllc.com/#website"
+    },
+    "about": {
       "@id": "https://screenteamllc.com/#business"
-    }
+    },
+    "breadcrumb": {
+      "@id": "https://screenteamllc.com/contact.html#breadcrumb"
+    },
+    "mainEntity": {
+      "@id": "https://screenteamllc.com/contact.html#contact-point"
+    },
+    "inLanguage": "en-US"
   }
   </script>
   <script type="application/ld+json">
