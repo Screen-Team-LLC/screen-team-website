@@ -2009,6 +2009,7 @@ a.service-card {
 
 /* ---- Hero: split original banner into 4 panels ---- */
 body.home-landing .hero {
+  position: relative;
   min-height: min(92vh, 920px);
   overflow: hidden;
   background: var(--bg);
@@ -2085,6 +2086,7 @@ body.home-landing .hero-panel--right.hero-panel--split {
 }
 
 body.home-landing .hero-overlay {
+  position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;

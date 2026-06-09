@@ -7,7 +7,7 @@ const NAV_ACTIVE_SELECTORS = {
   "pool-enclosures": ['.nav-dropdown-menu a[href="pool-enclosures.html"]', '.mobile-services-sub a[href="pool-enclosures.html"]'],
   "screen-lanais": ['.nav-dropdown-menu a[href="screen-lanais.html"]', '.mobile-services-sub a[href="screen-lanais.html"]'],
   "window-screens": ['.nav-dropdown-menu a[href="window-screens.html"]', '.mobile-services-sub a[href="window-screens.html"]'],
-  "garage-screens": ['.nav-dropdown-menu a[href="garage-screens.html"]', '.mobile-services-sub a[href="garage-screens.html"]'],
+  "garage-screens": ['.nav-dropdown-menu a[href="garage-screens.html"]', ".mobile-services-sub a[href=\"garage-screens.html\"]"],
   "gutter-work": ['.nav-dropdown-menu a[href="gutter-work.html"]', '.mobile-services-sub a[href="gutter-work.html"]'],
   "service-areas": ['.footer-links a[href="service-areas.html"]'],
   "service-guarantee": ['.footer-links a[href="service-guarantee.html"]'],
@@ -47,57 +47,15 @@ function applyHeaderAdjustments() {
   });
 }
 
-async function loadSiteIncludes() {
-  const headerMount = document.getElementById("site-header-mount");
-  const footerMount = document.getElementById("site-footer-mount");
-  if (!headerMount && !footerMount) return;
+function initSiteIncludes() {
+  if (!document.querySelector(".site-header")) return;
 
-  try {
-    const requests = [];
-
-    if (headerMount) {
-      requests.push(
-        fetch("header.html").then((response) => {
-          if (!response.ok) throw new Error("header.html");
-          return response.text();
-        }),
-      );
-    } else {
-      requests.push(Promise.resolve(null));
-    }
-
-    if (footerMount) {
-      requests.push(
-        fetch("footer.html").then((response) => {
-          if (!response.ok) throw new Error("footer.html");
-          return response.text();
-        }),
-      );
-    } else {
-      requests.push(Promise.resolve(null));
-    }
-
-    const [headerHtml, footerHtml] = await Promise.all(requests);
-
-    if (headerHtml && headerMount) {
-      headerMount.insertAdjacentHTML("afterend", headerHtml);
-      headerMount.remove();
-      applyHeaderAdjustments();
-    }
-
-    if (footerHtml && footerMount) {
-      footerMount.insertAdjacentHTML("afterend", footerHtml);
-      footerMount.remove();
-    }
-
-    document.dispatchEvent(new CustomEvent("site:includes-loaded"));
-  } catch (error) {
-    console.error("Failed to load site header/footer includes:", error);
-  }
+  applyHeaderAdjustments();
+  document.dispatchEvent(new CustomEvent("site:includes-loaded"));
 }
 
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", loadSiteIncludes);
+  document.addEventListener("DOMContentLoaded", initSiteIncludes);
 } else {
-  loadSiteIncludes();
+  initSiteIncludes();
 }
