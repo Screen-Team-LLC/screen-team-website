@@ -212,7 +212,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <!-- Hero image preload: largest contentful paint element, discoverable immediately -->
   <link rel="preload" as="image" href="Images/ScreenTeamBanner-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
   <link rel="preload" as="image" href="Images/ScreenTeamBanner.webp" fetchpriority="high" media="(min-width: 769px)">
   <link rel="stylesheet" href="styles.css">
@@ -238,91 +237,25 @@
     gtag('js', new Date());
     gtag('config', 'G-N5V1084LC6');
   </script></head>
-<body>
+<body class="home-landing">
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="The Screen Team LLC home">
-        <img src="Images/Logo-175.webp" srcset="Images/Logo-175.webp 1x" sizes="175px" alt="The Screen Team LLC logo" class="brand-logo" width="175" height="175" decoding="async">
-      </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-          <a href="/">Home</a>
-        <div class="nav-dropdown-wrap">
-          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
-            Services
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="nav-dropdown-menu" role="menu">
-            <a href="rescreens.html" role="menuitem">Rescreens</a>
-            <a href="pool-enclosures.html" role="menuitem">Pool Enclosures</a>
-            <a href="screen-lanais.html" role="menuitem">Screen Lanais</a>
-            <a href="window-screens.html" role="menuitem">Window Screens</a>
-            <a href="garage-screens.html" role="menuitem">Garage Screens</a>
-            <a href="gutter-work.html" role="menuitem">Gutter Work</a>
-          </div>
-        </div>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Our Work</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <a class="header-cta" href="tel:7273866562">
-                <span class="header-cta-label">Call or Text</span>
-        <span class="header-cta-number">(727) 386-6562</span>
-      </a>
-      <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+  <div id="site-header-mount"></div>
 
   <main>
 
-    <!-- ====== HERO ====== -->
-    <section class="hero">
+    <!-- ====== HERO (desktop: 4-panel banner | mobile: single portrait banner) ====== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-panels" aria-hidden="true">
+        <div class="hero-panel hero-panel--left hero-panel--split"></div>
+        <div class="hero-panel hero-panel--top hero-panel--split"></div>
+        <div class="hero-panel hero-panel--bottom hero-panel--split"></div>
+        <div class="hero-panel hero-panel--right hero-panel--split"></div>
+      </div>
       <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
       <div class="container hero-inner">
 
-        <div class="hero-copy">
-          <p class="eyebrow">Rescreens - Pool Enclosures - Lanais - Windows - Garages - Gutters</p>
-          <h1>The Screen<br>Team <span class="h1-accent">LLC</span></h1>
-          <p class="hero-sub">
-            Tampa Bay's reliable screen repair and enclosure specialists.
-            Call Chris Westcott directly - no middleman, no runaround, just the work done right.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:7273866562">Call Chris Now</a>
-            <a class="btn btn-ghost" href="#services">Our Services</a>
-          </div>
-          <div class="trust-row">
-            <div class="trust-item">
-              <strong>6+</strong>
-              <span>Services offered</span>
-            </div>
-            <div class="trust-divider" aria-hidden="true"></div>
-            <div class="trust-item">
-              <strong>Direct</strong>
-              <span>Owner contact</span>
-            </div>
-            <div class="trust-divider" aria-hidden="true"></div>
-            <div class="trust-item">
-              <strong>Local</strong>
-              <span>Tampa Bay area</span>
-            </div>
-          </div>
-          <div class="hero-social">
-            <span class="hero-social-label">Follow us</span>
-            <div class="social-icons">
-              <a href="https://x.com/ScreenTeamLLC" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-              <a href="https://www.facebook.com/profile.php?id=61588867359684" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-              <a href="https://www.linkedin.com/company/screen-team-llc/?viewAsMember=true" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-              <a href="https://nextdoor.com/page/screen-team-llc-safety-harbor-fl" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Nextdoor"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></a>
-            </div>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="Get a free quote">
+        <aside class="hero-card hero-enter hero-enter--from-left hero-enter--d0" aria-label="Get a free quote">
           <p class="card-eyebrow">Get a free quote</p>
           <h2 class="card-name">Talk to Chris Today</h2>
           <p class="card-note">Fill out the form and Chris will get back to you to discuss the job.</p>
@@ -372,77 +305,155 @@
           </div>
         </aside>
 
+        <div class="hero-copy">
+          <p class="eyebrow hero-enter hero-enter--from-right hero-enter--d1">Rescreens - Pool Enclosures - Lanais - Windows - Garages - Gutters</p>
+          <h1 class="hero-enter hero-enter--from-right hero-enter--d1">The Screen<br>Team <span class="h1-accent">LLC</span></h1>
+          <p class="hero-sub hero-enter hero-enter--from-right hero-enter--d14">
+            Tampa Bay's reliable screen repair and enclosure specialists.
+            Call Chris Westcott directly - no middleman, no runaround, just the work done right.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary hero-enter hero-enter--from-left hero-enter--d17" href="tel:7273866562">Call Chris Now</a>
+            <a class="btn btn-ghost hero-enter hero-enter--from-right hero-enter--d17" href="#services">Our Services</a>
+          </div>
+          <div class="trust-row">
+            <div class="trust-item hero-enter hero-enter--from-left hero-enter--d17">
+              <strong>6+</strong>
+              <span>Services offered</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item hero-enter hero-enter--from-right hero-enter--d17">
+              <strong>Direct</strong>
+              <span>Owner contact</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item hero-enter hero-enter--from-right hero-enter--d17">
+              <strong>Local</strong>
+              <span>Tampa Bay area</span>
+            </div>
+          </div>
+          <div class="hero-social hero-enter hero-enter--from-bottom hero-enter--d14">
+            <span class="hero-social-label">Follow us</span>
+            <div class="social-icons">
+              <a href="https://x.com/ScreenTeamLLC" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="https://www.facebook.com/profile.php?id=61588867359684" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+              <a href="https://www.linkedin.com/company/screen-team-llc/?viewAsMember=true" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              <a href="https://nextdoor.com/page/screen-team-llc-safety-harbor-fl" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Nextdoor"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Trust highlights">
+      <div class="container trust-strip-grid">
+        <div class="reveal stagger-1">
+          <span>Service area</span>
+          <strong>Tampa Bay Local</strong>
+        </div>
+        <div class="reveal stagger-2">
+          <span>Contact</span>
+          <strong>Owner Direct Line</strong>
+        </div>
+        <div class="reveal stagger-3">
+          <span>Estimates</span>
+          <strong>Free Quotes</strong>
+        </div>
+        <div class="reveal stagger-4">
+          <span>Services</span>
+          <strong>6 Specialties</strong>
+        </div>
       </div>
     </section>
 
     <!-- ====== SERVICES ====== -->
     <section id="services" class="services-section section-shell">
       <div class="container">
-        <div class="section-heading" data-reveal>
+        <div class="section-heading reveal">
           <p class="eyebrow">What we do</p>
           <h2>Professional Screen &amp; Enclosure Services</h2>
           <p>Quality materials and clean workmanship on every job, start to finish.</p>
         </div>
         <div class="services-grid">
 
-          <a class="service-card" href="rescreens.html" data-reveal>
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
-              </svg>
+          <a class="service-card service-card--media reveal-scale stagger-1" href="rescreens.html">
+            <div class="service-card-media" style="background-image: url('Images/preview/services/rescreens.jpg')" role="img" aria-label="Completed rescreen project"></div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
+                </svg>
+              </div>
+              <h3>Rescreens</h3>
+              <p>Replace worn, torn, or weathered screening on pool cages, lanais, porches, and enclosures - done right the first time.</p>
             </div>
-            <h3>Rescreens</h3>
-            <p>Replace worn, torn, or weathered screening on pool cages, lanais, porches, and enclosures - done right the first time.</p>
           </a>
 
-          <a class="service-card" href="pool-enclosures.html" data-reveal>
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
+          <a class="service-card service-card--media reveal-scale stagger-2" href="pool-enclosures.html">
+            <div class="service-card-media" style="background-image: url('Images/preview/services/pool-enclosures.jpg')" role="img" aria-label="Pool enclosure screening project"></div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <h3>Pool Enclosures</h3>
+              <p>Refresh your pool cage screening to keep bugs out, debris down, and the enclosure looking sharp year-round.</p>
             </div>
-            <h3>Pool Enclosures</h3>
-            <p>Refresh your pool cage screening to keep bugs out, debris down, and the enclosure looking sharp year-round.</p>
           </a>
 
-          <a class="service-card" href="screen-lanais.html" data-reveal>
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-              </svg>
+          <a class="service-card service-card--media reveal-scale stagger-3" href="screen-lanais.html">
+            <div class="service-card-media" style="background-image: url('Images/preview/services/screen-lanais.jpg')" role="img" aria-label="Screen lanai project"></div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                </svg>
+              </div>
+              <h3>Screen Lanais</h3>
+              <p>Restore your lanai screen panels - clean lines, no torn sections, no flapping edges catching the Florida breeze.</p>
             </div>
-            <h3>Screen Lanais</h3>
-            <p>Restore your lanai screen panels - clean lines, no torn sections, no flapping edges catching the Florida breeze.</p>
           </a>
 
-          <a class="service-card" href="window-screens.html" data-reveal>
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-              </svg>
+          <a class="service-card service-card--media reveal-scale stagger-4" href="window-screens.html">
+            <div class="service-card-media" style="background-image: url('Images/preview/services/window-screens.jpg')" role="img" aria-label="Window with screen"></div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3>Window Screens</h3>
+              <p>Repair or replace window screens that have torn, warped, or come loose due to Florida's heat and storms.</p>
             </div>
-            <h3>Window Screens</h3>
-            <p>Repair or replace window screens that have torn, warped, or come loose due to Florida's heat and storms.</p>
           </a>
 
-          <a class="service-card" href="garage-screens.html" data-reveal>
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/>
-              </svg>
+          <a class="service-card service-card--media reveal-scale stagger-1" href="garage-screens.html">
+            <div class="service-card-media" style="background-image: url('Images/preview/services/garage-screens.jpg')" role="img" aria-label="Residential garage exterior"></div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/>
+                </svg>
+              </div>
+              <h3>Garage Screens</h3>
+              <p>Add or repair garage screen systems that let airflow in while keeping pests and debris outside where they belong.</p>
             </div>
-            <h3>Garage Screens</h3>
-            <p>Add or repair garage screen systems that let airflow in while keeping pests and debris outside where they belong.</p>
           </a>
 
-          <a class="service-card" href="gutter-work.html" data-reveal>
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 12H2"/><path d="M5 12V6a1 1 0 011-1h12a1 1 0 011 1v6"/><path d="M2 12v2a2 2 0 002 2h16a2 2 0 002-2v-2"/>
-              </svg>
+          <a class="service-card service-card--media reveal-scale stagger-2" href="gutter-work.html">
+            <div class="service-card-media" style="background-image: url('Images/preview/services/gutter-work.jpg')" role="img" aria-label="House exterior and roofline"></div>
+            <div class="service-card-body">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12H2"/><path d="M5 12V6a1 1 0 011-1h12a1 1 0 011 1v6"/><path d="M2 12v2a2 2 0 002 2h16a2 2 0 002-2v-2"/>
+                </svg>
+              </div>
+              <h3>Gutter Work</h3>
+              <p>Gutter-related exterior work handled as part of a complete service call - ask Chris about your specific situation.</p>
             </div>
-            <h3>Gutter Work</h3>
-            <p>Gutter-related exterior work handled as part of a complete service call - ask Chris about your specific situation.</p>
           </a>
 
         </div>
@@ -452,31 +463,54 @@
     <!-- ====== OUR WORK TEASER ====== -->
     <section class="work-teaser section-shell">
       <div class="container">
-        <div class="section-heading" data-reveal>
+        <div class="section-heading reveal">
           <p class="eyebrow">Proof of work</p>
           <h2>Real Jobs, Real Results</h2>
           <p>Every photo is from an actual completed project - screen lanais, pool enclosures, and rescreens across Tampa Bay.</p>
         </div>
         <div class="work-teaser-grid">
-          <a class="work-thumb" href="gallery.html?filter=lanai">
+          <a class="work-thumb reveal-photo stagger-1" href="gallery.html?filter=lanai">
             <img src="Images/gallery/20221018_121328.jpg" alt="Completed screen lanai with dark aluminum frame - Tampa Bay" loading="lazy" width="600" height="450">
             <span class="work-thumb-label">Screen Lanais</span>
           </a>
-          <a class="work-thumb" href="gallery.html?filter=enclosure&view=pool">
+          <a class="work-thumb reveal-photo stagger-2" href="gallery.html?filter=enclosure&view=pool">
             <img src="Images/gallery/20220816_113149.jpg" alt="Residential pool area screen enclosure project - Tampa Bay" loading="lazy" width="600" height="450">
             <span class="work-thumb-label">Pool Enclosures</span>
           </a>
-          <a class="work-thumb" href="gallery.html?filter=rescreen">
+          <a class="work-thumb reveal-photo stagger-3" href="gallery.html?filter=rescreen">
             <img src="Images/gallery/20220406_152213.jpg" alt="Rescreen and screen lanai enclosure finished - Tampa Bay" loading="lazy" width="600" height="450">
             <span class="work-thumb-label">Rescreens</span>
           </a>
-          <a class="work-thumb" href="gallery.html?filter=enclosure&view=full">
+          <a class="work-thumb reveal-photo stagger-4" href="gallery.html?filter=enclosure&view=full">
             <img src="Images/gallery/PXL_20240909_160616822.PANO.jpg" alt="Panoramic view of completed screen enclosure across rear of home - Tampa Bay 2024" loading="lazy" width="1200" height="450">
             <span class="work-thumb-label">Full Enclosures</span>
           </a>
         </div>
-        <div style="text-align:center;margin-top:2rem">
+        <div class="work-teaser-cta reveal">
           <a class="btn btn-ghost" href="gallery.html">See All Projects &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICE AREA MAP ====== -->
+    <section class="map-section section-shell" aria-label="Service area map">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Where we work</p>
+          <h2>Tampa Bay Service Area</h2>
+          <p>Serving Pinellas and Hillsborough County — St. Pete, Clearwater, Largo, Palm Harbor, and nearby communities.</p>
+        </div>
+        <div class="map-embed reveal-scale">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451015.1659499797!2d-83.02166183365341!3d27.976881443101366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaeb0400d14eb0ad1%3A0x5f8f79fca3ad24aa!2sScreen%20Team%20LLC!5e0!3m2!1sen!2sus!4v1780851537400!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Screen Team LLC on Google Maps"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -485,14 +519,14 @@
     <section id="about" class="about-section section-shell">
       <div class="container about-grid">
 
-        <div class="about-copy" data-reveal>
+        <div class="about-copy reveal-left">
           <p class="eyebrow">Why choose us</p>
           <h2>Straight talk.<br>Quality work.<br>No runaround.</h2>
           <p>Chris Westcott runs The Screen Team LLC as a direct-contact operation. When you call, you're talking to the person doing the work - not a call center, not a subcontractor chain.</p>
           <p>The focus is screen repair and enclosure work throughout the Tampa Bay area, built on clean, reliable workmanship one job at a time.</p>
         </div>
 
-        <div class="about-card" data-reveal>
+        <div class="about-card reveal-right stagger-2">
           <h3>What to expect</h3>
           <ul class="about-list">
             <li>Direct line to Chris - no phone trees</li>
@@ -510,7 +544,7 @@
     <!-- ====== FAQ ====== -->
     <section id="faq" class="faq-section section-shell">
       <div class="container">
-        <div class="section-heading" data-reveal>
+        <div class="section-heading reveal">
           <p class="eyebrow">Common questions</p>
           <h2>Frequently Asked Questions</h2>
           <p>Straight answers about screen repair and enclosure work in Tampa Bay.</p>
@@ -603,7 +637,7 @@
 
     <!-- ====== CONTACT ====== -->
     <section id="contact" class="contact-section section-shell">
-      <div class="container contact-inner" data-reveal>
+      <div class="container contact-inner reveal-scale">
         <p class="eyebrow">Ready to get started?</p>
         <h2>Call or text Chris Westcott today.</h2>
         <p>Pool enclosure, lanai screens, window screens, garage screens, rescreens, or gutter work - call to talk through what you need.</p>
@@ -613,76 +647,9 @@
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="Images/LogoMark-189.webp" srcset="Images/LogoMark-189.webp 1x" sizes="189px" alt="The Screen Team LLC logo mark" class="footer-logo" width="189" height="189" loading="lazy" decoding="async">
-      <div class="footer-info">
-        <p><strong>The Screen Team LLC</strong></p>
-        <p>Chris Westcott &nbsp;-&nbsp; (727) 386-6562</p>
-        <p>Tampa Bay, Florida</p>
-        <p class="footer-cities">St. Pete &nbsp;&middot;&nbsp; Clearwater &nbsp;&middot;&nbsp; Largo &nbsp;&middot;&nbsp; Palm Harbor &nbsp;&middot;&nbsp; Safety Harbor &nbsp;&middot;&nbsp; Dunedin</p>
-        <div class="footer-social">
-          <div class="social-icons">
-            <a href="https://x.com/ScreenTeamLLC" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-            <a href="https://www.facebook.com/profile.php?id=61588867359684" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-            <a href="https://www.linkedin.com/company/screen-team-llc/?viewAsMember=true" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-            <a href="https://nextdoor.com/page/screen-team-llc-safety-harbor-fl" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Nextdoor"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copy-bar">
-      <nav class="footer-links" aria-label="Footer links">
-        <a href="gallery.html">Our Work</a>
-        <a href="service-areas.html">Service Areas</a>
-        <a href="service-guarantee.html">Service Guarantee</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-      </nav>
-      <p class="footer-copy">&copy; <span id="current-year"></span> The Screen Team LLC. All rights reserved. &nbsp;&middot;&nbsp; <a href="https://knightlogics.com" rel="noopener noreferrer">Site by Knight Logics</a></p>
-    </div>
-  </footer>
+  <div id="site-footer-mount"></div>
 
-
-  <!-- Mobile nav overlay -->
-  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
-
-  <!-- Mobile navigation drawer -->
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true" inert>
-    <div class="mobile-nav-header">
-        <img src="Images/Logo-175.webp" srcset="Images/Logo-175.webp 1x" sizes="175px" alt="The Screen Team LLC logo" class="mobile-nav-logo" width="175" height="175" loading="lazy" decoding="async">
-      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
-    <div class="mobile-nav-links">
-      <a href="/">Home</a>
-      <button class="mobile-services-toggle" id="mobile-services-toggle" aria-expanded="false">
-        Services
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="mobile-services-sub" id="mobile-services-sub">
-        <a href="rescreens.html">Rescreens</a>
-        <a href="pool-enclosures.html">Pool Enclosures</a>
-        <a href="screen-lanais.html">Screen Lanais</a>
-        <a href="window-screens.html">Window Screens</a>
-        <a href="garage-screens.html">Garage Screens</a>
-        <a href="gutter-work.html">Gutter Work</a>
-      </div>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Our Work</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="mobile-nav-social">
-      <p class="mobile-nav-social-label">Follow Us</p>
-      <div class="social-icons">
-        <a href="https://x.com/ScreenTeamLLC" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-        <a href="https://www.facebook.com/profile.php?id=61588867359684" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-        <a href="https://www.linkedin.com/company/screen-team-llc/?viewAsMember=true" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-        <a href="https://nextdoor.com/page/screen-team-llc-safety-harbor-fl" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Nextdoor"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></a>
-      </div>
-    </div>
-  </nav>
-
+  <script src="includes.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
