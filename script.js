@@ -52,6 +52,45 @@ function initHeroPanels() {
   });
 }
 
+function initHomeStripEntrance() {
+  if (!document.body.classList.contains("home-landing")) return;
+
+  const items = document.querySelectorAll(
+    ".trust-strip .strip-slide, .st-intent-strip .strip-slide",
+  );
+  if (!items.length) return;
+
+  const reveal = () => {
+    items.forEach((item) => item.classList.add("is-visible"));
+  };
+
+  if (prefersReducedMotion()) {
+    reveal();
+    return;
+  }
+
+  const start = () => setTimeout(reveal, 1850);
+  const hero = document.querySelector(".hero");
+
+  if (hero?.classList.contains("hero-panels-ready")) {
+    start();
+    return;
+  }
+
+  if (!hero) {
+    start();
+    return;
+  }
+
+  const observer = new MutationObserver(() => {
+    if (!hero.classList.contains("hero-panels-ready")) return;
+    observer.disconnect();
+    start();
+  });
+
+  observer.observe(hero, { attributes: true, attributeFilter: ["class"] });
+}
+
 function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
@@ -622,6 +661,7 @@ function initStGoogleReviews() {
 function initPage() {
   initScrollReveal();
   initHeroPanels();
+  initHomeStripEntrance();
   initHeroParallax();
   initParallaxBands();
   initStGoogleReviews();

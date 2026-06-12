@@ -1,7 +1,17 @@
+# The Screen Team LLC — https://screenteamllc.com
+# Sitemap: https://screenteamllc.com/sitemap.xml
+# LLM / AI summary: https://screenteamllc.com/llms.txt
+
 User-agent: *
 Allow: /
 
-# AI crawlers — explicitly permitted to index all content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI crawlers — explicitly permitted
 User-agent: GPTBot
 Allow: /
 
@@ -32,7 +42,7 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-User-agent: GoogleExtendedBot
+User-agent: Google-Extended
 Allow: /
 
 User-agent: Applebot-Extended

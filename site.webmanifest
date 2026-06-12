@@ -1,21 +1,27 @@
 {
+  "id": "/",
   "name": "The Screen Team LLC",
   "short_name": "Screen Team",
-  "description": "Screen repair, rescreens, pool enclosures, and lanai screening across Tampa Bay, FL.",
+  "description": "Screen repair, rescreens, pool enclosures, lanai screening, window screens, garage screens, and gutter work across Tampa Bay, FL.",
+  "lang": "en-US",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#070d18",
   "theme_color": "#3da8d8",
+  "categories": ["business", "home services"],
   "icons": [
     {
       "src": "Images/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "Images/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

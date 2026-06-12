@@ -2647,16 +2647,10 @@ a.service-card {
   justify-content: center;
 }
 
-.footer-social .social-icon {
-  background: rgba(255, 225, 74, 0.1);
-  border-color: rgba(255, 225, 74, 0.55);
-  color: var(--eyebrow-accent);
-}
-
 .footer-social .social-icon:hover {
-  background: rgba(255, 225, 74, 0.22);
+  background: rgba(255, 225, 74, 0.18);
   border-color: var(--eyebrow-accent);
-  color: #fff7c2;
+  color: var(--eyebrow-accent);
   transform: translateY(-2px);
 }
 
@@ -2864,9 +2858,27 @@ body.home-landing .hero-copy {
 }
 
 body.home-landing .hero-copy h1 {
-  font-size: clamp(2.7rem, 5.4vw, 4.35rem);
-  max-width: 10ch;
+  max-width: 14ch;
   margin-bottom: 16px;
+  line-height: 1.02;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.75));
+}
+
+body.home-landing .hero-copy h1 .h1-keyword {
+  display: block;
+  margin-bottom: 0.35em;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--eyebrow-accent);
+  -webkit-text-fill-color: var(--eyebrow-accent);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
+}
+
+body.home-landing .hero-copy h1 .h1-brand {
+  display: block;
+  font-size: clamp(2.7rem, 5.4vw, 4.35rem);
   line-height: 0.98;
   background: linear-gradient(165deg, #ffffff 0%, #b8e6f8 38%, #3da8d8 72%, #7ec8e8 100%);
   background-size: 100% 100%;
@@ -2874,7 +2886,6 @@ body.home-landing .hero-copy h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: none;
-  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.75));
 }
 
 body.home-landing .hero-copy .hero-sub {
@@ -2942,17 +2953,38 @@ body.home-landing .hero-social-label {
 }
 
 body.home-landing .hero-social .social-icon {
-  background: rgba(255, 225, 74, 0.1);
-  border-color: rgba(255, 225, 74, 0.55);
-  color: var(--eyebrow-accent);
+  background: rgba(61, 168, 216, 0.14);
+  border-color: rgba(61, 168, 216, 0.42);
+  color: var(--accent);
 }
 
 body.home-landing .hero-social .social-icon:hover {
-  background: rgba(255, 225, 74, 0.22);
+  background: rgba(255, 225, 74, 0.18);
   border-color: var(--eyebrow-accent);
-  color: #fff7c2;
+  color: var(--eyebrow-accent);
   transform: translateY(-2px);
 }
+
+/* ---- Homepage strip load entrance (slide from above) ---- */
+body.home-landing .strip-slide {
+  opacity: 0;
+  transform: translate3d(0, calc(-1 * min(36vh, 180px)), 0);
+  transition:
+    opacity 0.95s var(--ease-out),
+    transform 0.95s var(--ease-out);
+  transition-delay: var(--strip-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+body.home-landing .strip-slide.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+body.home-landing :is(.trust-strip, .st-intent-strip) .stagger-1 { --strip-delay: 0ms; }
+body.home-landing :is(.trust-strip, .st-intent-strip) .stagger-2 { --strip-delay: 100ms; }
+body.home-landing :is(.trust-strip, .st-intent-strip) .stagger-3 { --strip-delay: 200ms; }
+body.home-landing :is(.trust-strip, .st-intent-strip) .stagger-4 { --strip-delay: 300ms; }
 
 /* ---- Trust strip ---- */
 body.home-landing .trust-strip {
@@ -2960,6 +2992,7 @@ body.home-landing .trust-strip {
   z-index: 3;
   background: linear-gradient(180deg, #0b1825 0%, #0d1c2e 100%);
   border-bottom: 1px solid var(--border);
+  overflow: hidden;
 }
 
 body.home-landing .trust-strip-grid {
@@ -3721,11 +3754,18 @@ body.home-landing .hero-enter--d17 { animation-delay: 1.7s; }
   }
 
   body.home-landing .hero-copy h1 {
-    font-size: clamp(1.95rem, 9vw, 2.65rem);
     max-width: none;
     margin-inline: auto;
     margin-top: 0;
     margin-bottom: 8px;
+  }
+
+  body.home-landing .hero-copy h1 .h1-brand {
+    font-size: clamp(1.95rem, 9vw, 2.65rem);
+  }
+
+  body.home-landing .hero-copy h1 .h1-keyword {
+    font-size: clamp(0.72rem, 3.2vw, 0.95rem);
   }
 
   body.home-landing .hero-copy .hero-sub {
@@ -3961,6 +4001,7 @@ body.home-landing .hero-enter--d17 { animation-delay: 1.7s; }
   z-index: 3;
   padding: 0 0 8px;
   background: linear-gradient(180deg, #0d1c2e 0%, var(--bg) 100%);
+  overflow: hidden;
 }
 
 .st-intent-strip__inner {
@@ -4403,6 +4444,7 @@ body.home-landing .hero-copy h1 {
   .reveal-scale,
   .reveal-photo,
   .slide-enter,
+  .strip-slide,
   .eyebrow,
   .card-eyebrow {
     opacity: 1 !important;

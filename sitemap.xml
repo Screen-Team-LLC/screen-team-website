@@ -4,7 +4,7 @@
     <loc>https://screenteamllc.com/</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://screenteamllc.com/about.html</loc>
@@ -13,79 +13,43 @@
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://screenteamllc.com/gallery.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/contact.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/pricing.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/rescreens.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/pool-enclosures.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/screen-lanais.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/window-screens.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/garage-screens.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/gutter-work.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/service-areas.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://screenteamllc.com/clearwater-screen-repair.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
   </url>
   <url>
-    <loc>https://screenteamllc.com/st-petersburg-screen-repair.html</loc>
+    <loc>https://screenteamllc.com/contact.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/dunedin-screen-repair.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
   </url>
   <url>
-    <loc>https://screenteamllc.com/palm-harbor-screen-repair.html</loc>
+    <loc>https://screenteamllc.com/gallery.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/garage-screens.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/gutter-work.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/largo-screen-repair.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
@@ -97,16 +61,34 @@
     <priority>0.84</priority>
   </url>
   <url>
-    <loc>https://screenteamllc.com/tampa-screen-repair.html</loc>
+    <loc>https://screenteamllc.com/oldsmar-screen-repair.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
   </url>
   <url>
-    <loc>https://screenteamllc.com/largo-screen-repair.html</loc>
+    <loc>https://screenteamllc.com/palm-harbor-screen-repair.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/pool-enclosures.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/pricing.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/rescreens.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://screenteamllc.com/safety-harbor-screen-repair.html</loc>
@@ -115,13 +97,37 @@
     <priority>0.84</priority>
   </url>
   <url>
-    <loc>https://screenteamllc.com/dunedin-screen-repair.html</loc>
+    <loc>https://screenteamllc.com/screen-lanais.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/seminole-screen-repair.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
   </url>
   <url>
-    <loc>https://screenteamllc.com/oldsmar-screen-repair.html</loc>
+    <loc>https://screenteamllc.com/service-areas.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/service-guarantee.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/st-petersburg-screen-repair.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://screenteamllc.com/tampa-screen-repair.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
@@ -133,15 +139,9 @@
     <priority>0.84</priority>
   </url>
   <url>
-    <loc>https://screenteamllc.com/seminole-screen-repair.html</loc>
+    <loc>https://screenteamllc.com/window-screens.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.84</priority>
-  </url>
-  <url>
-    <loc>https://screenteamllc.com/service-guarantee.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.80</priority>
   </url>
 </urlset>

@@ -1,0 +1,28 @@
+{
+  "updated": "2026-06-12",
+  "site": "https://screenteamllc.com",
+  "global_entities": {
+    "organization": "https://screenteamllc.com/#organization",
+    "local_business": "https://screenteamllc.com/#business",
+    "website": "https://screenteamllc.com/#website",
+    "contact_point": "https://screenteamllc.com/contact.html#contact-point",
+    "person": "https://screenteamllc.com/about.html#person"
+  },
+  "sitemap": {
+    "url": "https://screenteamllc.com/sitemap.xml",
+    "indexable_count": 24,
+    "excluded": ["404.html", "thank-you.html", "privacy-policy.html", "header.html", "footer.html"]
+  },
+  "page_schema": {
+    "index.html": ["Organization", "HomeAndConstructionBusiness (full)", "WebSite", "WebPage", "BreadcrumbList", "FAQPage"],
+    "about.html": ["Organization", "HomeAndConstructionBusiness", "Person", "AboutPage", "BreadcrumbList", "FAQPage"],
+    "contact.html": ["Organization", "HomeAndConstructionBusiness", "ContactPoint", "ContactPage", "BreadcrumbList", "FAQPage"],
+    "gallery.html": ["Organization", "HomeAndConstructionBusiness", "ImageGallery", "CollectionPage", "BreadcrumbList", "FAQPage"],
+    "pricing.html": ["Organization", "HomeAndConstructionBusiness", "WebPage", "OfferCatalog", "BreadcrumbList", "FAQPage"],
+    "service-areas.html": ["Organization", "HomeAndConstructionBusiness", "CollectionPage", "ItemList", "BreadcrumbList", "FAQPage"],
+    "service-guarantee.html": ["Organization", "HomeAndConstructionBusiness", "CreativeWork", "WebPage", "BreadcrumbList", "FAQPage"],
+    "service_pages": ["Organization", "HomeAndConstructionBusiness", "Service", "WebPage", "BreadcrumbList", "FAQPage"],
+    "city_pages": ["Organization", "HomeAndConstructionBusiness", "Service (city)", "WebPage", "BreadcrumbList", "FAQPage"]
+  },
+  "notes": "Street address intentionally omitted from LocalBusiness schema. Duplicate @id entities use the same canonical graph nodes site-wide."
+}

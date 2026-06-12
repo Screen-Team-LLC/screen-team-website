@@ -1,0 +1,378 @@
+{
+  "updated": "2026-06-12",
+  "site": "https://screenteamllc.com",
+  "notes": "Internal keyword map for meta tags, on-page copy, GSC, and SERP research. Google ignores meta keywords for ranking. Prioritize: title (<=60), description (<=150), H1, body copy, URLs, internal links, and schema.",
+  "primary_brand_terms": [
+    "screen repair Tampa Bay",
+    "pool cage rescreen",
+    "lanai screen repair",
+    "window screen replacement",
+    "Chris Westcott Screen Team"
+  ],
+  "pages": {
+    "index.html": {
+      "url": "https://screenteamllc.com/",
+      "meta_title": "Screen Repair Tampa Bay | Pool Enclosures | Screen Team",
+      "meta_title_length": 55,
+      "meta_description": "Screen repair, rescreens, pool enclosures, lanais, and window screens across Tampa Bay. Call Chris Westcott at (727) 386-6562.",
+      "meta_description_length": 126,
+      "keywords": [
+        "screen repair Tampa Bay",
+        "pool cage rescreen",
+        "lanai screen repair",
+        "window screen replacement",
+        "garage screen Tampa",
+        "Chris Westcott"
+      ]
+    },
+    "about.html": {
+      "url": "https://screenteamllc.com/about.html",
+      "meta_title": "About Chris Westcott | Tampa Bay | Screen Team LLC",
+      "meta_title_length": 50,
+      "meta_description": "Meet Chris Westcott, owner of The Screen Team LLC. Direct screen repair and enclosure service across St. Pete, Clearwater, Largo, and Tampa Bay.",
+      "meta_description_length": 144,
+      "keywords": [
+        "Chris Westcott screen repair",
+        "Screen Team owner",
+        "Tampa Bay screen contractor"
+      ]
+    },
+    "contact.html": {
+      "url": "https://screenteamllc.com/contact.html",
+      "meta_title": "Contact Screen Team LLC | Tampa Bay Screen Repair",
+      "meta_title_length": 49,
+      "meta_description": "Call or text Chris Westcott at (727) 386-6562 for rescreens, pool enclosures, lanais, window screens, and more across Tampa Bay.",
+      "meta_description_length": 128,
+      "keywords": [
+        "contact screen repair Tampa Bay",
+        "free screen estimate",
+        "Chris Westcott phone"
+      ]
+    },
+    "gallery.html": {
+      "url": "https://screenteamllc.com/gallery.html",
+      "meta_title": "Screen Repair Gallery | Tampa Bay | Screen Team LLC",
+      "meta_title_length": 51,
+      "meta_description": "View real Screen Team LLC jobs: rescreens, pool enclosures, screen lanais, and custom builds completed across Tampa Bay.",
+      "meta_description_length": 120,
+      "keywords": [
+        "screen repair photos Tampa Bay",
+        "pool cage rescreen gallery",
+        "lanai screen work"
+      ]
+    },
+    "pricing.html": {
+      "url": "https://screenteamllc.com/pricing.html",
+      "meta_title": "Screen Repair Pricing Tampa Bay | Screen Team LLC",
+      "meta_title_length": 49,
+      "meta_description": "Tampa Bay screen repair pricing across Pasco, Pinellas, and Hillsborough. Repairs from $75/panel, full rescreens from $1,995. Free photo quotes.",
+      "meta_description_length": 144,
+      "keywords": [
+        "screen repair cost Tampa Bay",
+        "pool cage rescreen price",
+        "lanai rescreen cost Florida"
+      ]
+    },
+    "service-areas.html": {
+      "url": "https://screenteamllc.com/service-areas.html",
+      "meta_title": "Screen Repair Service Areas Tampa Bay | Screen Team",
+      "meta_title_length": 51,
+      "meta_description": "Screen repair service areas across Pasco, Pinellas, and Hillsborough. Pool cages, lanais, and window screens. Free estimates from Chris Westcott.",
+      "meta_description_length": 145,
+      "keywords": [
+        "screen repair service area Tampa Bay",
+        "Pasco Pinellas Hillsborough screen repair"
+      ]
+    },
+    "service-guarantee.html": {
+      "url": "https://screenteamllc.com/service-guarantee.html",
+      "meta_title": "Screen Repair Guarantee Tampa Bay | Screen Team",
+      "meta_title_length": 47,
+      "meta_description": "Screen Team workmanship guarantee on screen repair, rescreens, and enclosure work across Tampa Bay. Chris Westcott stands behind every job.",
+      "meta_description_length": 139,
+      "keywords": [
+        "screen repair guarantee Tampa Bay",
+        "Screen Team workmanship warranty"
+      ]
+    },
+    "privacy-policy.html": {
+      "url": "https://screenteamllc.com/privacy-policy.html",
+      "meta_title": "Privacy Policy | Screen Team LLC",
+      "meta_title_length": 32,
+      "meta_description": "Privacy policy explaining how The Screen Team LLC handles contact details submitted through this website.",
+      "meta_description_length": 105,
+      "keywords": [
+        "Screen Team privacy policy"
+      ]
+    },
+    "rescreens.html": {
+      "url": "https://screenteamllc.com/rescreens.html",
+      "meta_title": "Pool Cage & Lanai Rescreens | Screen Team LLC",
+      "meta_title_length": 45,
+      "meta_description": "Pool cage and lanai rescreens across Tampa Bay. Screen Team LLC installs fresh screen for worn or damaged enclosures with free estimates.",
+      "meta_description_length": 137,
+      "keywords": [
+        "pool cage rescreen Tampa Bay",
+        "lanai rescreen Florida",
+        "partial screen panel repair"
+      ]
+    },
+    "pool-enclosures.html": {
+      "url": "https://screenteamllc.com/pool-enclosures.html",
+      "meta_title": "Pool Cage Repair in Tampa Bay | Screen Team LLC",
+      "meta_title_length": 47,
+      "meta_description": "Pool cage rescreen and repair across Tampa Bay. Screen Team LLC fixes torn panels, sagging screens, and damaged enclosures with free estimates.",
+      "meta_description_length": 143,
+      "keywords": [
+        "pool cage repair Tampa Bay",
+        "pool enclosure rescreen",
+        "storm damaged pool screen"
+      ]
+    },
+    "screen-lanais.html": {
+      "url": "https://screenteamllc.com/screen-lanais.html",
+      "meta_title": "Lanai Screen Repair in Tampa Bay | Screen Team LLC",
+      "meta_title_length": 50,
+      "meta_description": "Lanai screen repair and rescreen across Tampa Bay. Screen Team LLC fixes torn panels, popped spline, and sagging screens with free estimates.",
+      "meta_description_length": 141,
+      "keywords": [
+        "lanai screen repair Tampa Bay",
+        "lanai rescreen Florida",
+        "popped spline repair"
+      ]
+    },
+    "window-screens.html": {
+      "url": "https://screenteamllc.com/window-screens.html",
+      "meta_title": "Window Screen Repair in Tampa Bay | Screen Team LLC",
+      "meta_title_length": 51,
+      "meta_description": "Window screen repair and replacement across Tampa Bay. Screen Team LLC replaces torn, warped, and damaged screens with free estimates.",
+      "meta_description_length": 134,
+      "keywords": [
+        "window screen repair Tampa Bay",
+        "window screen replacement Florida",
+        "custom window screens"
+      ]
+    },
+    "garage-screens.html": {
+      "url": "https://screenteamllc.com/garage-screens.html",
+      "meta_title": "Garage Screens in Tampa Bay | Screen Team LLC",
+      "meta_title_length": 45,
+      "meta_description": "Garage screen installation and repair across Tampa Bay. Manual and motorized retractable systems. Free estimates from Chris at (727) 386-6562.",
+      "meta_description_length": 142,
+      "keywords": [
+        "garage screen Tampa Bay",
+        "retractable garage screen",
+        "motorized garage screen Florida"
+      ]
+    },
+    "gutter-work.html": {
+      "url": "https://screenteamllc.com/gutter-work.html",
+      "meta_title": "Gutter Repair in Tampa Bay | Screen Team LLC",
+      "meta_title_length": 44,
+      "meta_description": "Gutter repair and installation across Tampa Bay, often bundled with lanai and pool cage work. Clear local estimates from Chris Westcott.",
+      "meta_description_length": 136,
+      "keywords": [
+        "gutter repair Tampa Bay",
+        "seamless gutter install Florida",
+        "gutter repair near pool cage"
+      ]
+    },
+    "404.html": {
+      "url": "https://screenteamllc.com/404.html",
+      "meta_title": "Page Not Found | The Screen Team LLC",
+      "meta_title_length": 36,
+      "meta_description": "Page not found. Return to Screen Team LLC for Tampa Bay screen repair, pool cage rescreens, lanai work, and free estimates from Chris Westcott.",
+      "meta_description_length": 143,
+      "keywords": [
+        "Screen Team LLC",
+        "screen repair Tampa Bay"
+      ]
+    },
+    "thank-you.html": {
+      "url": "https://screenteamllc.com/thank-you.html",
+      "meta_title": "Thank You | The Screen Team LLC",
+      "meta_title_length": 31,
+      "meta_description": "Thank you for contacting Screen Team LLC. Chris Westcott will follow up on your screen repair or enclosure quote request soon.",
+      "meta_description_length": 126,
+      "keywords": [
+        "Screen Team contact confirmation"
+      ]
+    },
+    "new-port-richey-screen-repair.html": {
+      "url": "https://screenteamllc.com/new-port-richey-screen-repair.html",
+      "meta_title": "Screen Repair New Port Richey FL | Pasco | Screen Team",
+      "meta_title_length": 54,
+      "meta_description": "Pool cage rescreens and screen repair in New Port Richey, FL. Screen Team home base. Chris handles every job. Call (727) 386-6562.",
+      "meta_description_length": 130,
+      "keywords": [
+        "screen repair New Port Richey",
+        "pool cage rescreen Pasco County",
+        "lanai screen repair NPR"
+      ]
+    },
+    "clearwater-screen-repair.html": {
+      "url": "https://screenteamllc.com/clearwater-screen-repair.html",
+      "meta_title": "Screen Repair Clearwater FL | Pool Cage | Screen Team",
+      "meta_title_length": 53,
+      "meta_description": "Pool cage rescreens, lanai repair, and screen repair in Clearwater, FL. Owner-direct service from Chris Westcott. Call (727) 386-6562.",
+      "meta_description_length": 134,
+      "keywords": [
+        "screen repair Clearwater FL",
+        "pool cage rescreen Clearwater",
+        "lanai screen repair Clearwater"
+      ]
+    },
+    "st-petersburg-screen-repair.html": {
+      "url": "https://screenteamllc.com/st-petersburg-screen-repair.html",
+      "meta_title": "Screen Repair St Petersburg FL | Pool Cage | Screen Team",
+      "meta_title_length": 56,
+      "meta_description": "Pool cage rescreens, lanai repair, and window screens in St. Petersburg, FL. Owner-direct service. Free estimates at (727) 386-6562.",
+      "meta_description_length": 132,
+      "keywords": [
+        "screen repair St Petersburg FL",
+        "pool cage rescreen St Pete",
+        "lanai screen repair St Pete"
+      ]
+    },
+    "tampa-screen-repair.html": {
+      "url": "https://screenteamllc.com/tampa-screen-repair.html",
+      "meta_title": "Screen Repair Tampa FL | Pool Cage Rescreen | Screen Team",
+      "meta_title_length": 57,
+      "meta_description": "Pool cage rescreens, lanai repair, and window screens in Tampa, FL. Owner-direct Hillsborough service from Chris Westcott. (727) 386-6562.",
+      "meta_description_length": 138,
+      "keywords": [
+        "screen repair Tampa FL",
+        "pool cage rescreen Tampa",
+        "lanai screen repair Hillsborough"
+      ]
+    },
+    "largo-screen-repair.html": {
+      "url": "https://screenteamllc.com/largo-screen-repair.html",
+      "meta_title": "Screen Repair Largo FL | Lanai & Pool Cage | Screen Team",
+      "meta_title_length": 56,
+      "meta_description": "Screen repair, pool cage rescreens, and lanai work in Largo, FL. Owner-direct Pinellas service from Chris Westcott. (727) 386-6562.",
+      "meta_description_length": 131,
+      "keywords": [
+        "screen repair Largo FL",
+        "pool cage rescreen Largo",
+        "lanai screen repair Pinellas"
+      ]
+    },
+    "palm-harbor-screen-repair.html": {
+      "url": "https://screenteamllc.com/palm-harbor-screen-repair.html",
+      "meta_title": "Screen Repair Palm Harbor FL | Pool Cage | Screen Team",
+      "meta_title_length": 54,
+      "meta_description": "Pool cage rescreens and lanai screen repair in Palm Harbor, FL. Chris Westcott, owner-operator. Free estimates at (727) 386-6562.",
+      "meta_description_length": 129,
+      "keywords": [
+        "screen repair Palm Harbor FL",
+        "pool cage rescreen Palm Harbor",
+        "lanai repair East Lake"
+      ]
+    },
+    "safety-harbor-screen-repair.html": {
+      "url": "https://screenteamllc.com/safety-harbor-screen-repair.html",
+      "meta_title": "Screen Repair Safety Harbor FL | Pool & Lanai | Screen Team",
+      "meta_title_length": 59,
+      "meta_description": "Pool cage rescreens and lanai screen repair in Safety Harbor, FL. Chris Westcott, owner-direct service. Free estimates at (727) 386-6562.",
+      "meta_description_length": 137,
+      "keywords": [
+        "screen repair Safety Harbor FL",
+        "pool cage rescreen Safety Harbor",
+        "lanai screen repair"
+      ]
+    },
+    "dunedin-screen-repair.html": {
+      "url": "https://screenteamllc.com/dunedin-screen-repair.html",
+      "meta_title": "Screen Repair Dunedin FL | Pool Cage Rescreen | Screen Team",
+      "meta_title_length": 59,
+      "meta_description": "Screen repair and pool cage rescreens in Dunedin, FL. Lanai panels, window screens, and enclosure work. Call Chris at (727) 386-6562.",
+      "meta_description_length": 133,
+      "keywords": [
+        "screen repair Dunedin FL",
+        "pool cage rescreen Dunedin",
+        "lanai screen repair Dunedin"
+      ]
+    },
+    "oldsmar-screen-repair.html": {
+      "url": "https://screenteamllc.com/oldsmar-screen-repair.html",
+      "meta_title": "Screen Repair Oldsmar FL | Pool & Lanai | Screen Team",
+      "meta_title_length": 53,
+      "meta_description": "Pool cage rescreens and lanai screen repair in Oldsmar, FL. Screen Team LLC, Chris Westcott owner-operator. Call (727) 386-6562.",
+      "meta_description_length": 128,
+      "keywords": [
+        "screen repair Oldsmar FL",
+        "pool cage rescreen Oldsmar",
+        "lanai screen repair Tampa Bay"
+      ]
+    },
+    "tarpon-springs-screen-repair.html": {
+      "url": "https://screenteamllc.com/tarpon-springs-screen-repair.html",
+      "meta_title": "Screen Repair Tarpon Springs FL | Pool Cage | Screen Team",
+      "meta_title_length": 57,
+      "meta_description": "Pool cage rescreens and lanai repair in Tarpon Springs, FL. Owner-direct Pasco and Pinellas service. Free estimates at (727) 386-6562.",
+      "meta_description_length": 134,
+      "keywords": [
+        "screen repair Tarpon Springs FL",
+        "pool cage rescreen Tarpon Springs",
+        "lanai repair Pasco"
+      ]
+    },
+    "seminole-screen-repair.html": {
+      "url": "https://screenteamllc.com/seminole-screen-repair.html",
+      "meta_title": "Screen Repair Seminole FL | Pool & Lanai | Screen Team",
+      "meta_title_length": 54,
+      "meta_description": "Screen repair, pool cage rescreens, and lanai work in Seminole, FL. Chris Westcott, owner on every job. Call (727) 386-6562.",
+      "meta_description_length": 124,
+      "keywords": [
+        "screen repair Seminole FL",
+        "pool cage rescreen Seminole",
+        "lanai screen repair Pinellas"
+      ]
+    }
+  },
+  "checklist": {
+    "title_tag": "<=60 characters, primary keyword + geo/service + brand",
+    "meta_description": "<=150 characters, natural pitch + CTA or phone",
+    "h1": "Matches primary keyword intent for the page",
+    "body": "Keywords in H2s and first paragraphs without stuffing",
+    "internal_links": "Service pages link to city pages; city pages link to services",
+    "schema": "LocalBusiness on homepage; Service + FAQ + Breadcrumb on money pages"
+  },
+  "h1_targets": {
+    "index.html": "Screen Repair Tampa Bay + The Screen Team LLC",
+    "contact.html": "Contact Chris for Tampa Bay Screen Repair",
+    "gallery.html": "Screen Repair Gallery — Tampa Bay Jobs",
+    "about.html": "About Chris Westcott & The Screen Team",
+    "service-guarantee.html": "Screen Repair Guarantee — Tampa Bay",
+    "service-areas.html": "Screen Repair Service Areas — NPR, Pinellas, Pasco & Hillsborough",
+    "city_pages": "Screen Repair & [service] in [City], FL"
+  },
+  "sitemap": {
+    "url": "https://screenteamllc.com/sitemap.xml",
+    "indexable_pages": 24,
+    "excluded_noindex": ["404.html", "thank-you.html", "privacy-policy.html"]
+  },
+  "schema_reference": "data/schema-reference.json",
+  "prepush_checklist": {
+    "sitemap_urls": 24,
+    "robots": "https://screenteamllc.com/robots.txt",
+    "llms": "https://screenteamllc.com/llms.txt",
+    "schema_reference": "data/schema-reference.json",
+    "indexed_pages": [
+      "index.html", "about.html", "contact.html", "gallery.html", "pricing.html",
+      "service-areas.html", "service-guarantee.html",
+      "rescreens.html", "pool-enclosures.html", "screen-lanais.html",
+      "window-screens.html", "garage-screens.html", "gutter-work.html",
+      "11 city *-screen-repair.html pages"
+    ],
+    "excluded_noindex": ["404.html", "thank-you.html", "privacy-policy.html"]
+  },
+  "gsc_serp_workflow": [
+    "Export GSC queries (last 28 days) once impressions appear",
+    "Use serp.dev to check live SERPs for top 5 query + city combos",
+    "Update meta_title/meta_description in this file first, then mirror to HTML",
+    "Request indexing in GSC for new or heavily edited city pages",
+    "Track click-through rate; rewrite descriptions when impressions rise but clicks stay flat"
+  ]
+}
