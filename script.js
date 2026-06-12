@@ -17,7 +17,7 @@ function initHeaderScroll() {
 
 function initScrollReveal() {
   const revealEls = document.querySelectorAll(
-    ".reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-photo, [data-reveal]",
+    ".reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-photo, .slide-enter, [data-reveal], .eyebrow:not(.hero-enter), .card-eyebrow:not(.hero-enter)",
   );
   if (!revealEls.length) return;
 
@@ -52,23 +52,168 @@ function initHeroPanels() {
   });
 }
 
-function initSiteNav() {
-  const dropdownBtn = document.querySelector(".nav-dropdown-btn");
-  const dropdownMenu = document.querySelector(".nav-dropdown-menu");
+function prefersReducedMotion() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
 
-  if (dropdownBtn && dropdownMenu) {
+function initHeroParallax() {
+  if (prefersReducedMotion()) return;
+
+  const hero = document.querySelector("body.home-landing .hero");
+  if (!hero) return;
+
+  const layers = hero.querySelectorAll(".hero-panels, .hero-cutout-wrap, .hero-overlay");
+  if (!layers.length) return;
+
+  let ticking = false;
+
+  function update() {
+    ticking = false;
+
+    const heroTop = hero.offsetTop;
+    const heroHeight = hero.offsetHeight;
+    const offset = Math.max(0, window.scrollY - heroTop);
+    const shift = Math.min(offset * 0.4, heroHeight);
+
+    layers.forEach((layer) => {
+      layer.style.setProperty("--st-hero-shift", `${Math.round(shift)}px`);
+    });
+  }
+
+  function queue() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }
+
+  update();
+  window.addEventListener("scroll", queue, { passive: true });
+  window.addEventListener("resize", queue, { passive: true });
+}
+
+function initParallaxBands() {
+  if (prefersReducedMotion()) return;
+
+  const backgrounds = document.querySelectorAll(".st-parallax-bg");
+  const contactBands = document.querySelectorAll(".contact-section--parallax");
+  if (!backgrounds.length && !contactBands.length) return;
+
+  let ticking = false;
+
+  function getOverscanPx(band) {
+    if (band.dataset.parallaxOverscan) {
+      return band.offsetHeight * Number(band.dataset.parallaxOverscan);
+    }
+    if (band.classList.contains("st-process-band")) {
+      return band.offsetHeight * 0.08;
+    }
+    if (band.classList.contains("st-route-band--parallax")) {
+      return band.offsetHeight * 0.28;
+    }
+    return band.offsetHeight * 0.3;
+  }
+
+  function clampShift(shift, maxShift) {
+    return Math.round(Math.max(-maxShift, Math.min(maxShift, shift)));
+  }
+
+  /** Scroll progress 0→1 as the band travels through the viewport */
+  function bandScrollProgress(band, vh) {
+    const rect = band.getBoundingClientRect();
+    const range = vh + band.offsetHeight;
+    const scrolled = Math.max(0, Math.min(range, vh - rect.top));
+    return scrolled / range;
+  }
+
+  function applySymmetricParallax(target, band, { intensity = 0.6, baseOffset = 0 } = {}) {
+    const vh = Math.max(window.innerHeight, 1);
+    const rect = band.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > vh) return;
+
+    const maxShift = getOverscanPx(band);
+    const t = bandScrollProgress(band, vh);
+    const shift = clampShift((t - 0.5) * 2 * maxShift * intensity + baseOffset, maxShift);
+
+    target.style.setProperty("--st-band-shift", `${shift}px`);
+  }
+
+  function applyParallax(target, band) {
+    const vh = Math.max(window.innerHeight, 1);
+    const rect = band.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > vh) return;
+
+    if (
+      band.classList.contains("work-teaser--parallax") ||
+      band.classList.contains("contact-section--parallax")
+    ) {
+      applySymmetricParallax(target, band, { intensity: 0.55 });
+      return;
+    }
+
+    const maxShift = getOverscanPx(band);
+    let shift;
+
+    if (band.classList.contains("st-process-band")) {
+      shift = (rect.top - vh) * 0.35 + 56;
+    } else if (band.classList.contains("st-route-band--parallax")) {
+      shift = (rect.top - vh) * 0.28;
+    } else {
+      shift = (rect.top - vh) * 0.45;
+    }
+
+    target.style.setProperty("--st-band-shift", `${clampShift(shift, maxShift)}px`);
+  }
+
+  function update() {
+    ticking = false;
+
+    backgrounds.forEach((bg) => {
+      const band = bg.closest(
+        ".work-teaser--parallax, .st-process-band, .st-route-band--parallax",
+      );
+      if (!band) return;
+      applyParallax(bg, band);
+    });
+
+    contactBands.forEach((band) => {
+      applyParallax(band, band);
+    });
+  }
+
+  function queue() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }
+
+  update();
+  window.addEventListener("scroll", queue, { passive: true });
+  window.addEventListener("resize", queue, { passive: true });
+}
+
+function initSiteNav() {
+  function closeAllDropdowns() {
+    document.querySelectorAll(".nav-dropdown-btn").forEach((btn) => {
+      btn.setAttribute("aria-expanded", "false");
+    });
+  }
+
+  document.querySelectorAll(".nav-dropdown-wrap").forEach((wrap) => {
+    const dropdownBtn = wrap.querySelector(".nav-dropdown-btn");
+    const dropdownMenu = wrap.querySelector(".nav-dropdown-menu");
+    if (!dropdownBtn || !dropdownMenu) return;
+
     dropdownBtn.addEventListener("click", (e) => {
       e.stopPropagation();
       const expanded = dropdownBtn.getAttribute("aria-expanded") === "true";
+      closeAllDropdowns();
       dropdownBtn.setAttribute("aria-expanded", String(!expanded));
     });
 
     dropdownMenu.addEventListener("click", (e) => e.stopPropagation());
+  });
 
-    document.addEventListener("click", () => {
-      dropdownBtn.setAttribute("aria-expanded", "false");
-    });
-  }
+  document.addEventListener("click", closeAllDropdowns);
 
   const hamburgerBtn = document.getElementById("hamburger-btn");
   const mobileNav = document.getElementById("mobile-nav");
@@ -118,6 +263,16 @@ function initSiteNav() {
       const open = mobileServToggle.classList.toggle("is-open");
       mobileServicesSub.classList.toggle("is-open", open);
       mobileServToggle.setAttribute("aria-expanded", String(open));
+    });
+  }
+
+  const mobileAreasToggle = document.getElementById("mobile-areas-toggle");
+  const mobileAreasSub = document.getElementById("mobile-areas-sub");
+  if (mobileAreasToggle && mobileAreasSub) {
+    mobileAreasToggle.addEventListener("click", () => {
+      const open = mobileAreasToggle.classList.toggle("is-open");
+      mobileAreasSub.classList.toggle("is-open", open);
+      mobileAreasToggle.setAttribute("aria-expanded", String(open));
     });
   }
 }
@@ -243,14 +398,241 @@ function initFaqAccordion() {
   });
 }
 
+function initStGoogleReviews() {
+  const carousels = document.querySelectorAll("[data-st-review-carousel]");
+  if (!carousels.length) return;
+
+  carousels.forEach((carousel) => {
+    const track = carousel.querySelector(".st-review-carousel-track");
+    const prevBtn = carousel.querySelector(".st-review-carousel-btn.prev");
+    const nextBtn = carousel.querySelector(".st-review-carousel-btn.next");
+    const showcase = carousel.closest(".st-google-reviews-showcase");
+    const dotsContainer = showcase
+      ? showcase.querySelector(".st-review-carousel-dots")
+      : null;
+    const summaryEl = document.getElementById("st-review-summary");
+    const mapRatingEl = document.getElementById("st-map-rating");
+    const seedEl = showcase ? showcase.querySelector("#google-reviews-seed") : null;
+
+    if (!track || !prevBtn || !nextBtn || !dotsContainer || !showcase) return;
+
+    let cards = [];
+    let currentIndex = 0;
+    let reviews = [];
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function getInitial(name) {
+      const clean = String(name || "").trim();
+      return clean ? clean.charAt(0).toUpperCase() : "?";
+    }
+
+    function formatStars(count) {
+      const stars = Math.max(1, Math.min(5, Number(count) || 5));
+      return "\u2605".repeat(stars);
+    }
+
+    function reviewCardMarkup(review) {
+      return (
+        '<article class="st-review-card">' +
+        '<div class="st-review-card-header">' +
+        '<span class="st-review-avatar" style="background:' +
+        escapeHtml(review.avatarColor || "#1a56c4") +
+        ';" aria-hidden="true">' +
+        escapeHtml(getInitial(review.name)) +
+        "</span>" +
+        "<div>" +
+        '<div class="st-review-name">' +
+        escapeHtml(review.name) +
+        "</div>" +
+        '<div class="st-review-meta">' +
+        escapeHtml(review.meta || "") +
+        "</div>" +
+        "</div>" +
+        "</div>" +
+        '<div class="st-review-card-stars" role="img" aria-label="' +
+        escapeHtml(String(Number(review.stars) || 5)) +
+        ' stars">' +
+        formatStars(review.stars) +
+        "</div>" +
+        '<p class="st-review-text">' +
+        escapeHtml(review.text || "") +
+        "</p>" +
+        '<div class="st-review-date">' +
+        escapeHtml(review.date || "") +
+        "</div>" +
+        "</article>"
+      );
+    }
+
+    function applySummary(payload) {
+      const rating = Number(payload.ratingValue || 5).toFixed(1);
+      const count = Number(payload.reviewCount || reviews.length || 0);
+      const label = count === 1 ? " review" : " reviews";
+      const summaryText = rating + " \u00b7 " + count + label;
+      if (summaryEl) summaryEl.textContent = summaryText;
+      if (mapRatingEl) {
+        mapRatingEl.textContent =
+          formatStars(payload.ratingValue || 5) +
+          " " +
+          rating +
+          " \u00b7 " +
+          count +
+          " Google review" +
+          (count === 1 ? "" : "s");
+        mapRatingEl.setAttribute(
+          "aria-label",
+          rating + " out of 5 stars, " + count + " Google reviews",
+        );
+      }
+    }
+
+    function visibleCount() {
+      if (window.innerWidth <= 720) return 1;
+      if (window.innerWidth <= 1060) return 2;
+      return 3;
+    }
+
+    function pageCount() {
+      return Math.max(1, Math.ceil(cards.length / visibleCount()));
+    }
+
+    function maxIndex() {
+      return Math.max(0, cards.length - visibleCount());
+    }
+
+    function cardSpan() {
+      if (!cards.length) return 0;
+      const styles = window.getComputedStyle(track);
+      const gap = parseFloat(styles.columnGap || styles.gap || "0");
+      return cards[0].getBoundingClientRect().width + gap;
+    }
+
+    function updateButtons() {
+      const singlePage = pageCount() <= 1 || cards.length === 0;
+      prevBtn.disabled = singlePage || currentIndex <= 0;
+      nextBtn.disabled = singlePage || currentIndex >= maxIndex();
+    }
+
+    function update() {
+      currentIndex = Math.max(0, Math.min(currentIndex, maxIndex()));
+      track.style.transform = "translateX(" + -currentIndex * cardSpan() + "px)";
+
+      const activePage = Math.floor(currentIndex / visibleCount());
+      dotsContainer.querySelectorAll(".st-review-carousel-dot").forEach((dot, index) => {
+        const isActive = index === activePage;
+        dot.classList.toggle("active", isActive);
+        if (isActive) {
+          dot.setAttribute("aria-current", "true");
+        } else {
+          dot.removeAttribute("aria-current");
+        }
+      });
+
+      updateButtons();
+    }
+
+    function buildDots() {
+      dotsContainer.innerHTML = "";
+      for (let index = 0; index < pageCount(); index += 1) {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "st-review-carousel-dot" + (index === 0 ? " active" : "");
+        dot.setAttribute("aria-label", "Go to review page " + (index + 1));
+        if (index === 0) dot.setAttribute("aria-current", "true");
+        dot.addEventListener("click", () => {
+          currentIndex = index * visibleCount();
+          update();
+        });
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function renderReviews(payload) {
+      reviews = Array.isArray(payload.reviews) ? payload.reviews.slice() : [];
+      applySummary(payload);
+
+      if (!reviews.length) {
+        track.innerHTML =
+          '<article class="st-review-card"><p class="st-review-text">Reviews will appear here once posted on Google.</p></article>';
+      } else {
+        track.innerHTML = reviews.map(reviewCardMarkup).join("");
+      }
+
+      cards = Array.from(track.querySelectorAll(".st-review-card"));
+      currentIndex = 0;
+      carousel.classList.toggle("single-review", cards.length <= 1);
+      buildDots();
+      update();
+    }
+
+    function parseSeedPayload() {
+      if (!seedEl) return null;
+      try {
+        return JSON.parse(seedEl.textContent || "{}");
+      } catch (error) {
+        console.warn("Google review seed parse failed:", error);
+        return null;
+      }
+    }
+
+    async function loadReviews() {
+      let payload = null;
+      try {
+        const response = await fetch("./data/google-reviews.json", { cache: "no-store" });
+        if (response.ok) {
+          payload = await response.json();
+        }
+      } catch (error) {
+        console.warn("Google review feed fetch failed, using seed data:", error);
+      }
+
+      if (!payload) payload = parseSeedPayload();
+      if (!payload || !Array.isArray(payload.reviews)) {
+        payload = { ratingValue: 5, reviewCount: 0, reviews: [] };
+      }
+
+      renderReviews(payload);
+    }
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex -= 1;
+      update();
+    });
+    nextBtn.addEventListener("click", () => {
+      currentIndex += 1;
+      update();
+    });
+    window.addEventListener("resize", () => {
+      buildDots();
+      update();
+    });
+
+    loadReviews();
+  });
+}
+
 function initPage() {
   initScrollReveal();
   initHeroPanels();
+  initHeroParallax();
+  initParallaxBands();
+  initStGoogleReviews();
   initFormHandlers();
   initGalleryFilters();
   initFaqAccordion();
 
-  if (document.querySelector(".site-header")) {
+  if (
+    document.querySelector(".site-header") &&
+    !document.getElementById("site-header-include")
+  ) {
     initSiteChrome();
   }
 }

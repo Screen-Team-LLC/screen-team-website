@@ -1,8 +1,19 @@
 <header class="site-header" id="top">
   <div class="container header-inner">
-    <a class="brand" href="/" aria-label="The Screen Team LLC home">
-      <img src="Images/Logo-175.webp" srcset="Images/Logo-175.webp 1x" sizes="175px" alt="The Screen Team LLC logo" class="brand-logo" width="175" height="175" decoding="async">
-    </a>
+    <div class="header-lead">
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="brand" href="/" aria-label="The Screen Team LLC home">
+        <img src="Images/Logo-175.webp" srcset="Images/Logo-175.webp 1x" sizes="175px" alt="" class="brand-logo" width="175" height="175" decoding="async">
+        <span class="brand-lockup">
+          <span class="brand-name">The Screen Team LLC</span>
+          <span class="brand-tagline">Tampa Bay Screen Repair</span>
+        </span>
+      </a>
+    </div>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="/">Home</a>
       <div class="nav-dropdown-wrap">
@@ -21,6 +32,27 @@
       </div>
       <a href="about.html">About</a>
       <a href="gallery.html">Our Work</a>
+      <div class="nav-dropdown-wrap nav-dropdown-wrap--areas">
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+          Service Areas
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="service-areas.html" role="menuitem">All Service Areas</a>
+          <a href="new-port-richey-screen-repair.html" role="menuitem">New Port Richey</a>
+          <a href="clearwater-screen-repair.html" role="menuitem">Clearwater</a>
+          <a href="st-petersburg-screen-repair.html" role="menuitem">St. Pete</a>
+          <a href="palm-harbor-screen-repair.html" role="menuitem">Palm Harbor</a>
+          <a href="tampa-screen-repair.html" role="menuitem">Tampa</a>
+          <a href="largo-screen-repair.html" role="menuitem">Largo</a>
+          <a href="safety-harbor-screen-repair.html" role="menuitem">Safety Harbor</a>
+          <a href="dunedin-screen-repair.html" role="menuitem">Dunedin</a>
+          <a href="oldsmar-screen-repair.html" role="menuitem">Oldsmar</a>
+          <a href="tarpon-springs-screen-repair.html" role="menuitem">Tarpon Springs</a>
+          <a href="seminole-screen-repair.html" role="menuitem">Seminole</a>
+        </div>
+      </div>
+      <a href="pricing.html">Pricing</a>
       <a href="contact.html">Contact</a>
     </nav>
     <a class="header-cta" href="tel:7273866562" aria-label="Call or text (727) 386-6562">
@@ -32,11 +64,6 @@
         <span class="header-cta-number">(727) 386-6562</span>
       </span>
     </a>
-    <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
   </div>
 </header>
 
@@ -65,6 +92,25 @@
     </div>
     <a href="about.html">About</a>
     <a href="gallery.html">Our Work</a>
+    <button class="mobile-services-toggle" id="mobile-areas-toggle" aria-expanded="false">
+      Service Areas
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="mobile-services-sub" id="mobile-areas-sub">
+      <a href="service-areas.html">All Service Areas</a>
+      <a href="new-port-richey-screen-repair.html">New Port Richey</a>
+      <a href="clearwater-screen-repair.html">Clearwater</a>
+      <a href="st-petersburg-screen-repair.html">St. Pete</a>
+      <a href="palm-harbor-screen-repair.html">Palm Harbor</a>
+      <a href="tampa-screen-repair.html">Tampa</a>
+      <a href="largo-screen-repair.html">Largo</a>
+      <a href="safety-harbor-screen-repair.html">Safety Harbor</a>
+      <a href="dunedin-screen-repair.html">Dunedin</a>
+      <a href="oldsmar-screen-repair.html">Oldsmar</a>
+      <a href="tarpon-springs-screen-repair.html">Tarpon Springs</a>
+      <a href="seminole-screen-repair.html">Seminole</a>
+    </div>
+    <a href="pricing.html">Pricing</a>
     <a href="contact.html">Contact</a>
   </div>
   <div class="mobile-nav-social">
