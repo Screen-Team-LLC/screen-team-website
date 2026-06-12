@@ -15,7 +15,7 @@ const AREA_PAGES = [
 ];
 
 const NAV_ACTIVE_SELECTORS = {
-  home: [".site-nav > a[href='/']", ".mobile-nav-links > a[href='/']"],
+  home: [".site-header .brand"],
   about: [".site-nav > a[href='about.html']", ".mobile-nav-links a[href='about.html']"],
   gallery: [".site-nav > a[href='gallery.html']", ".mobile-nav-links a[href='gallery.html']"],
   contact: [".site-nav > a[href='contact.html']", ".mobile-nav-links a[href='contact.html']"],

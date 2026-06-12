@@ -1,3 +1,117 @@
+const CLARITY_PROJECT_ID = "wjl6hyr76v";
+const CLARITY_LOAD_DELAY_MS = 4000;
+
+function clarityCall(...args) {
+  window.clarity =
+    window.clarity ||
+    function () {
+      (window.clarity.q = window.clarity.q || []).push(arguments);
+    };
+  window.clarity(...args);
+}
+
+function getClarityVisitorId() {
+  const storageKey = "st_clarity_vid";
+  try {
+    let visitorId = sessionStorage.getItem(storageKey);
+    if (!visitorId) {
+      visitorId = `v_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 10)}`;
+      sessionStorage.setItem(storageKey, visitorId);
+    }
+    return visitorId;
+  } catch {
+    return `v_${Date.now().toString(36)}`;
+  }
+}
+
+function getClarityPageId() {
+  const path = window.location.pathname || "/";
+  const search = window.location.search || "";
+  return `${path}${search}` || "/";
+}
+
+function initMicrosoftClarity() {
+  if (window.__stClarityBootstrapped) return;
+  window.__stClarityBootstrapped = true;
+
+  const boot = () => {
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+
+    const pageId = getClarityPageId();
+    clarityCall("identify", getClarityVisitorId(), undefined, pageId, document.title || pageId);
+    clarityCall("set", "page_path", pageId);
+    if (document.body && document.body.className) {
+      clarityCall("set", "page_type", document.body.className.trim());
+    }
+  };
+
+  window.addEventListener(
+    "load",
+    () => {
+      setTimeout(boot, CLARITY_LOAD_DELAY_MS);
+    },
+    { once: true },
+  );
+}
+
+function trackClarityEvent(eventName) {
+  if (!eventName) return;
+  clarityCall("event", eventName);
+}
+
+function trackClarityUpgrade(reason) {
+  if (!reason) return;
+  clarityCall("upgrade", reason);
+}
+
+function initClarityConversionTracking() {
+  document.addEventListener(
+    "click",
+    (event) => {
+      const telLink = event.target.closest('a[href^="tel:"]');
+      if (telLink) {
+        trackClarityEvent("phone_click");
+        trackClarityUpgrade("phone_click");
+        return;
+      }
+
+      const mailLink = event.target.closest('a[href^="mailto:"]');
+      if (mailLink) {
+        trackClarityEvent("email_click");
+      }
+
+      const tracked = event.target.closest("[data-clarity-event]");
+      if (tracked && tracked.dataset.clarityEvent) {
+        trackClarityEvent(tracked.dataset.clarityEvent);
+      }
+    },
+    { passive: true },
+  );
+}
+
+window.ScreenTeamClarity = {
+  init: initMicrosoftClarity,
+  identify(customId, customSessionId, customPageId, friendlyName) {
+    clarityCall("identify", customId, customSessionId, customPageId, friendlyName);
+  },
+  setTag(key, value) {
+    clarityCall("set", key, value);
+  },
+  event: trackClarityEvent,
+  upgrade: trackClarityUpgrade,
+};
+
 function initCurrentYear() {
   document.querySelectorAll("#current-year").forEach((el) => {
     el.textContent = new Date().getFullYear();
@@ -345,6 +459,8 @@ function initFormHandlers() {
       });
 
       if (res.ok) {
+        trackClarityEvent("contact_form_submit");
+        trackClarityUpgrade("contact_form_submit");
         submitBtn.textContent = "Sent! ✓";
         setTimeout(() => {
           heroForm.hidden = true;
@@ -659,6 +775,8 @@ function initStGoogleReviews() {
 }
 
 function initPage() {
+  initMicrosoftClarity();
+  initClarityConversionTracking();
   initScrollReveal();
   initHeroPanels();
   initHomeStripEntrance();
