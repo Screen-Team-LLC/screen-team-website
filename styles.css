@@ -2137,9 +2137,9 @@ a.service-card {
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(7, 13, 24, 0.94) 0%,
-    rgba(7, 13, 24, 0.88) 42%,
-    rgba(7, 13, 24, 0.94) 100%
+    rgba(7, 13, 24, 0.9) 0%,
+    rgba(7, 13, 24, 0.76) 42%,
+    rgba(7, 13, 24, 0.88) 100%
   );
   pointer-events: none;
 }
@@ -3017,7 +3017,7 @@ body.home-landing .trust-strip span {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: clamp(0.03em, 0.2vw, 0.1em);
-  color: #a8c8de;
+  color: var(--muted);
   margin-bottom: clamp(3px, 0.8vw, 6px);
   line-height: 1.2;
 }
@@ -4467,55 +4467,12 @@ body.home-landing .st-route-card p {
   color: #e3f0fa;
 }
 
-body.home-landing :is(
-  .work-teaser--parallax,
-  .st-process-band,
-  .st-route-band--parallax,
-  .contact-section--parallax,
-  .hero
-) :is(.eyebrow, .card-eyebrow) {
-  color: #fff8c7;
-  background: rgba(0, 0, 0, 0.68);
-  padding: 6px 12px;
-  border-radius: 6px;
-  display: inline-block;
-  -webkit-text-stroke: 0;
-  paint-order: normal;
-  text-shadow: none;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
-}
-
-body.home-landing :is(
-  .services-section,
-  .st-trust-quotes,
-  .faq-section,
-  .st-crawl-hub,
-  .map-section
-) .eyebrow {
-  color: #fff0a0;
-  background: rgba(7, 13, 24, 0.72);
-  padding: 6px 12px;
-  border-radius: 6px;
-  display: inline-block;
-  -webkit-text-stroke: 0;
-  paint-order: normal;
-  text-shadow: none;
-}
-
 .st-pillar-tag {
   font-size: calc(0.68rem + 2px);
-  color: #fff0a0;
-  background: rgba(7, 13, 24, 0.82);
-  border-color: rgba(255, 225, 74, 0.55);
 }
 
 .st-quote-meta {
   font-size: calc(0.82rem + 2px);
-  color: #b8d4e8;
-}
-
-.st-quote-meta a {
-  color: #8fdcff;
 }
 
 .trust-item span {
@@ -4548,32 +4505,8 @@ body.home-landing .contact-section p:not(.eyebrow) {
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
 }
 
-body.home-landing :is(
-  .work-teaser--parallax,
-  .st-process-band,
-  .contact-section--parallax
-) .section-heading,
-body.home-landing .contact-section--parallax .contact-inner {
-  max-width: 720px;
-  padding: 20px 24px;
-  border-radius: var(--radius-md);
-  background: rgba(7, 13, 24, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
-}
-
-body.home-landing :is(.work-teaser--parallax, .st-process-band) .section-heading h2,
-body.home-landing .contact-section--parallax h2 {
-  color: #ffffff;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
-}
-
 body.home-landing .service-card p {
   color: #c0d8ea;
-}
-
-body.home-landing .st-process-card h3 {
-  color: #ffffff;
 }
 
 body.home-landing .st-quote-text {
