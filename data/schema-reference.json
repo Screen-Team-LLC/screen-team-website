@@ -1,5 +1,6 @@
 {
   "updated": "2026-06-12",
+  "audit_tool": "node E:/Website Audit/tools/schema-audit.mjs --site sites/screenteamllc.com.json --local --all",
   "site": "https://screenteamllc.com",
   "global_entities": {
     "organization": "https://screenteamllc.com/#organization",
@@ -20,7 +21,7 @@
     "gallery.html": ["Organization", "HomeAndConstructionBusiness", "ImageGallery", "CollectionPage", "BreadcrumbList", "FAQPage"],
     "pricing.html": ["Organization", "HomeAndConstructionBusiness", "WebPage", "OfferCatalog", "BreadcrumbList", "FAQPage"],
     "service-areas.html": ["Organization", "HomeAndConstructionBusiness", "CollectionPage", "ItemList", "BreadcrumbList", "FAQPage"],
-    "service-guarantee.html": ["Organization", "HomeAndConstructionBusiness", "CreativeWork", "WebPage", "BreadcrumbList", "FAQPage"],
+    "service-guarantee.html": ["Organization", "HomeAndConstructionBusiness", "WebSite", "WarrantyPromise", "WebPage", "BreadcrumbList", "FAQPage"],
     "service_pages": ["Organization", "HomeAndConstructionBusiness", "Service", "WebPage", "BreadcrumbList", "FAQPage"],
     "city_pages": ["Organization", "HomeAndConstructionBusiness", "Service (city)", "WebPage", "BreadcrumbList", "FAQPage"]
   },

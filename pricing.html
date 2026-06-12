@@ -145,12 +145,28 @@
   "contactPoint": {
     "@id": "https://screenteamllc.com/contact.html#contact-point"
   },
+  "hasOfferCatalog": {
+    "@id": "https://screenteamllc.com/pricing.html#offers"
+  },
   "sameAs": [
     "https://x.com/ScreenTeamLLC",
     "https://www.facebook.com/profile.php?id=61588867359684",
     "https://www.linkedin.com/company/screen-team-llc/?viewAsMember=true",
     "https://nextdoor.com/page/screen-team-llc-safety-harbor-fl"
   ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://screenteamllc.com/#website",
+  "url": "https://screenteamllc.com/",
+  "name": "The Screen Team LLC",
+  "publisher": {
+    "@id": "https://screenteamllc.com/#business"
+  },
+  "inLanguage": "en-US"
 }
   </script>
   <script type="application/ld+json">
@@ -186,7 +202,7 @@
   "@id": "https://screenteamllc.com/pricing.html#offers",
   "name": "Screen Repair Pricing — Tampa Bay",
   "url": "https://screenteamllc.com/pricing.html",
-  "provider": {
+  "offeredBy": {
     "@id": "https://screenteamllc.com/#business"
   },
   "itemListElement": [
@@ -197,8 +213,12 @@
         "name": "Screen repairs",
         "url": "https://screenteamllc.com/rescreens.html"
       },
-      "priceCurrency": "USD",
-      "description": "From $75 per panel; $150 minimum job charge."
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "USD",
+        "minPrice": 150,
+        "description": "From $75 per panel; $150 minimum job charge."
+      }
     },
     {
       "@type": "Offer",
@@ -207,8 +227,12 @@
         "name": "Pool cage rescreens",
         "url": "https://screenteamllc.com/pool-enclosures.html"
       },
-      "priceCurrency": "USD",
-      "description": "Full rescreens from about $1,995; typical range $2,500–$6,500+."
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "USD",
+        "minPrice": 1995,
+        "description": "Full rescreens from about $1,995; typical range $2,500–$6,500+."
+      }
     },
     {
       "@type": "Offer",
@@ -217,8 +241,12 @@
         "name": "Lanai rescreens",
         "url": "https://screenteamllc.com/screen-lanais.html"
       },
-      "priceCurrency": "USD",
-      "description": "Partial and full lanai rescreens quoted by panel count and access."
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "USD",
+        "minPrice": 175,
+        "description": "Partial and full lanai rescreens quoted by panel count and access."
+      }
     },
     {
       "@type": "Offer",
@@ -227,8 +255,12 @@
         "name": "Window screens",
         "url": "https://screenteamllc.com/window-screens.html"
       },
-      "priceCurrency": "USD",
-      "description": "Per-screen replacement with multi-opening bundle pricing."
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "USD",
+        "minPrice": 75,
+        "description": "Per-screen replacement with multi-opening bundle pricing."
+      }
     },
     {
       "@type": "Offer",
@@ -237,8 +269,12 @@
         "name": "Garage screens",
         "url": "https://screenteamllc.com/garage-screens.html"
       },
-      "priceCurrency": "USD",
-      "description": "Manual systems from about $899; motorized from about $2,299+."
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "USD",
+        "minPrice": 899,
+        "description": "Manual systems from about $899; motorized from about $2,299+."
+      }
     },
     {
       "@type": "Offer",
@@ -247,8 +283,12 @@
         "name": "Gutter work",
         "url": "https://screenteamllc.com/gutter-work.html"
       },
-      "priceCurrency": "USD",
-      "description": "Repairs from $150 minimum; seamless installs quoted per linear foot."
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "USD",
+        "minPrice": 150,
+        "description": "Repairs from $150 minimum; seamless installs quoted per linear foot."
+      }
     }
   ]
 }
