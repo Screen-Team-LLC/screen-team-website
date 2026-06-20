@@ -22,10 +22,47 @@
   --shadow-hero:   0 24px 64px rgba(0, 0, 0, 0.6);
   --radius-lg:     18px;
   --radius-md:     12px;
-  --font-head:     "Oswald", sans-serif;
-  --font-body:     "Inter", sans-serif;
+  --font-head:     "Oswald", "Oswald Fallback", sans-serif;
+  --font-body:     "Inter", "Inter Fallback", sans-serif;
   --container:     1200px;
   --ease-out:      cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Metric-matched fallbacks reduce CLS while Google Fonts load */
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Segoe UI"), local("Arial");
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Oswald Fallback";
+  src: local("Arial Narrow"), local("Arial");
+  size-adjust: 88%;
+  ascent-override: 115%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+
+/* Reserve header height while header.html loads via includes.js */
+#site-header-include {
+  display: block;
+  min-height: 112px;
+}
+
+@media (max-width: 1280px) and (min-width: 901px) {
+  #site-header-include {
+    min-height: 96px;
+  }
+}
+
+@media (max-width: 900px) {
+  #site-header-include {
+    min-height: calc(clamp(60px, 16vw, 80px) + clamp(12px, 3vw, 20px));
+  }
 }
 
 /* ---- RESET ---- */
