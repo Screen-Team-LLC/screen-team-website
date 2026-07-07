@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12",
+  "updated": "2026-07-07",
   "site": "https://screenteamllc.com",
   "notes": "Internal keyword map for meta tags, on-page copy, GSC, and SERP research. Google ignores meta keywords for ranking. Prioritize: title (<=60), description (<=150), H1, body copy, URLs, internal links, and schema.",
   "primary_brand_terms": [
@@ -39,10 +39,10 @@
     },
     "contact.html": {
       "url": "https://screenteamllc.com/contact.html",
-      "meta_title": "Contact Screen Team LLC | Tampa Bay Screen Repair",
-      "meta_title_length": 49,
-      "meta_description": "Call or text Chris Westcott at (727) 386-6562 for rescreens, pool enclosures, lanais, window screens, and more across Tampa Bay.",
-      "meta_description_length": 128,
+      "meta_title": "Call (727) 386-6562 | Screen Repair Tampa Bay | Screen Team",
+      "meta_title_length": 58,
+      "meta_description": "Call or text Chris Westcott at (727) 386-6562 for pool cage repair, lanai rescreens, and window screens across Pasco, Pinellas, and Hillsborough.",
+      "meta_description_length": 145,
       "keywords": [
         "contact screen repair Tampa Bay",
         "free screen estimate",
@@ -75,10 +75,10 @@
     },
     "service-areas.html": {
       "url": "https://screenteamllc.com/service-areas.html",
-      "meta_title": "Screen Repair Service Areas Tampa Bay | Screen Team",
-      "meta_title_length": 51,
-      "meta_description": "Screen repair service areas across Pasco, Pinellas, and Hillsborough. Pool cages, lanais, and window screens. Free estimates from Chris Westcott.",
-      "meta_description_length": 145,
+      "meta_title": "Screen Repair Pasco, Pinellas & Hillsborough | Screen Team",
+      "meta_title_length": 58,
+      "meta_description": "Screen repair across Pasco, Pinellas, and Hillsborough counties. Pool cages, lanais, window screens. Owner Chris Westcott. (727) 386-6562.",
+      "meta_description_length": 138,
       "keywords": [
         "screen repair service area Tampa Bay",
         "Pasco Pinellas Hillsborough screen repair"
@@ -107,10 +107,10 @@
     },
     "rescreens.html": {
       "url": "https://screenteamllc.com/rescreens.html",
-      "meta_title": "Pool Cage & Lanai Rescreens | Screen Team LLC",
-      "meta_title_length": 45,
-      "meta_description": "Pool cage and lanai rescreens across Tampa Bay. Screen Team LLC installs fresh screen for worn or damaged enclosures with free estimates.",
-      "meta_description_length": 137,
+      "meta_title": "Pool Cage Rescreen Tampa Bay | From $1,995 | Screen Team",
+      "meta_title_length": 55,
+      "meta_description": "Pool cage rescreen Tampa Bay — full and partial jobs from $1,995. Chris Westcott on every install. Call (727) 386-6562 for a photo quote.",
+      "meta_description_length": 138,
       "keywords": [
         "pool cage rescreen Tampa Bay",
         "lanai rescreen Florida",
@@ -119,10 +119,10 @@
     },
     "pool-enclosures.html": {
       "url": "https://screenteamllc.com/pool-enclosures.html",
-      "meta_title": "Pool Cage Repair in Tampa Bay | Screen Team LLC",
-      "meta_title_length": 47,
-      "meta_description": "Pool cage rescreen and repair across Tampa Bay. Screen Team LLC fixes torn panels, sagging screens, and damaged enclosures with free estimates.",
-      "meta_description_length": 143,
+      "meta_title": "Pool Cage Repair Tampa Bay | Rescreen & Panels | Screen Team",
+      "meta_title_length": 59,
+      "meta_description": "Pool cage repair Tampa Bay — torn panels, sagging mesh, storm damage. Chris Westcott inspects frames before quoting. Call (727) 386-6562.",
+      "meta_description_length": 136,
       "keywords": [
         "pool cage repair Tampa Bay",
         "pool enclosure rescreen",
@@ -167,10 +167,10 @@
     },
     "gutter-work.html": {
       "url": "https://screenteamllc.com/gutter-work.html",
-      "meta_title": "Gutter Repair in Tampa Bay | Screen Team LLC",
-      "meta_title_length": 44,
-      "meta_description": "Gutter repair and installation across Tampa Bay, often bundled with lanai and pool cage work. Clear local estimates from Chris Westcott.",
-      "meta_description_length": 136,
+      "meta_title": "Gutter Repair Tampa Bay FL | Screen & Cage Bundle | Screen Team",
+      "meta_title_length": 62,
+      "meta_description": "Gutter repair Tampa Bay FL — often bundled with lanai and pool cage work. Chris Westcott quotes gutters and screens together. (727) 386-6562.",
+      "meta_description_length": 139,
       "keywords": [
         "gutter repair Tampa Bay",
         "seamless gutter install Florida",
@@ -212,12 +212,12 @@
     },
     "clearwater-screen-repair.html": {
       "url": "https://screenteamllc.com/clearwater-screen-repair.html",
-      "meta_title": "Screen Repair Clearwater FL | Pool Cage | Screen Team",
-      "meta_title_length": 53,
-      "meta_description": "Pool cage rescreens, lanai repair, and screen repair in Clearwater, FL. Owner-direct service from Chris Westcott. Call (727) 386-6562.",
-      "meta_description_length": 134,
+      "meta_title": "Pool Cage Repair Clearwater FL | Rescreen | Screen Team",
+      "meta_title_length": 55,
+      "meta_description": "Pool cage repair &amp; rescreen in Clearwater, FL — Island Estates, Countryside &amp; Coachman. Chris Westcott on every job. Call (727) 386-6562.",
+      "meta_description_length": 143,
       "keywords": [
-        "screen repair Clearwater FL",
+        "pool cage repair Clearwater FL",
         "pool cage rescreen Clearwater",
         "lanai screen repair Clearwater"
       ]
@@ -320,14 +320,62 @@
     },
     "seminole-screen-repair.html": {
       "url": "https://screenteamllc.com/seminole-screen-repair.html",
-      "meta_title": "Screen Repair Seminole FL | Pool & Lanai | Screen Team",
-      "meta_title_length": 54,
-      "meta_description": "Screen repair, pool cage rescreens, and lanai work in Seminole, FL. Chris Westcott, owner on every job. Call (727) 386-6562.",
-      "meta_description_length": 124,
+      "meta_title": "Lanai Screen Repair Seminole FL | Pool Cage | Screen Team",
+      "meta_title_length": 58,
+      "meta_description": "Lanai screen repair &amp; pool cage rescreens in Seminole, FL. South Pinellas owner-direct service from Chris Westcott. Call (727) 386-6562.",
+      "meta_description_length": 141,
       "keywords": [
-        "screen repair Seminole FL",
+        "lanai screen repair seminole fl",
         "pool cage rescreen Seminole",
-        "lanai screen repair Pinellas"
+        "lanai screen repair pinellas county"
+      ]
+    },
+    "pinellas-county-screen-repair.html": {
+      "url": "https://screenteamllc.com/pinellas-county-screen-repair.html",
+      "meta_title": "Pinellas County Screen Repair | Pool Cages & Lanais | Screen Team",
+      "meta_title_length": 64,
+      "meta_description": "Pinellas County screen repair — Clearwater, St. Pete, Largo, Seminole pool cages and lanais. Chris Westcott owner-direct. (727) 386-6562.",
+      "meta_description_length": 138,
+      "keywords": [
+        "screen repair pinellas county",
+        "pool cage repair pinellas county",
+        "lanai screen repair pinellas"
+      ]
+    },
+    "pasco-county-screen-repair.html": {
+      "url": "https://screenteamllc.com/pasco-county-screen-repair.html",
+      "meta_title": "Pasco County Screen Repair | NPR Home Base | Screen Team",
+      "meta_title_length": 55,
+      "meta_description": "Pasco County screen repair from New Port Richey home base — pool cages, lanais, window screens. Chris on every job. (727) 386-6562.",
+      "meta_description_length": 132,
+      "keywords": [
+        "screen repair pasco county",
+        "pool cage rescreen pasco county",
+        "new port richey screen repair"
+      ]
+    },
+    "hillsborough-county-screen-repair.html": {
+      "url": "https://screenteamllc.com/hillsborough-county-screen-repair.html",
+      "meta_title": "Hillsborough County Screen Repair | Tampa Area | Screen Team",
+      "meta_title_length": 59,
+      "meta_description": "Hillsborough County screen repair — Tampa, Brandon border, pool cages and lanais. Owner Chris Westcott. Call (727) 386-6562.",
+      "meta_description_length": 125,
+      "keywords": [
+        "screen repair hillsborough county",
+        "pool cage repair tampa",
+        "lanai screen repair hillsborough"
+      ]
+    },
+    "storm-screen-repair.html": {
+      "url": "https://screenteamllc.com/storm-screen-repair.html",
+      "meta_title": "Storm Screen Repair Tampa Bay | Hurricane Damage | Screen Team",
+      "meta_title_length": 61,
+      "meta_description": "Storm and hurricane screen repair across Tampa Bay — pool cages, lanais, porch screens. Chris Westcott patches or rescreens after weather. (727) 386-6562.",
+      "meta_description_length": 153,
+      "keywords": [
+        "storm screen repair",
+        "hurricane pool cage repair",
+        "storm damaged lanai screen"
       ]
     }
   },
@@ -350,12 +398,12 @@
   },
   "sitemap": {
     "url": "https://screenteamllc.com/sitemap.xml",
-    "indexable_pages": 24,
+    "indexable_pages": 28,
     "excluded_noindex": ["404.html", "thank-you.html", "privacy-policy.html"]
   },
   "schema_reference": "data/schema-reference.json",
   "prepush_checklist": {
-    "sitemap_urls": 24,
+    "sitemap_urls": 28,
     "robots": "https://screenteamllc.com/robots.txt",
     "llms": "https://screenteamllc.com/llms.txt",
     "schema_reference": "data/schema-reference.json",
@@ -364,6 +412,9 @@
       "service-areas.html", "service-guarantee.html",
       "rescreens.html", "pool-enclosures.html", "screen-lanais.html",
       "window-screens.html", "garage-screens.html", "gutter-work.html",
+      "storm-screen-repair.html",
+      "pinellas-county-screen-repair.html", "pasco-county-screen-repair.html",
+      "hillsborough-county-screen-repair.html",
       "11 city *-screen-repair.html pages"
     ],
     "excluded_noindex": ["404.html", "thank-you.html", "privacy-policy.html"]

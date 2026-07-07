@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12",
+  "updated": "2026-07-07",
   "audit_tool": "node E:/Website Audit/tools/schema-audit.mjs --site sites/screenteamllc.com.json --local --all",
   "site": "https://screenteamllc.com",
   "global_entities": {
@@ -11,7 +11,7 @@
   },
   "sitemap": {
     "url": "https://screenteamllc.com/sitemap.xml",
-    "indexable_count": 24,
+    "indexable_count": 28,
     "excluded": ["404.html", "thank-you.html", "privacy-policy.html", "header.html", "footer.html"]
   },
   "page_schema": {
@@ -23,6 +23,8 @@
     "service-areas.html": ["Organization", "HomeAndConstructionBusiness", "CollectionPage", "ItemList", "BreadcrumbList", "FAQPage"],
     "service-guarantee.html": ["Organization", "HomeAndConstructionBusiness", "WebSite", "WarrantyPromise", "WebPage", "BreadcrumbList", "FAQPage"],
     "service_pages": ["Organization", "HomeAndConstructionBusiness", "Service", "WebPage", "BreadcrumbList", "FAQPage"],
+    "county_hub_pages": ["Organization", "HomeAndConstructionBusiness", "Service (county)", "WebPage", "BreadcrumbList", "FAQPage"],
+    "storm_screen_repair": ["Organization", "HomeAndConstructionBusiness", "Service", "WebPage", "BreadcrumbList", "FAQPage"],
     "city_pages": ["Organization", "HomeAndConstructionBusiness", "Service (city)", "WebPage", "BreadcrumbList", "FAQPage"]
   },
   "notes": "Street address intentionally omitted from LocalBusiness schema. Duplicate @id entities use the same canonical graph nodes site-wide."

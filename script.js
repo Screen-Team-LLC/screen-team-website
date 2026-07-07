@@ -75,7 +75,14 @@ function trackClarityUpgrade(reason) {
   clarityCall("upgrade", reason);
 }
 
-function initClarityConversionTracking() {
+const GA4_MEASUREMENT_ID = "G-N5V1084LC6";
+
+function trackGa4Event(eventName, params) {
+  if (typeof gtag !== "function" || !eventName) return;
+  gtag("event", eventName, params || {});
+}
+
+function initConversionTracking() {
   document.addEventListener(
     "click",
     (event) => {
@@ -83,12 +90,36 @@ function initClarityConversionTracking() {
       if (telLink) {
         trackClarityEvent("phone_click");
         trackClarityUpgrade("phone_click");
+        trackGa4Event("phone_click", {
+          event_category: "conversion",
+          event_label: telLink.getAttribute("href") || "tel",
+          link_url: telLink.href,
+          page_path: getClarityPageId(),
+        });
+        return;
+      }
+
+      const smsLink = event.target.closest('a[href^="sms:"]');
+      if (smsLink) {
+        trackClarityEvent("sms_click");
+        trackClarityUpgrade("sms_click");
+        trackGa4Event("sms_click", {
+          event_category: "conversion",
+          event_label: smsLink.getAttribute("href") || "sms",
+          link_url: smsLink.href,
+          page_path: getClarityPageId(),
+        });
         return;
       }
 
       const mailLink = event.target.closest('a[href^="mailto:"]');
       if (mailLink) {
         trackClarityEvent("email_click");
+        trackGa4Event("email_click", {
+          event_category: "engagement",
+          page_path: getClarityPageId(),
+        });
+        return;
       }
 
       const tracked = event.target.closest("[data-clarity-event]");
@@ -98,6 +129,13 @@ function initClarityConversionTracking() {
     },
     { passive: true },
   );
+
+  if (getClarityPageId().includes("thank-you")) {
+    trackGa4Event("contact_form_success", {
+      event_category: "conversion",
+      page_path: getClarityPageId(),
+    });
+  }
 }
 
 window.ScreenTeamClarity = {
@@ -461,6 +499,11 @@ function initFormHandlers() {
       if (res.ok) {
         trackClarityEvent("contact_form_submit");
         trackClarityUpgrade("contact_form_submit");
+        trackGa4Event("contact_form_submit", {
+          event_category: "conversion",
+          form_id: heroForm.id || "contact-form",
+          page_path: getClarityPageId(),
+        });
         submitBtn.textContent = "Sent! ✓";
         setTimeout(() => {
           heroForm.hidden = true;
@@ -776,7 +819,7 @@ function initStGoogleReviews() {
 
 function initPage() {
   initMicrosoftClarity();
-  initClarityConversionTracking();
+  initConversionTracking();
   initScrollReveal();
   initHeroPanels();
   initHomeStripEntrance();

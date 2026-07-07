@@ -5,10 +5,14 @@ const SERVICE_PAGES = [
   "window-screens",
   "garage-screens",
   "gutter-work",
+  "storm-screen-repair",
 ];
 
 const AREA_PAGES = [
   "service-areas",
+  "pinellas-county-screen-repair",
+  "pasco-county-screen-repair",
+  "hillsborough-county-screen-repair",
   "clearwater-screen-repair",
   "st-petersburg-screen-repair",
   "palm-harbor-screen-repair",
@@ -44,10 +48,26 @@ const NAV_ACTIVE_SELECTORS = {
     ".nav-dropdown-menu a[href='gutter-work.html']",
     ".mobile-services-sub a[href='gutter-work.html']",
   ],
+  "storm-screen-repair": [
+    ".nav-dropdown-menu a[href='storm-screen-repair.html']",
+    ".mobile-services-sub a[href='storm-screen-repair.html']",
+  ],
   "service-areas": [
     ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='service-areas.html']",
     "#mobile-areas-sub a[href='service-areas.html']",
     ".footer-links a[href='service-areas.html']",
+  ],
+  "pinellas-county-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='pinellas-county-screen-repair.html']",
+    "#mobile-areas-sub a[href='pinellas-county-screen-repair.html']",
+  ],
+  "pasco-county-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='pasco-county-screen-repair.html']",
+    "#mobile-areas-sub a[href='pasco-county-screen-repair.html']",
+  ],
+  "hillsborough-county-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='hillsborough-county-screen-repair.html']",
+    "#mobile-areas-sub a[href='hillsborough-county-screen-repair.html']",
   ],
   "clearwater-screen-repair": [
     ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='clearwater-screen-repair.html']",
