@@ -1,6 +1,7 @@
 # The Screen Team LLC — https://screenteamllc.com
 # Sitemap: https://screenteamllc.com/sitemap.xml
 # LLM / AI summary: https://screenteamllc.com/llms.txt
+# AI agent summary: https://screenteamllc.com/ai.txt
 
 User-agent: *
 Allow: /

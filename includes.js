@@ -1,10 +1,15 @@
 const SERVICE_PAGES = [
   "rescreens",
   "pool-enclosures",
+  "pool-cage-repair",
   "screen-lanais",
+  "lanai-screen-replacement",
+  "screen-panel-repair",
   "window-screens",
   "garage-screens",
   "gutter-work",
+  "gutters-and-screens",
+  "pet-resistant-screen-mesh",
   "storm-screen-repair",
 ];
 
@@ -13,9 +18,25 @@ const AREA_PAGES = [
   "pinellas-county-screen-repair",
   "pasco-county-screen-repair",
   "hillsborough-county-screen-repair",
+  "new-port-richey-screen-repair",
+  "holiday-screen-repair",
+  "hudson-screen-repair",
+  "land-o-lakes-screen-repair",
+  "wesley-chapel-screen-repair",
+  "tarpon-springs-screen-repair",
   "clearwater-screen-repair",
   "st-petersburg-screen-repair",
+  "largo-screen-repair",
   "palm-harbor-screen-repair",
+  "safety-harbor-screen-repair",
+  "dunedin-screen-repair",
+  "oldsmar-screen-repair",
+  "seminole-screen-repair",
+  "pinellas-park-screen-repair",
+  "gulfport-screen-repair",
+  "belleair-screen-repair",
+  "tampa-screen-repair",
+  "brandon-screen-repair",
 ];
 
 const NAV_ACTIVE_SELECTORS = {
@@ -52,6 +73,26 @@ const NAV_ACTIVE_SELECTORS = {
     ".nav-dropdown-menu a[href='storm-screen-repair.html']",
     ".mobile-services-sub a[href='storm-screen-repair.html']",
   ],
+  "pool-cage-repair": [
+    ".nav-dropdown-menu a[href='pool-cage-repair.html']",
+    ".mobile-services-sub a[href='pool-cage-repair.html']",
+  ],
+  "lanai-screen-replacement": [
+    ".nav-dropdown-menu a[href='lanai-screen-replacement.html']",
+    ".mobile-services-sub a[href='lanai-screen-replacement.html']",
+  ],
+  "screen-panel-repair": [
+    ".nav-dropdown-menu a[href='screen-panel-repair.html']",
+    ".mobile-services-sub a[href='screen-panel-repair.html']",
+  ],
+  "gutters-and-screens": [
+    ".nav-dropdown-menu a[href='gutters-and-screens.html']",
+    ".mobile-services-sub a[href='gutters-and-screens.html']",
+  ],
+  "pet-resistant-screen-mesh": [
+    ".nav-dropdown-menu a[href='pet-resistant-screen-mesh.html']",
+    ".mobile-services-sub a[href='pet-resistant-screen-mesh.html']",
+  ],
   "service-areas": [
     ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='service-areas.html']",
     "#mobile-areas-sub a[href='service-areas.html']",
@@ -80,6 +121,66 @@ const NAV_ACTIVE_SELECTORS = {
   "palm-harbor-screen-repair": [
     ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='palm-harbor-screen-repair.html']",
     "#mobile-areas-sub a[href='palm-harbor-screen-repair.html']",
+  ],
+  "seminole-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='seminole-screen-repair.html']",
+    "#mobile-areas-sub a[href='seminole-screen-repair.html']",
+  ],
+  "pinellas-park-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='pinellas-park-screen-repair.html']",
+    "#mobile-areas-sub a[href='pinellas-park-screen-repair.html']",
+  ],
+  "gulfport-screen-repair": [
+    ".footer-quicklinks-grid a[href='gulfport-screen-repair.html']",
+  ],
+  "brandon-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='brandon-screen-repair.html']",
+    "#mobile-areas-sub a[href='brandon-screen-repair.html']",
+  ],
+  "wesley-chapel-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='wesley-chapel-screen-repair.html']",
+    "#mobile-areas-sub a[href='wesley-chapel-screen-repair.html']",
+  ],
+  "holiday-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='holiday-screen-repair.html']",
+    "#mobile-areas-sub a[href='holiday-screen-repair.html']",
+  ],
+  "hudson-screen-repair": [
+    ".footer-quicklinks-grid a[href='hudson-screen-repair.html']",
+  ],
+  "land-o-lakes-screen-repair": [
+    ".footer-quicklinks-grid a[href='land-o-lakes-screen-repair.html']",
+  ],
+  "belleair-screen-repair": [
+    ".footer-quicklinks-grid a[href='belleair-screen-repair.html']",
+  ],
+  "tampa-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='tampa-screen-repair.html']",
+    "#mobile-areas-sub a[href='tampa-screen-repair.html']",
+  ],
+  "largo-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='largo-screen-repair.html']",
+    "#mobile-areas-sub a[href='largo-screen-repair.html']",
+  ],
+  "new-port-richey-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='new-port-richey-screen-repair.html']",
+    "#mobile-areas-sub a[href='new-port-richey-screen-repair.html']",
+  ],
+  "tarpon-springs-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='tarpon-springs-screen-repair.html']",
+    "#mobile-areas-sub a[href='tarpon-springs-screen-repair.html']",
+  ],
+  "dunedin-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='dunedin-screen-repair.html']",
+    "#mobile-areas-sub a[href='dunedin-screen-repair.html']",
+  ],
+  "oldsmar-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='oldsmar-screen-repair.html']",
+    "#mobile-areas-sub a[href='oldsmar-screen-repair.html']",
+  ],
+  "safety-harbor-screen-repair": [
+    ".nav-dropdown-wrap--areas .nav-dropdown-menu a[href='safety-harbor-screen-repair.html']",
+    "#mobile-areas-sub a[href='safety-harbor-screen-repair.html']",
   ],
   "service-guarantee": [".footer-links a[href='service-guarantee.html']"],
   "privacy-policy": [".footer-links a[href='privacy-policy.html']"],

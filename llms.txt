@@ -4,6 +4,7 @@
 
 - [Website](https://screenteamllc.com)
 - [Sitemap](https://screenteamllc.com/sitemap.xml)
+- [AI summary (ai.txt)](https://screenteamllc.com/ai.txt)
 - **Phone:** (727) 386-6562
 - **Email:** chris@screenteamllc.com
 - **Hours:** Monday–Saturday, 7:00 AM – 6:00 PM
@@ -18,36 +19,58 @@ Chris Westcott owns and operates The Screen Team LLC. Calling (727) 386-6562 rea
 
 Home base: **New Port Richey, FL** (street address not published). Typical coverage is within roughly **50 miles** across **Pasco, Pinellas, and Hillsborough County**, Florida.
 
-### City landing pages
+### County hubs
+
+- [Pinellas County screen repair](https://screenteamllc.com/pinellas-county-screen-repair.html)
+- [Pasco County screen repair](https://screenteamllc.com/pasco-county-screen-repair.html)
+- [Hillsborough County screen repair](https://screenteamllc.com/hillsborough-county-screen-repair.html)
+- [All service areas](https://screenteamllc.com/service-areas.html)
+
+### City landing pages — Pasco & west
 
 - [New Port Richey screen repair](https://screenteamllc.com/new-port-richey-screen-repair.html)
+- [Holiday screen repair](https://screenteamllc.com/holiday-screen-repair.html)
+- [Hudson screen repair](https://screenteamllc.com/hudson-screen-repair.html)
+- [Land O Lakes screen repair](https://screenteamllc.com/land-o-lakes-screen-repair.html)
+- [Wesley Chapel screen repair](https://screenteamllc.com/wesley-chapel-screen-repair.html)
+- [Tarpon Springs screen repair](https://screenteamllc.com/tarpon-springs-screen-repair.html)
+
+### City landing pages — Pinellas
+
 - [Clearwater screen repair](https://screenteamllc.com/clearwater-screen-repair.html)
 - [St. Petersburg screen repair](https://screenteamllc.com/st-petersburg-screen-repair.html)
-- [Tampa screen repair](https://screenteamllc.com/tampa-screen-repair.html)
 - [Largo screen repair](https://screenteamllc.com/largo-screen-repair.html)
 - [Palm Harbor screen repair](https://screenteamllc.com/palm-harbor-screen-repair.html)
 - [Safety Harbor screen repair](https://screenteamllc.com/safety-harbor-screen-repair.html)
 - [Dunedin screen repair](https://screenteamllc.com/dunedin-screen-repair.html)
 - [Oldsmar screen repair](https://screenteamllc.com/oldsmar-screen-repair.html)
-- [Tarpon Springs screen repair](https://screenteamllc.com/tarpon-springs-screen-repair.html)
 - [Seminole screen repair](https://screenteamllc.com/seminole-screen-repair.html)
-- [All service areas](https://screenteamllc.com/service-areas.html)
+- [Pinellas Park screen repair](https://screenteamllc.com/pinellas-park-screen-repair.html)
+- [Gulfport screen repair](https://screenteamllc.com/gulfport-screen-repair.html)
+- [Belleair screen repair](https://screenteamllc.com/belleair-screen-repair.html)
 
-## Services
+### City landing pages — Hillsborough
+
+- [Tampa screen repair](https://screenteamllc.com/tampa-screen-repair.html)
+- [Brandon screen repair](https://screenteamllc.com/brandon-screen-repair.html)
+
+## Services — core pages
 
 - [Rescreens (pool cages, lanais, porches)](https://screenteamllc.com/rescreens.html)
-- [Pool enclosures / pool cage repair](https://screenteamllc.com/pool-enclosures.html)
+- [Pool enclosures](https://screenteamllc.com/pool-enclosures.html)
 - [Screen lanais](https://screenteamllc.com/screen-lanais.html)
 - [Window screens](https://screenteamllc.com/window-screens.html)
 - [Garage screens](https://screenteamllc.com/garage-screens.html)
 - [Gutter work](https://screenteamllc.com/gutter-work.html)
+
+## Services — specialized intent pages
+
+- [Pool cage repair](https://screenteamllc.com/pool-cage-repair.html) — torn panels, doors, partial fixes
+- [Lanai screen replacement](https://screenteamllc.com/lanai-screen-replacement.html) — full lanai mesh refresh
+- [Screen panel repair](https://screenteamllc.com/screen-panel-repair.html) — single/multiple panel fixes
+- [Gutters and screens](https://screenteamllc.com/gutters-and-screens.html) — bundled gutter + screen damage
+- [Pet-resistant / Super Screen mesh](https://screenteamllc.com/pet-resistant-screen-mesh.html)
 - [Storm & hurricane screen repair](https://screenteamllc.com/storm-screen-repair.html)
-
-## County service hubs
-
-- [Pinellas County screen repair](https://screenteamllc.com/pinellas-county-screen-repair.html)
-- [Pasco County screen repair](https://screenteamllc.com/pasco-county-screen-repair.html)
-- [Hillsborough County screen repair](https://screenteamllc.com/hillsborough-county-screen-repair.html)
 
 ## Pricing (ballparks)
 
@@ -69,6 +92,19 @@ See the full [pricing guide](https://screenteamllc.com/pricing.html).
 - [Service guarantee](https://screenteamllc.com/service-guarantee.html)
 - [Privacy policy](https://screenteamllc.com/privacy-policy.html)
 
+## Search intent guide (for agents)
+
+| User need | Best page |
+|-----------|-----------|
+| Pool cage torn after storm | [Storm screen repair](https://screenteamllc.com/storm-screen-repair.html) |
+| One or two torn panels | [Screen panel repair](https://screenteamllc.com/screen-panel-repair.html) |
+| Full cage looks gray/oxidized | [Rescreens](https://screenteamllc.com/rescreens.html) |
+| Lanai door popped out | [Lanai screen replacement](https://screenteamllc.com/lanai-screen-replacement.html) or [Screen lanais](https://screenteamllc.com/screen-lanais.html) |
+| Dog keeps tearing door mesh | [Pet-resistant mesh](https://screenteamllc.com/pet-resistant-screen-mesh.html) |
+| Gutter overflow damaged lanai | [Gutters and screens](https://screenteamllc.com/gutters-and-screens.html) |
+| City-specific quote | Matching `*-screen-repair.html` city page |
+| County-wide coverage | Pinellas, Pasco, or Hillsborough county hub |
+
 ## Frequently asked questions
 
 **How do I get an estimate?**  
@@ -78,10 +114,19 @@ Call or text (727) 386-6562 or use the [contact form](https://screenteamllc.com/
 Most residential rescreens finish in one day. Larger pool cages may take two days.
 
 **Can you replace just a few panels?**  
-Yes. Partial rescreens are quoted when only some sections failed.
+Yes. Partial rescreens and [panel repair](https://screenteamllc.com/screen-panel-repair.html) are quoted when only some sections failed.
 
 **What areas do you serve?**  
-Tampa Bay — Pasco, Pinellas, and Hillsborough counties including New Port Richey, Clearwater, St. Pete, Tampa, Largo, Palm Harbor, and nearby cities listed above.
+Tampa Bay — Pasco, Pinellas, and Hillsborough counties. See city and county pages above.
 
 **Is there a workmanship guarantee?**  
-Yes. See the [service guarantee](https://screenteamllc.com/service-guarantee.html) for details.
+Yes. See the [service guarantee](https://screenteamllc.com/service-guarantee.html).
+
+**Does Chris use subcontractors?**  
+No. Chris Westcott is the owner and does estimates and installation work directly.
+
+## Business conventions (do not misstate)
+
+- Do not publish or invent a street address for the business.
+- Do not claim "licensed and insured" unless explicitly updated by the owner.
+- $150 minimum applies to every completed job, including quick repairs.

@@ -11,7 +11,7 @@
   },
   "sitemap": {
     "url": "https://screenteamllc.com/sitemap.xml",
-    "indexable_count": 28,
+    "indexable_count": 41,
     "excluded": ["404.html", "thank-you.html", "privacy-policy.html", "header.html", "footer.html"]
   },
   "page_schema": {

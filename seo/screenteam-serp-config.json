@@ -1,0 +1,66 @@
+{
+  "business_id": "screenteamllc",
+  "depth": 10,
+  "notes": "Screen Team LLC screen repair SERP tracking — Tampa Bay (Pasco, Pinellas, Hillsborough)",
+  "runs": [
+    {
+      "keyword": "pool cage repair",
+      "location": "Tampa Bay, Florida, United States",
+      "priority": 1,
+      "gsc_note": "209 impressions — top query"
+    },
+    {
+      "keyword": "lanai screen repair",
+      "location": "Tampa Bay, Florida, United States",
+      "priority": 1,
+      "gsc_note": "192 impressions"
+    },
+    {
+      "keyword": "pool cage rescreen",
+      "location": "Tampa Bay, Florida, United States",
+      "priority": 1
+    },
+    {
+      "keyword": "gutters and screens",
+      "location": "Tampa Bay, Florida, United States",
+      "priority": 2,
+      "gsc_note": "139 impressions"
+    },
+    {
+      "keyword": "screen repair company pinellas county",
+      "location": "Pinellas County, Florida, United States",
+      "priority": 1
+    },
+    {
+      "keyword": "pool cage repair clearwater fl",
+      "location": "Clearwater, Florida, United States",
+      "priority": 1
+    },
+    {
+      "keyword": "lanai screen repair seminole fl",
+      "location": "Seminole, Florida, United States",
+      "priority": 2
+    },
+    {
+      "keyword": "storm screen repair",
+      "location": "Tampa Bay, Florida, United States",
+      "priority": 2
+    },
+    {
+      "keyword": "pool screen repair pinellas park fl",
+      "location": "Pinellas Park, Florida, United States",
+      "priority": 2
+    },
+    {
+      "keyword": "screen repair tampa fl",
+      "location": "Tampa, Florida, United States",
+      "priority": 2
+    },
+    {
+      "keyword": "the screen team llc",
+      "location": "New Port Richey, Florida, United States",
+      "priority": 3,
+      "gsc_note": "Brand monitoring"
+    }
+  ]
+}
