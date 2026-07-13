@@ -1,6 +1,3 @@
-const CLARITY_PROJECT_ID = "wjl6hyr76v";
-const CLARITY_LOAD_DELAY_MS = 4000;
-
 function clarityCall(...args) {
   window.clarity =
     window.clarity ||
@@ -34,35 +31,12 @@ function initMicrosoftClarity() {
   if (window.__stClarityBootstrapped) return;
   window.__stClarityBootstrapped = true;
 
-  const boot = () => {
-    (function (c, l, a, r, i, t, y) {
-      c[a] =
-        c[a] ||
-        function () {
-          (c[a].q = c[a].q || []).push(arguments);
-        };
-      t = l.createElement(r);
-      t.async = 1;
-      t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0];
-      y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
-
-    const pageId = getClarityPageId();
-    clarityCall("identify", getClarityVisitorId(), undefined, pageId, document.title || pageId);
-    clarityCall("set", "page_path", pageId);
-    if (document.body && document.body.className) {
-      clarityCall("set", "page_type", document.body.className.trim());
-    }
-  };
-
-  window.addEventListener(
-    "load",
-    () => {
-      setTimeout(boot, CLARITY_LOAD_DELAY_MS);
-    },
-    { once: true },
-  );
+  const pageId = getClarityPageId();
+  clarityCall("identify", getClarityVisitorId(), undefined, pageId, document.title || pageId);
+  clarityCall("set", "page_path", pageId);
+  if (document.body && document.body.className) {
+    clarityCall("set", "page_type", document.body.className.trim());
+  }
 }
 
 function trackClarityEvent(eventName) {
