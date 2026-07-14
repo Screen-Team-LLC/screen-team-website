@@ -390,6 +390,15 @@
           <p>Pool enclosures, screen lanais, rescreens, and more - done right by Chris Westcott.</p>
         </div>
 
+        <div id="dispatch-job-gallery" hidden>
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Latest field proof</p>
+            <h2>Before, Process &amp; After Projects</h2>
+            <p>Completed Screen Team jobs published directly from the field app.</p>
+          </div>
+          <div class="gallery-grid" id="dispatch-job-grid"></div>
+        </div>
+
         <!-- Filter Tabs -->
         <div class="gallery-filters" role="tablist" aria-label="Filter gallery by type">
           <button class="gallery-filter active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
@@ -587,6 +596,36 @@
   <script src="includes.js"></script>
   <script src="script.js"></script>
   <script>
+    // Latest completed jobs are published by the Screen Team field app.
+    fetch('data/job-gallery.json', { cache: 'no-store' })
+      .then(function(response) { return response.ok ? response.json() : Promise.reject(response.status); })
+      .then(function(data) {
+        var projects = Array.isArray(data.projects) ? data.projects : [];
+        if (!projects.length) return;
+        var grid = document.getElementById('dispatch-job-grid');
+        projects.forEach(function(project) {
+          var card = document.createElement('figure');
+          card.className = 'gallery-item';
+          var link = document.createElement('a');
+          link.className = 'gallery-img-link';
+          link.href = project.detail_url;
+          var image = document.createElement('img');
+          image.src = project.image;
+          image.alt = project.title + ' before, process, and after project by Screen Team LLC';
+          image.loading = 'lazy';
+          image.width = 1600;
+          image.height = 900;
+          var caption = document.createElement('figcaption');
+          caption.textContent = project.title;
+          link.appendChild(image);
+          card.appendChild(link);
+          card.appendChild(caption);
+          grid.appendChild(card);
+        });
+        document.getElementById('dispatch-job-gallery').hidden = false;
+      })
+      .catch(function() { /* Existing gallery remains fully functional. */ });
+
     // ---- Gallery Filter ----
     const filterBtns = document.querySelectorAll('.gallery-filter');
     const allItems   = [...document.querySelectorAll('.gallery-item')];
