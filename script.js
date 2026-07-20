@@ -52,8 +52,12 @@ function trackClarityUpgrade(reason) {
 const GA4_MEASUREMENT_ID = "G-N5V1084LC6";
 
 function trackGa4Event(eventName, params) {
-  if (typeof gtag !== "function" || !eventName) return;
-  gtag("event", eventName, params || {});
+  if (!eventName) return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: eventName, ...(params || {}) });
+  if (typeof gtag === "function") {
+    gtag("event", eventName, params || {});
+  }
 }
 
 function initConversionTracking() {
