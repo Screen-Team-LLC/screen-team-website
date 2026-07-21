@@ -1,0 +1,31 @@
+name: static-site
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify include generator idempotence
+        run: |
+          node scripts/build-includes.mjs
+          find . -maxdepth 1 -name '*.html' -print0 | sort -z | xargs -0 sha256sum > /tmp/includes-first.sha256
+          node scripts/build-includes.mjs
+          find . -maxdepth 1 -name '*.html' -print0 | sort -z | xargs -0 sha256sum > /tmp/includes-second.sha256
+          cmp /tmp/includes-first.sha256 /tmp/includes-second.sha256
+      - name: Parse site tooling
+        run: python -m compileall -q scripts
+      - name: Validate public output
+        run: python scripts/validate-static-site.py
