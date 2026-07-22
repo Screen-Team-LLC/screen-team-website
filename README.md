@@ -23,7 +23,7 @@ Production website for The Screen Team LLC, a Tampa Bay screen repair and enclos
 - Bing site verification and Microsoft Clarity instrumentation
 - AJAX contact form handling via Formspree
 - GitHub Pages deployment with a custom apex domain (`screenteamllc.com`)
-- GitHub Actions automation for IndexNow submission and repository health checks
+- GitHub Actions validation for generator idempotence, canonicals, sitemap coverage, JSON-LD, internal links, UTF-8 encoding, referenced assets, and public-image budgets
 
 ## Tech Stack
 
@@ -93,7 +93,7 @@ Pushes to `main` publish through GitHub Pages. The deployment depends on these f
 - `CNAME`
 - `sitemap.xml`
 - `robots.txt`
-- `.github/workflows/indexnow-submit.yml`
+- `.github/workflows/static-site.yml`
 
 If the custom domain or HTTPS appears broken, check GitHub Pages settings first. A successful DNS check does not guarantee that the TLS certificate has already been issued.
 
@@ -101,7 +101,8 @@ If the custom domain or HTTPS appears broken, check GitHub Pages settings first.
 
 - XML sitemap for all public pages
 - Robots policy for search crawlers
-- IndexNow submission workflow on push
+- Static-site validation on every push and pull request
+- IndexNow tooling is maintained centrally in `E:\Website Audit\IndexNow`; this repository does not currently submit IndexNow from GitHub Actions
 - Bing verification meta tag
 - Open Graph and Twitter metadata for social sharing
 - JSON-LD for business, service, FAQ, and breadcrumb enhancement
