@@ -1,5 +1,15 @@
 {
   "version": 1,
   "brand": "st",
-  "projects": []
+  "projects": [
+    {
+      "id": "before-process-after-damaged-screen-replacement-3b039016",
+      "title": "Damaged Screen Replacement",
+      "summary": "Before, process, and after project proof from Screen Team LLC.",
+      "image": "Images/gallery/before-process-after-damaged-screen-replacement-3b039016.webp",
+      "social_image": "Images/gallery/before-process-after-damaged-screen-replacement-3b039016-social.jpg",
+      "detail_url": "gallery/before-process-after-damaged-screen-replacement-3b039016.html",
+      "published_at": "2026-07-23T15:26:11.123155+00:00"
+    }
+  ]
 }
