@@ -2815,6 +2815,19 @@ body.home-landing .hero.hero-panels-ready .hero-cutout {
   }
 }
 
+/* Wide desktop only — below 1600px the banner already shows Chris */
+@media (max-width: 1599px) {
+  body.home-landing .hero-cutout-wrap {
+    display: none !important;
+  }
+
+  body.home-landing .hero-inner {
+    grid-template-columns: minmax(0, 390px) minmax(0, 400px);
+    justify-content: center;
+    align-items: start;
+  }
+}
+
 @keyframes homeHeroFromLeft {
   to { opacity: 1; transform: translateX(0); }
 }
@@ -3760,16 +3773,6 @@ body.home-landing .hero-enter--d17 { animation-delay: 1.7s; }
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
-  }
-
-  body.home-landing .hero-cutout-wrap {
-    width: min(52vw, 300px);
-    height: min(62vh, 500px);
-    right: clamp(0px, 1vw, 10px);
-  }
-
-  body.home-landing .hero.hero-panels-ready .hero-cutout {
-    animation-delay: 0.5s;
   }
 
   /* Copy ? sits below the portrait, not over the face */

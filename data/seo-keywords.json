@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07",
+  "updated": "2026-07-22",
   "site": "https://screenteamllc.com",
   "notes": "Internal keyword map for meta tags, on-page copy, GSC, and SERP research. Google ignores meta keywords for ranking. Prioritize: title (<=60), description (<=150), H1, body copy, URLs, internal links, and schema.",
   "primary_brand_terms": [
@@ -12,16 +12,15 @@
   "pages": {
     "index.html": {
       "url": "https://screenteamllc.com/",
-      "meta_title": "Screen Repair Tampa Bay | Pool Enclosures | Screen Team",
-      "meta_title_length": 55,
-      "meta_description": "Screen repair Tampa Bay \u2014 pool cages, lanais &amp; rescreens. Chris Westcott on every job. Call (727) 386-6562.",
-      "meta_description_length": 107,
+      "meta_title": "Pool Cage Rescreen & Super Gutters Tampa Bay | Screen Team",
+      "meta_title_length": 58,
+      "meta_description": "Full pool cage rescreens, new enclosure coordination &amp; super gutters across Tampa Bay. Chris Westcott on every job. Call (727) 386-6562.",
+      "meta_description_length": 139,
       "keywords": [
-        "screen repair Tampa Bay",
-        "pool cage rescreen",
-        "lanai screen repair",
-        "window screen replacement",
-        "garage screen Tampa",
+        "pool cage rescreen Tampa Bay",
+        "super gutters Tampa Bay",
+        "new pool cage installation",
+        "screen enclosure Tampa Bay",
         "Chris Westcott"
       ]
     },
@@ -65,7 +64,7 @@
       "url": "https://screenteamllc.com/pricing.html",
       "meta_title": "Screen Repair Pricing Tampa Bay | Screen Team LLC",
       "meta_title_length": 49,
-      "meta_description": "Pool cage rescreen pricing Tampa Bay \u2014 panels from $75, full cages from $1,995. $150 minimum. Call (727) 386-6562.",
+      "meta_description": "Pool cage rescreen pricing Tampa Bay — panels from $75, full cages from $1,995. $150 minimum. Call (727) 386-6562.",
       "meta_description_length": 114,
       "keywords": [
         "screen repair cost Tampa Bay",
@@ -121,7 +120,7 @@
       "url": "https://screenteamllc.com/pool-enclosures.html",
       "meta_title": "Pool Cage Repair Tampa Bay | Rescreen & Panels | Screen Team",
       "meta_title_length": 59,
-      "meta_description": "Pool enclosure repair Tampa Bay \u2014 torn mesh, sagging panels &amp; door tracks. Chris Westcott on every job. Call (727) 386-6562.",
+      "meta_description": "Pool enclosure repair Tampa Bay — torn mesh, sagging panels &amp; door tracks. Chris Westcott on every job. Call (727) 386-6562.",
       "meta_description_length": 124,
       "keywords": [
         "pool cage repair Tampa Bay",
@@ -133,7 +132,7 @@
       "url": "https://screenteamllc.com/screen-lanais.html",
       "meta_title": "Lanai Screen Repair in Tampa Bay | Screen Team LLC",
       "meta_title_length": 50,
-      "meta_description": "Lanai screen repair Tampa Bay \u2014 popped spline, door panels &amp; roof lines. Call (727) 386-6562.",
+      "meta_description": "Lanai screen repair Tampa Bay — popped spline, door panels &amp; roof lines. Call (727) 386-6562.",
       "meta_description_length": 93,
       "keywords": [
         "lanai screen repair Tampa Bay",
@@ -169,7 +168,7 @@
       "url": "https://screenteamllc.com/gutter-work.html",
       "meta_title": "Gutter Repair Tampa Bay FL | Screen & Cage Bundle | Screen Team",
       "meta_title_length": 62,
-      "meta_description": "Gutter repair Tampa Bay FL \u2014 often bundled with lanai and pool cage work. Chris Westcott quotes gutters and screens together. (727) 386-6562.",
+      "meta_description": "Gutter repair Tampa Bay FL — often bundled with lanai and pool cage work. Chris Westcott quotes gutters and screens together. (727) 386-6562.",
       "meta_description_length": 139,
       "keywords": [
         "gutter repair Tampa Bay",
@@ -334,7 +333,7 @@
       "url": "https://screenteamllc.com/pinellas-county-screen-repair.html",
       "meta_title": "Pinellas County Screen Repair | Pool Cages & Lanais | Screen Team",
       "meta_title_length": 64,
-      "meta_description": "Pinellas County screen repair \u2014 pool cages, lanais &amp; enclosures. Chris Westcott on every job. Call (727) 386-6562.",
+      "meta_description": "Pinellas County screen repair — pool cages, lanais &amp; enclosures. Chris Westcott on every job. Call (727) 386-6562.",
       "meta_description_length": 114,
       "keywords": [
         "screen repair pinellas county",
@@ -346,7 +345,7 @@
       "url": "https://screenteamllc.com/pasco-county-screen-repair.html",
       "meta_title": "Pasco County Screen Repair | NPR Home Base | Screen Team",
       "meta_title_length": 55,
-      "meta_description": "Pasco County screen repair \u2014 pool cages, lanais &amp; enclosures. Chris Westcott on every job. Call (727) 386-6562.",
+      "meta_description": "Pasco County screen repair — pool cages, lanais &amp; enclosures. Chris Westcott on every job. Call (727) 386-6562.",
       "meta_description_length": 111,
       "keywords": [
         "screen repair pasco county",
@@ -358,7 +357,7 @@
       "url": "https://screenteamllc.com/hillsborough-county-screen-repair.html",
       "meta_title": "Hillsborough County Screen Repair | Tampa Area | Screen Team",
       "meta_title_length": 59,
-      "meta_description": "Hillsborough County screen repair \u2014 pool cages, lanais &amp; enclosures. Chris Westcott on every job. Call (727) 386-6562.",
+      "meta_description": "Hillsborough County screen repair — pool cages, lanais &amp; enclosures. Chris Westcott on every job. Call (727) 386-6562.",
       "meta_description_length": 118,
       "keywords": [
         "screen repair hillsborough county",
@@ -370,7 +369,7 @@
       "url": "https://screenteamllc.com/storm-screen-repair.html",
       "meta_title": "Storm Screen Repair Tampa Bay | Hurricane Damage | Screen Team",
       "meta_title_length": 61,
-      "meta_description": "Storm screen repair Tampa Bay \u2014 hurricane panel patches on pool cages &amp; lanais. Call (727) 386-6562.",
+      "meta_description": "Storm screen repair Tampa Bay — hurricane panel patches on pool cages &amp; lanais. Call (727) 386-6562.",
       "meta_description_length": 100,
       "keywords": [
         "storm screen repair",
@@ -385,7 +384,7 @@
         "pool cage repair",
         "pool cage screen repair Tampa Bay"
       ],
-      "meta_description": "Pool cage repair Tampa Bay \u2014 torn panels, doors &amp; storm damage fixed fast. Chris Westcott on every job. Call (727) 386-6562.",
+      "meta_description": "Pool cage repair Tampa Bay — torn panels, doors &amp; storm damage fixed fast. Chris Westcott on every job. Call (727) 386-6562.",
       "meta_description_length": 124
     },
     "lanai-screen-replacement.html": {
@@ -395,7 +394,7 @@
         "lanai screen replacement",
         "rescreen lanai Tampa Bay"
       ],
-      "meta_description": "Lanai screen replacement Tampa Bay \u2014 fresh mesh &amp; aligned doors. Chris Westcott on every job. Call (727) 386-6562.",
+      "meta_description": "Lanai screen replacement Tampa Bay — fresh mesh &amp; aligned doors. Chris Westcott on every job. Call (727) 386-6562.",
       "meta_description_length": 114
     },
     "gutters-and-screens.html": {
@@ -405,7 +404,7 @@
         "gutters and screens",
         "gutter repair tampa bay fl"
       ],
-      "meta_description": "Gutters &amp; screens Tampa Bay \u2014 fix overflow damage on lanais &amp; pool cages together. Call (727) 386-6562.",
+      "meta_description": "Gutters &amp; screens Tampa Bay — fix overflow damage on lanais &amp; pool cages together. Call (727) 386-6562.",
       "meta_description_length": 103
     },
     "pet-resistant-screen-mesh.html": {
@@ -415,7 +414,7 @@
         "pet resistant pool screen pinellas",
         "superscreen pool cage repair"
       ],
-      "meta_description": "Pet-resistant pool screen mesh Tampa Bay \u2014 tougher door panels for dogs. Call (727) 386-6562.",
+      "meta_description": "Pet-resistant pool screen mesh Tampa Bay — tougher door panels for dogs. Call (727) 386-6562.",
       "meta_description_length": 93
     },
     "screen-panel-repair.html": {
@@ -499,6 +498,438 @@
       ],
       "meta_description": "Pool cage &amp; lanai screen repair in Belleair, FL. Chris Westcott on every job. Call (727) 386-6562.",
       "meta_description_length": 98
+    },
+    "carrollwood-screen-repair.html": {
+      "url": "https://screenteamllc.com/carrollwood-screen-repair.html",
+      "meta_title": "Screen Repair Carrollwood FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 70,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Carrollwood, FL. Call (727) 386-6562.",
+      "meta_description_length": 98,
+      "keywords": [
+        "screen repair Carrollwood",
+        "pool cage rescreen Carrollwood",
+        "super gutter Carrollwood"
+      ]
+    },
+    "citrus-park-screen-repair.html": {
+      "url": "https://screenteamllc.com/citrus-park-screen-repair.html",
+      "meta_title": "Screen Repair Citrus Park FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 70,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Citrus Park, FL. Call (727) 386-6562.",
+      "meta_description_length": 98,
+      "keywords": [
+        "screen repair Citrus Park",
+        "pool cage rescreen Citrus Park",
+        "super gutter Citrus Park"
+      ]
+    },
+    "custom-screen-enclosure.html": {
+      "url": "https://screenteamllc.com/custom-screen-enclosure.html",
+      "meta_title": "Custom Screen Enclosure Tampa Bay | Screen Team",
+      "meta_title_length": 47,
+      "meta_description": "Custom screen enclosure design & build coordination. Call (727) 386-6562.",
+      "meta_description_length": 73,
+      "keywords": [
+        "custom screen enclosure",
+        "custom pool cage Tampa Bay"
+      ]
+    },
+    "dade-city-screen-repair.html": {
+      "url": "https://screenteamllc.com/dade-city-screen-repair.html",
+      "meta_title": "Screen Repair Dade City FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 68,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Dade City, FL. Call (727) 386-6562.",
+      "meta_description_length": 96,
+      "keywords": [
+        "screen repair Dade City",
+        "pool cage rescreen Dade City",
+        "super gutter Dade City"
+      ]
+    },
+    "east-lake-screen-repair.html": {
+      "url": "https://screenteamllc.com/east-lake-screen-repair.html",
+      "meta_title": "Screen Repair East Lake FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 68,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in East Lake, FL. Call (727) 386-6562.",
+      "meta_description_length": 96,
+      "keywords": [
+        "screen repair East Lake",
+        "pool cage rescreen East Lake",
+        "super gutter East Lake"
+      ]
+    },
+    "feather-sound-screen-repair.html": {
+      "url": "https://screenteamllc.com/feather-sound-screen-repair.html",
+      "meta_title": "Screen Repair Feather Sound FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 72,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Feather Sound, FL. Call (727) 386-6562.",
+      "meta_description_length": 100,
+      "keywords": [
+        "screen repair Feather Sound",
+        "pool cage rescreen Feather Sound",
+        "super gutter Feather Sound"
+      ]
+    },
+    "full-pool-cage-rescreen.html": {
+      "url": "https://screenteamllc.com/full-pool-cage-rescreen.html",
+      "meta_title": "Full Pool Cage Rescreen Tampa Bay | Screen Team",
+      "meta_title_length": 47,
+      "meta_description": "Full pool cage rescreen Tampa Bay from $1,995. Large enclosure mesh jobs. Call (727) 386-6562.",
+      "meta_description_length": 94,
+      "keywords": [
+        "full pool cage rescreen Tampa Bay",
+        "large pool cage rescreen"
+      ]
+    },
+    "image-use-policy.html": {
+      "url": "https://screenteamllc.com/image-use-policy.html",
+      "meta_title": "Image Use Policy | Screen Team LLC",
+      "meta_title_length": 34,
+      "meta_description": "How Screen Team LLC uses and licenses project photos.",
+      "meta_description_length": 53,
+      "keywords": [
+        "image use policy"
+      ]
+    },
+    "kenneth-city-screen-repair.html": {
+      "url": "https://screenteamllc.com/kenneth-city-screen-repair.html",
+      "meta_title": "Screen Repair Kenneth City FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 71,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Kenneth City, FL. Call (727) 386-6562.",
+      "meta_description_length": 99,
+      "keywords": [
+        "screen repair Kenneth City",
+        "pool cage rescreen Kenneth City",
+        "super gutter Kenneth City"
+      ]
+    },
+    "lutz-screen-repair.html": {
+      "url": "https://screenteamllc.com/lutz-screen-repair.html",
+      "meta_title": "Screen Repair Lutz FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 63,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Lutz, FL. Call (727) 386-6562.",
+      "meta_description_length": 91,
+      "keywords": [
+        "screen repair Lutz",
+        "pool cage rescreen Lutz",
+        "super gutter Lutz"
+      ]
+    },
+    "madeira-beach-screen-repair.html": {
+      "url": "https://screenteamllc.com/madeira-beach-screen-repair.html",
+      "meta_title": "Screen Repair Madeira Beach FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 72,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Madeira Beach, FL. Call (727) 386-6562.",
+      "meta_description_length": 100,
+      "keywords": [
+        "screen repair Madeira Beach",
+        "pool cage rescreen Madeira Beach",
+        "super gutter Madeira Beach"
+      ]
+    },
+    "new-lanai-enclosure.html": {
+      "url": "https://screenteamllc.com/new-lanai-enclosure.html",
+      "meta_title": "New Lanai Enclosure Tampa Bay | Screen Team",
+      "meta_title_length": 43,
+      "meta_description": "New lanai enclosure builds coordinated for Tampa Bay. Call (727) 386-6562.",
+      "meta_description_length": 74,
+      "keywords": [
+        "new lanai enclosure",
+        "screened lanai installation"
+      ]
+    },
+    "new-pool-cage-installation.html": {
+      "url": "https://screenteamllc.com/new-pool-cage-installation.html",
+      "meta_title": "New Pool Cage Installation Tampa Bay | Screen Team",
+      "meta_title_length": 50,
+      "meta_description": "New pool cage installation — Screen Team scoping with licensed partners. (727) 386-6562.",
+      "meta_description_length": 88,
+      "keywords": [
+        "new pool cage installation Tampa Bay",
+        "pool cage installation"
+      ]
+    },
+    "no-see-um-screen.html": {
+      "url": "https://screenteamllc.com/no-see-um-screen.html",
+      "meta_title": "No-See-Um Screen Tampa Bay | Fine Mesh | Screen Team",
+      "meta_title_length": 52,
+      "meta_description": "No-see-um fine mesh for pool cages & lanais. Call (727) 386-6562.",
+      "meta_description_length": 65,
+      "keywords": [
+        "no-see-um screen Tampa Bay",
+        "fine mesh pool screen"
+      ]
+    },
+    "odessa-screen-repair.html": {
+      "url": "https://screenteamllc.com/odessa-screen-repair.html",
+      "meta_title": "Screen Repair Odessa FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 65,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Odessa, FL. Call (727) 386-6562.",
+      "meta_description_length": 93,
+      "keywords": [
+        "screen repair Odessa",
+        "pool cage rescreen Odessa",
+        "super gutter Odessa"
+      ]
+    },
+    "payment-policy.html": {
+      "url": "https://screenteamllc.com/payment-policy.html",
+      "meta_title": "Payment Policy | Screen Team LLC",
+      "meta_title_length": 32,
+      "meta_description": "Payment policy for Screen Team LLC jobs — cash, check, cards.",
+      "meta_description_length": 61,
+      "keywords": [
+        "Screen Team payment policy"
+      ]
+    },
+    "plant-city-screen-repair.html": {
+      "url": "https://screenteamllc.com/plant-city-screen-repair.html",
+      "meta_title": "Screen Repair Plant City FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 69,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Plant City, FL. Call (727) 386-6562.",
+      "meta_description_length": 97,
+      "keywords": [
+        "screen repair Plant City",
+        "pool cage rescreen Plant City",
+        "super gutter Plant City"
+      ]
+    },
+    "pool-cage-door-repair.html": {
+      "url": "https://screenteamllc.com/pool-cage-door-repair.html",
+      "meta_title": "Pool Cage Door Repair Tampa Bay | Screen Team",
+      "meta_title_length": 45,
+      "meta_description": "Pool cage door repair — torn door panels & latch issues. Call (727) 386-6562.",
+      "meta_description_length": 77,
+      "keywords": [
+        "pool cage door repair",
+        "lanai door screen repair"
+      ]
+    },
+    "pool-cage-gutter-replacement.html": {
+      "url": "https://screenteamllc.com/pool-cage-gutter-replacement.html",
+      "meta_title": "Pool Cage Gutter Replacement Tampa Bay | Screen Team",
+      "meta_title_length": 52,
+      "meta_description": "Pool cage gutter replacement to stop overflow & fascia rot. Call (727) 386-6562.",
+      "meta_description_length": 80,
+      "keywords": [
+        "pool cage gutter replacement",
+        "lanai gutter replacement"
+      ]
+    },
+    "port-richey-screen-repair.html": {
+      "url": "https://screenteamllc.com/port-richey-screen-repair.html",
+      "meta_title": "Screen Repair Port Richey FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 70,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Port Richey, FL. Call (727) 386-6562.",
+      "meta_description_length": 98,
+      "keywords": [
+        "screen repair Port Richey",
+        "pool cage rescreen Port Richey",
+        "super gutter Port Richey"
+      ]
+    },
+    "riverview-screen-repair.html": {
+      "url": "https://screenteamllc.com/riverview-screen-repair.html",
+      "meta_title": "Screen Repair Riverview FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 68,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Riverview, FL. Call (727) 386-6562.",
+      "meta_description_length": 96,
+      "keywords": [
+        "screen repair Riverview",
+        "pool cage rescreen Riverview",
+        "super gutter Riverview"
+      ]
+    },
+    "screen-door-repair.html": {
+      "url": "https://screenteamllc.com/screen-door-repair.html",
+      "meta_title": "Screen Door Repair Tampa Bay | Screen Team",
+      "meta_title_length": 42,
+      "meta_description": "Screen door repair for pool cages & lanais. Call (727) 386-6562.",
+      "meta_description_length": 64,
+      "keywords": [
+        "screen door repair Tampa Bay",
+        "pool cage screen door"
+      ]
+    },
+    "screen-enclosure-installation.html": {
+      "url": "https://screenteamllc.com/screen-enclosure-installation.html",
+      "meta_title": "Screen Enclosure Installation Tampa Bay | Screen Team",
+      "meta_title_length": 53,
+      "meta_description": "Screen enclosure installation for Tampa Bay homes. Call (727) 386-6562.",
+      "meta_description_length": 71,
+      "keywords": [
+        "screen enclosure installation",
+        "new screen enclosure Florida"
+      ]
+    },
+    "seamless-gutters.html": {
+      "url": "https://screenteamllc.com/seamless-gutters.html",
+      "meta_title": "Seamless Gutters Tampa Bay | Screen Team",
+      "meta_title_length": 40,
+      "meta_description": "Seamless aluminum gutters Tampa Bay — often bundled with screen work. (727) 386-6562.",
+      "meta_description_length": 85,
+      "keywords": [
+        "seamless gutters Tampa Bay",
+        "seamless aluminum gutters"
+      ]
+    },
+    "services.html": {
+      "url": "https://screenteamllc.com/services.html",
+      "meta_title": "Screen Enclosure & Super Gutter Services | Screen Team",
+      "meta_title_length": 54,
+      "meta_description": "Full services: rescreens, new enclosures, super gutters & small jobs. (727) 386-6562.",
+      "meta_description_length": 85,
+      "keywords": [
+        "screen enclosure services Tampa Bay",
+        "pool cage and gutter services"
+      ]
+    },
+    "spa-enclosure-rescreen.html": {
+      "url": "https://screenteamllc.com/spa-enclosure-rescreen.html",
+      "meta_title": "Spa Enclosure Rescreen Tampa Bay | Screen Team",
+      "meta_title_length": 46,
+      "meta_description": "Spa enclosure & spa wing rescreens across Tampa Bay. Call (727) 386-6562.",
+      "meta_description_length": 73,
+      "keywords": [
+        "spa enclosure rescreen",
+        "spa wing screen repair"
+      ]
+    },
+    "super-gutter-installation.html": {
+      "url": "https://screenteamllc.com/super-gutter-installation.html",
+      "meta_title": "Super Gutter Installation Tampa Bay | Screen Team",
+      "meta_title_length": 49,
+      "meta_description": "Super gutter installation for Florida pool cages. Call (727) 386-6562.",
+      "meta_description_length": 70,
+      "keywords": [
+        "super gutter installation",
+        "7 inch super gutter"
+      ]
+    },
+    "super-gutter-repair.html": {
+      "url": "https://screenteamllc.com/super-gutter-repair.html",
+      "meta_title": "Super Gutter Repair Tampa Bay | Screen Team",
+      "meta_title_length": 43,
+      "meta_description": "Super gutter repair — sagging, leaking cage gutters fixed. Call (727) 386-6562.",
+      "meta_description_length": 79,
+      "keywords": [
+        "super gutter repair",
+        "sagging pool cage gutter"
+      ]
+    },
+    "super-gutters.html": {
+      "url": "https://screenteamllc.com/super-gutters.html",
+      "meta_title": "Super Gutters Tampa Bay | Pool Cage Gutters | Screen Team",
+      "meta_title_length": 57,
+      "meta_description": "Super gutters Tampa Bay — structural gutters for pool cages & lanais. Call (727) 386-6562.",
+      "meta_description_length": 90,
+      "keywords": [
+        "super gutters Tampa Bay",
+        "screen enclosure gutter"
+      ]
+    },
+    "temple-terrace-screen-repair.html": {
+      "url": "https://screenteamllc.com/temple-terrace-screen-repair.html",
+      "meta_title": "Screen Repair Temple Terrace FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 73,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Temple Terrace, FL. Call (727) 386-6562.",
+      "meta_description_length": 101,
+      "keywords": [
+        "screen repair Temple Terrace",
+        "pool cage rescreen Temple Terrace",
+        "super gutter Temple Terrace"
+      ]
+    },
+    "terms-of-service.html": {
+      "url": "https://screenteamllc.com/terms-of-service.html",
+      "meta_title": "Terms of Service | Screen Team LLC",
+      "meta_title_length": 34,
+      "meta_description": "Terms of service for The Screen Team LLC website and services.",
+      "meta_description_length": 62,
+      "keywords": [
+        "Screen Team terms of service"
+      ]
+    },
+    "town-n-country-screen-repair.html": {
+      "url": "https://screenteamllc.com/town-n-country-screen-repair.html",
+      "meta_title": "Screen Repair Town 'n' Country FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 75,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Town 'n' Country, FL. Call (727) 386-6562.",
+      "meta_description_length": 103,
+      "keywords": [
+        "screen repair Town 'n' Country",
+        "pool cage rescreen Town 'n' Country",
+        "super gutter Town 'n' Country"
+      ]
+    },
+    "treasure-island-screen-repair.html": {
+      "url": "https://screenteamllc.com/treasure-island-screen-repair.html",
+      "meta_title": "Screen Repair Treasure Island FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 74,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Treasure Island, FL. Call (727) 386-6562.",
+      "meta_description_length": 102,
+      "keywords": [
+        "screen repair Treasure Island",
+        "pool cage rescreen Treasure Island",
+        "super gutter Treasure Island"
+      ]
+    },
+    "trinity-screen-repair.html": {
+      "url": "https://screenteamllc.com/trinity-screen-repair.html",
+      "meta_title": "Screen Repair Trinity FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 66,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Trinity, FL. Call (727) 386-6562.",
+      "meta_description_length": 94,
+      "keywords": [
+        "screen repair Trinity",
+        "pool cage rescreen Trinity",
+        "super gutter Trinity"
+      ]
+    },
+    "two-story-pool-cage-rescreen.html": {
+      "url": "https://screenteamllc.com/two-story-pool-cage-rescreen.html",
+      "meta_title": "Two-Story Pool Cage Rescreen Tampa Bay | Screen Team",
+      "meta_title_length": 52,
+      "meta_description": "Two-story pool cage rescreen — tall ladder work across Tampa Bay. Call (727) 386-6562.",
+      "meta_description_length": 86,
+      "keywords": [
+        "two story pool cage rescreen",
+        "tall pool cage rescreen"
+      ]
+    },
+    "valrico-screen-repair.html": {
+      "url": "https://screenteamllc.com/valrico-screen-repair.html",
+      "meta_title": "Screen Repair Valrico FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 66,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Valrico, FL. Call (727) 386-6562.",
+      "meta_description_length": 94,
+      "keywords": [
+        "screen repair Valrico",
+        "pool cage rescreen Valrico",
+        "super gutter Valrico"
+      ]
+    },
+    "warranty-terms.html": {
+      "url": "https://screenteamllc.com/warranty-terms.html",
+      "meta_title": "Warranty Terms | Screen Team LLC",
+      "meta_title_length": 32,
+      "meta_description": "Workmanship warranty terms for Screen Team LLC screen and gutter work.",
+      "meta_description_length": 70,
+      "keywords": [
+        "Screen Team warranty"
+      ]
+    },
+    "zephyrhills-screen-repair.html": {
+      "url": "https://screenteamllc.com/zephyrhills-screen-repair.html",
+      "meta_title": "Screen Repair Zephyrhills FL | Pool Cage & Super Gutters | Screen Team",
+      "meta_title_length": 70,
+      "meta_description": "Pool cage rescreens, new enclosure quotes &amp; super gutters in Zephyrhills, FL. Call (727) 386-6562.",
+      "meta_description_length": 98,
+      "keywords": [
+        "screen repair Zephyrhills",
+        "pool cage rescreen Zephyrhills",
+        "super gutter Zephyrhills"
+      ]
     }
   },
   "checklist": {
@@ -512,24 +943,23 @@
   "h1_targets": {
     "index.html": "Screen Repair Tampa Bay + The Screen Team LLC",
     "contact.html": "Contact Chris for Tampa Bay Screen Repair",
-    "gallery.html": "Screen Repair Gallery \u2014 Tampa Bay Jobs",
+    "gallery.html": "Screen Repair Gallery — Tampa Bay Jobs",
     "about.html": "About Chris Westcott & The Screen Team",
-    "service-guarantee.html": "Screen Repair Guarantee \u2014 Tampa Bay",
-    "service-areas.html": "Screen Repair Service Areas \u2014 NPR, Pinellas, Pasco & Hillsborough",
+    "service-guarantee.html": "Screen Repair Guarantee — Tampa Bay",
+    "service-areas.html": "Screen Repair Service Areas — NPR, Pinellas, Pasco & Hillsborough",
     "city_pages": "Screen Repair & [service] in [City], FL"
   },
   "sitemap": {
     "url": "https://screenteamllc.com/sitemap.xml",
-    "indexable_pages": 41,
+    "indexable_pages": 80,
     "excluded_noindex": [
       "404.html",
-      "thank-you.html",
-      "privacy-policy.html"
+      "thank-you.html"
     ]
   },
   "schema_reference": "data/schema-reference.json",
   "prepush_checklist": {
-    "sitemap_urls": 41,
+    "sitemap_urls": 80,
     "robots": "https://screenteamllc.com/robots.txt",
     "llms": "https://screenteamllc.com/llms.txt",
     "schema_reference": "data/schema-reference.json",
@@ -540,15 +970,16 @@
       "gallery.html",
       "pricing.html",
       "service-areas.html",
+      "services.html",
       "service-guarantee.html",
-      "core + specialized service pages",
+      "enclosure + super gutter service cluster",
       "3 county hubs",
-      "19 city *-screen-repair.html pages"
+      "38 city pages",
+      "policy pages"
     ],
     "excluded_noindex": [
       "404.html",
-      "thank-you.html",
-      "privacy-policy.html"
+      "thank-you.html"
     ]
   },
   "gsc_serp_workflow": [

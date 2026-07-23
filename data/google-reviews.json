@@ -1,14 +1,32 @@
 {
-  "ratingValue": 5,
-  "reviewCount": 1,
+  "ratingValue": 5.0,
+  "reviewCount": 3,
+  "syncedAt": "2026-07-23T13:09:03.468204+00:00",
+  "locationId": "4667456483992971896",
   "reviews": [
     {
-      "name": "Patti Silliman",
-      "meta": "1 review · 0 photos",
-      "date": "3 weeks ago · New",
-      "text": "Helped me out so much screening in my patio…. Good bye love bugs!",
+      "name": "M Cully",
+      "meta": "Google review",
+      "date": "This week",
+      "text": "Chris was great.Will use him again.",
       "stars": 5,
       "avatarColor": "#1e6b2e"
+    },
+    {
+      "name": "Becky Garwood",
+      "meta": "Google review",
+      "date": "2 weeks ago",
+      "text": "What incredible professionalism and craftsmanship! I am so glad I found Chris and the Screen Team. They are very experienced and make the whole process easy and fast. Thank you! Highly recommended.",
+      "stars": 5,
+      "avatarColor": "#c0392b"
+    },
+    {
+      "name": "Patti Silliman",
+      "meta": "Google review",
+      "date": "2 months ago",
+      "text": "Helped me out so much screening in my patio\u2026. Good bye love bugs!",
+      "stars": 5,
+      "avatarColor": "#1a56c4"
     }
   ]
 }

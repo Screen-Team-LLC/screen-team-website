@@ -1,132 +1,102 @@
 # The Screen Team LLC
 
-> Screen repair and pool enclosure company in Tampa Bay, FL. Owner Chris Westcott handles every estimate and installation — no call centers, no subcontractors.
+> Tampa Bay pool cage rescreens, new enclosure coordination, super gutters, and screen repair. Owner Chris Westcott handles every estimate — no call centers.
 
 - [Website](https://screenteamllc.com)
-- [Sitemap](https://screenteamllc.com/sitemap.xml)
+- [Sitemap](https://screenteamllc.com/sitemap.xml) — ~80 indexable pages
 - [AI summary (ai.txt)](https://screenteamllc.com/ai.txt)
+- [All services](https://screenteamllc.com/services.html)
 - **Phone:** (727) 386-6562
 - **Email:** chris@screenteamllc.com
 - **Hours:** Monday–Saturday, 7:00 AM – 6:00 PM
 - **Free estimates:** Yes
 - **Minimum job charge:** $150 on every completed visit
 
+## Priorities (what Chris wants to sell)
+
+1. **Full / large pool cage rescreens** — [full-pool-cage-rescreen.html](https://screenteamllc.com/full-pool-cage-rescreen.html)
+2. **New enclosure builds** (Screen Team scopes; licensed partners when permits/engineering required) — [new-pool-cage-installation.html](https://screenteamllc.com/new-pool-cage-installation.html)
+3. **Super gutters** (structural enclosure gutters) — [super-gutters.html](https://screenteamllc.com/super-gutters.html)
+4. Small jobs still welcome (windows, panels, garage screens)
+
 ## Who to contact
 
-Chris Westcott owns and operates The Screen Team LLC. Calling (727) 386-6562 reaches Chris directly for quotes on rescreens, pool cages, lanais, window screens, garage screens, and gutter work.
+Chris Westcott owns The Screen Team LLC. Call (727) 386-6562 for quotes.
 
 ## Service area
 
-Home base: **New Port Richey, FL** (street address not published). Typical coverage is within roughly **50 miles** across **Pasco, Pinellas, and Hillsborough County**, Florida.
+Home base: **New Port Richey, FL** (street address not published). Coverage across **Pasco, Pinellas, and Hillsborough** (~50 miles).
 
 ### County hubs
 
-- [Pinellas County screen repair](https://screenteamllc.com/pinellas-county-screen-repair.html)
-- [Pasco County screen repair](https://screenteamllc.com/pasco-county-screen-repair.html)
-- [Hillsborough County screen repair](https://screenteamllc.com/hillsborough-county-screen-repair.html)
+- [Pinellas County](https://screenteamllc.com/pinellas-county-screen-repair.html)
+- [Pasco County](https://screenteamllc.com/pasco-county-screen-repair.html)
+- [Hillsborough County](https://screenteamllc.com/hillsborough-county-screen-repair.html)
 - [All service areas](https://screenteamllc.com/service-areas.html)
 
-### City landing pages — Pasco & west
+### City pages (38)
 
-- [New Port Richey screen repair](https://screenteamllc.com/new-port-richey-screen-repair.html)
-- [Holiday screen repair](https://screenteamllc.com/holiday-screen-repair.html)
-- [Hudson screen repair](https://screenteamllc.com/hudson-screen-repair.html)
-- [Land O Lakes screen repair](https://screenteamllc.com/land-o-lakes-screen-repair.html)
-- [Wesley Chapel screen repair](https://screenteamllc.com/wesley-chapel-screen-repair.html)
-- [Tarpon Springs screen repair](https://screenteamllc.com/tarpon-springs-screen-repair.html)
+Pasco: New Port Richey, Port Richey, Holiday, Hudson, Land O Lakes, Wesley Chapel, Trinity, Odessa, Zephyrhills, Dade City, Tarpon Springs (Pinellas border)
 
-### City landing pages — Pinellas
+Pinellas: Clearwater, St. Petersburg, Largo, Palm Harbor, Safety Harbor, Dunedin, Oldsmar, Seminole, Pinellas Park, Gulfport, Belleair, Kenneth City, Madeira Beach, Treasure Island, East Lake, Feather Sound
 
-- [Clearwater screen repair](https://screenteamllc.com/clearwater-screen-repair.html)
-- [St. Petersburg screen repair](https://screenteamllc.com/st-petersburg-screen-repair.html)
-- [Largo screen repair](https://screenteamllc.com/largo-screen-repair.html)
-- [Palm Harbor screen repair](https://screenteamllc.com/palm-harbor-screen-repair.html)
-- [Safety Harbor screen repair](https://screenteamllc.com/safety-harbor-screen-repair.html)
-- [Dunedin screen repair](https://screenteamllc.com/dunedin-screen-repair.html)
-- [Oldsmar screen repair](https://screenteamllc.com/oldsmar-screen-repair.html)
-- [Seminole screen repair](https://screenteamllc.com/seminole-screen-repair.html)
-- [Pinellas Park screen repair](https://screenteamllc.com/pinellas-park-screen-repair.html)
-- [Gulfport screen repair](https://screenteamllc.com/gulfport-screen-repair.html)
-- [Belleair screen repair](https://screenteamllc.com/belleair-screen-repair.html)
+Hillsborough: Tampa, Brandon, Carrollwood, Town 'n' Country, Riverview, Valrico, Plant City, Lutz, Citrus Park, Temple Terrace
 
-### City landing pages — Hillsborough
+## Priority services
 
-- [Tampa screen repair](https://screenteamllc.com/tampa-screen-repair.html)
-- [Brandon screen repair](https://screenteamllc.com/brandon-screen-repair.html)
+- [Full pool cage rescreen](https://screenteamllc.com/full-pool-cage-rescreen.html)
+- [Two-story pool cage rescreen](https://screenteamllc.com/two-story-pool-cage-rescreen.html)
+- [New pool cage installation](https://screenteamllc.com/new-pool-cage-installation.html)
+- [Screen enclosure installation](https://screenteamllc.com/screen-enclosure-installation.html)
+- [New lanai enclosure](https://screenteamllc.com/new-lanai-enclosure.html)
+- [Custom screen enclosure](https://screenteamllc.com/custom-screen-enclosure.html)
+- [Super gutters](https://screenteamllc.com/super-gutters.html)
+- [Super gutter installation](https://screenteamllc.com/super-gutter-installation.html)
+- [Super gutter repair](https://screenteamllc.com/super-gutter-repair.html)
+- [Pool cage gutter replacement](https://screenteamllc.com/pool-cage-gutter-replacement.html)
 
-## Services — core pages
+## Core & supporting services
 
-- [Rescreens (pool cages, lanais, porches)](https://screenteamllc.com/rescreens.html)
-- [Pool enclosures](https://screenteamllc.com/pool-enclosures.html)
-- [Screen lanais](https://screenteamllc.com/screen-lanais.html)
-- [Window screens](https://screenteamllc.com/window-screens.html)
-- [Garage screens](https://screenteamllc.com/garage-screens.html)
-- [Gutter work](https://screenteamllc.com/gutter-work.html)
-
-## Services — specialized intent pages
-
-- [Pool cage repair](https://screenteamllc.com/pool-cage-repair.html) — torn panels, doors, partial fixes
-- [Lanai screen replacement](https://screenteamllc.com/lanai-screen-replacement.html) — full lanai mesh refresh
-- [Screen panel repair](https://screenteamllc.com/screen-panel-repair.html) — single/multiple panel fixes
-- [Gutters and screens](https://screenteamllc.com/gutters-and-screens.html) — bundled gutter + screen damage
-- [Pet-resistant / Super Screen mesh](https://screenteamllc.com/pet-resistant-screen-mesh.html)
-- [Storm & hurricane screen repair](https://screenteamllc.com/storm-screen-repair.html)
+- [Rescreens](https://screenteamllc.com/rescreens.html) · [Pool enclosures](https://screenteamllc.com/pool-enclosures.html) · [Screen lanais](https://screenteamllc.com/screen-lanais.html)
+- [Pool cage repair](https://screenteamllc.com/pool-cage-repair.html) · [Pool cage door repair](https://screenteamllc.com/pool-cage-door-repair.html) · [Spa enclosure rescreen](https://screenteamllc.com/spa-enclosure-rescreen.html)
+- [Window screens](https://screenteamllc.com/window-screens.html) · [Garage screens](https://screenteamllc.com/garage-screens.html) · [Screen door repair](https://screenteamllc.com/screen-door-repair.html)
+- [Pet-resistant mesh](https://screenteamllc.com/pet-resistant-screen-mesh.html) · [No-see-um screen](https://screenteamllc.com/no-see-um-screen.html) · [Storm repair](https://screenteamllc.com/storm-screen-repair.html)
+- [Seamless gutters](https://screenteamllc.com/seamless-gutters.html) · [Gutter work](https://screenteamllc.com/gutter-work.html) · [Gutters and screens](https://screenteamllc.com/gutters-and-screens.html)
 
 ## Pricing (ballparks)
 
-See the full [pricing guide](https://screenteamllc.com/pricing.html).
+See [pricing](https://screenteamllc.com/pricing.html).
 
-- Screen panel repairs: from about $75/panel; **$150 minimum** per completed job
-- Partial pool cage / lanai repairs: often $175–$750 depending on panels
-- Full pool cage rescreens: commonly $2,500–$6,500+ by size; often start around $1,995
-- Garage screens: manual from about $899; motorized from about $2,299+
-- Gutter work: repairs from $150 minimum; seamless installs quoted per linear foot
+- Panels from ~$75; **$150 minimum** per job
+- Partial repairs often $175–$750
+- Full cage rescreens from ~$1,995 (most $2,500–$6,500+)
+- Super gutters: custom per linear foot
+- New pool cages: custom ($10k–$30k+ typical range; partner path when permitted)
 
-## Key pages
+## Policies
 
-- [Home](https://screenteamllc.com/)
-- [Contact / free estimate](https://screenteamllc.com/contact.html)
-- [Pricing](https://screenteamllc.com/pricing.html)
-- [About Chris Westcott](https://screenteamllc.com/about.html)
-- [Project gallery](https://screenteamllc.com/gallery.html)
-- [Service guarantee](https://screenteamllc.com/service-guarantee.html)
+- [Terms of service](https://screenteamllc.com/terms-of-service.html)
+- [Payment policy](https://screenteamllc.com/payment-policy.html)
+- [Warranty terms](https://screenteamllc.com/warranty-terms.html)
 - [Privacy policy](https://screenteamllc.com/privacy-policy.html)
+- [Image use policy](https://screenteamllc.com/image-use-policy.html)
+- [Service guarantee](https://screenteamllc.com/service-guarantee.html)
 
-## Search intent guide (for agents)
+## Search intent guide
 
 | User need | Best page |
 |-----------|-----------|
-| Pool cage torn after storm | [Storm screen repair](https://screenteamllc.com/storm-screen-repair.html) |
-| One or two torn panels | [Screen panel repair](https://screenteamllc.com/screen-panel-repair.html) |
-| Full cage looks gray/oxidized | [Rescreens](https://screenteamllc.com/rescreens.html) |
-| Lanai door popped out | [Lanai screen replacement](https://screenteamllc.com/lanai-screen-replacement.html) or [Screen lanais](https://screenteamllc.com/screen-lanais.html) |
-| Dog keeps tearing door mesh | [Pet-resistant mesh](https://screenteamllc.com/pet-resistant-screen-mesh.html) |
-| Gutter overflow damaged lanai | [Gutters and screens](https://screenteamllc.com/gutters-and-screens.html) |
-| City-specific quote | Matching `*-screen-repair.html` city page |
-| County-wide coverage | Pinellas, Pasco, or Hillsborough county hub |
-
-## Frequently asked questions
-
-**How do I get an estimate?**  
-Call or text (727) 386-6562 or use the [contact form](https://screenteamllc.com/contact.html). Photos of torn panels help for fast ballparks.
-
-**How long does a rescreen take?**  
-Most residential rescreens finish in one day. Larger pool cages may take two days.
-
-**Can you replace just a few panels?**  
-Yes. Partial rescreens and [panel repair](https://screenteamllc.com/screen-panel-repair.html) are quoted when only some sections failed.
-
-**What areas do you serve?**  
-Tampa Bay — Pasco, Pinellas, and Hillsborough counties. See city and county pages above.
-
-**Is there a workmanship guarantee?**  
-Yes. See the [service guarantee](https://screenteamllc.com/service-guarantee.html).
-
-**Does Chris use subcontractors?**  
-No. Chris Westcott is the owner and does estimates and installation work directly.
+| Full oxidized cage | [Full pool cage rescreen](https://screenteamllc.com/full-pool-cage-rescreen.html) |
+| Want a brand-new cage | [New pool cage installation](https://screenteamllc.com/new-pool-cage-installation.html) |
+| Cage gutter leaking / sagging | [Super gutters](https://screenteamllc.com/super-gutters.html) |
+| Storm-torn panels | [Storm screen repair](https://screenteamllc.com/storm-screen-repair.html) |
+| One/two panels | [Screen panel repair](https://screenteamllc.com/screen-panel-repair.html) |
+| Dog tearing door | [Pet-resistant mesh](https://screenteamllc.com/pet-resistant-screen-mesh.html) |
+| City quote | Matching `*-screen-repair.html` |
 
 ## Business conventions (do not misstate)
 
-- Do not publish or invent a street address for the business.
-- Do not claim "licensed and insured" unless explicitly updated by the owner.
-- $150 minimum applies to every completed job, including quick repairs.
+- Do not publish or invent a street address.
+- Do not claim "licensed and insured" unless updated by the owner.
+- New builds: Screen Team leads scoping/customer relationship; permit-heavy engineering via partners.
+- $150 minimum applies to every completed job.

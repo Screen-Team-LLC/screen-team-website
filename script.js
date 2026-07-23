@@ -587,6 +587,7 @@ function initStGoogleReviews() {
       ? showcase.querySelector(".st-review-carousel-dots")
       : null;
     const summaryEl = document.getElementById("st-review-summary");
+    const starsEl = document.getElementById("st-review-stars");
     const mapRatingEl = document.getElementById("st-map-rating");
     const seedEl = showcase ? showcase.querySelector("#google-reviews-seed") : null;
 
@@ -654,6 +655,14 @@ function initStGoogleReviews() {
       const label = count === 1 ? " review" : " reviews";
       const summaryText = rating + " \u00b7 " + count + label;
       if (summaryEl) summaryEl.textContent = summaryText;
+      if (starsEl) {
+        const stars = formatStars(payload.ratingValue || 5);
+        starsEl.textContent = stars;
+        starsEl.setAttribute(
+          "aria-label",
+          rating + " out of 5 stars",
+        );
+      }
       if (mapRatingEl) {
         mapRatingEl.textContent =
           formatStars(payload.ratingValue || 5) +
@@ -759,10 +768,18 @@ function initStGoogleReviews() {
       }
     }
 
+    function reviewsFeedUrl() {
+      const script = document.querySelector('script[src*="script.js"]');
+      if (script && script.src) {
+        return new URL("data/google-reviews.json", script.src).href;
+      }
+      return new URL("data/google-reviews.json", window.location.href).href;
+    }
+
     async function loadReviews() {
       let payload = null;
       try {
-        const response = await fetch("./data/google-reviews.json", { cache: "no-store" });
+        const response = await fetch(reviewsFeedUrl(), { cache: "no-store" });
         if (response.ok) {
           payload = await response.json();
         }
