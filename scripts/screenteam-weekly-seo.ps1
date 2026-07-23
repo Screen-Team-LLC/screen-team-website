@@ -24,6 +24,10 @@ try {
 
     Copy-Item -Force $serpJson (Join-Path $auditDir "serp-meta-research.json") -ErrorAction SilentlyContinue
     Copy-Item -Force (Join-Path $siteRoot "seo\meta-descriptions.json") (Join-Path $auditDir "meta-descriptions.json") -ErrorAction SilentlyContinue
+
+    Write-Host "Syncing Google Business Profile reviews"
+    python scripts/sync-google-reviews.py
+    if ($LASTEXITCODE -ne 0) { Write-Warning "sync-google-reviews.py failed — continuing weekly SEO" }
 }
 finally {
     Pop-Location

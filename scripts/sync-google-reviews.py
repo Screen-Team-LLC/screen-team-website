@@ -159,6 +159,84 @@ def to_carousel(raw_reviews: list[dict]) -> list[dict]:
     return candidates
 
 
+def update_homepage_schema(rating: float, count: int, reviews: list[dict]) -> None:
+    """Keep index.html AggregateRating + Review graph in sync with GBP feed."""
+    index_path = ROOT / "index.html"
+    html = index_path.read_text(encoding="utf-8")
+
+    review_objs: list[str] = []
+    for item in reviews[:12]:
+        name = (
+            str(item.get("name") or "Google reviewer")
+            .replace("\\", "\\\\")
+            .replace('"', '\\"')
+        )
+        text = (
+            str(item.get("text") or "")
+            .replace("\\", "\\\\")
+            .replace('"', '\\"')
+            .replace("\n", " ")
+        )
+        stars = int(item.get("stars") or 5)
+        review_objs.append(
+            "          {\n"
+            '            "@type": "Review",\n'
+            f'            "author": {{"@type": "Person", "name": "{name}"}},\n'
+            f'            "reviewBody": "{text}",\n'
+            "            \"reviewRating\": {\n"
+            '              "@type": "Rating",\n'
+            f'              "ratingValue": "{stars}",\n'
+            '              "bestRating": "5"\n'
+            "            }\n"
+            "          }"
+        )
+
+    if float(rating) == int(rating):
+        rating_str = str(int(rating))
+    else:
+        rating_str = f"{float(rating):.1f}"
+
+    rating_block = (
+        '"aggregateRating": {\n'
+        '          "@type": "AggregateRating",\n'
+        f'          "ratingValue": "{rating_str}",\n'
+        f'          "reviewCount": "{count}",\n'
+        '          "bestRating": "5"\n'
+        "        }"
+    )
+    review_block = (
+        '"review": [\n' + ",\n".join(review_objs) + "\n        ]"
+        if review_objs
+        else '"review": []'
+    )
+
+    html2, n1 = re.subn(
+        r'"aggregateRating":\s*\{.*?\n\s*\}',
+        rating_block,
+        html,
+        count=1,
+        flags=re.S,
+    )
+    html3, n2 = re.subn(
+        r'"review":\s*\[.*?\]',
+        review_block,
+        html2,
+        count=1,
+        flags=re.S,
+    )
+    if n1 and n2:
+        index_path.write_text(html3, encoding="utf-8")
+        print(
+            f"Updated index.html schema — {rating_str} · {count} reviews "
+            f"({len(review_objs)} listed)"
+        )
+    else:
+        print(
+            f"Warning: could not patch index.html schema "
+            f"(aggregate={n1}, review={n2})"
+        )
+
+
 def main() -> int:
     secrets = load_gbp_secrets()
     token = refresh_access_token(secrets)
@@ -182,6 +260,7 @@ def main() -> int:
         f"Wrote {REVIEWS_OUT.relative_to(ROOT)} — {rating} · {count} reviews "
         f"({len(carousel)} carousel)"
     )
+    update_homepage_schema(rating, count, carousel)
     return 0
 
 
