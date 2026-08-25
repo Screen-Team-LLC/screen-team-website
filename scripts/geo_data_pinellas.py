@@ -149,11 +149,11 @@ PINELLAS_CITIES.append(C(
 # ── 3. Largo ──────────────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "largo-screen-repair", "Largo", PIN, PIN_L,
-    "Screen Repair Largo FL | Pool Cage Rescreen &amp; Lanai | Screen Team",
-    "Pool cage rescreen, lanai repair &amp; super gutters in Largo, FL — Bardmoor, Ridgecrest &amp; mid-county cages. Chris Westcott. (727) 386-6562.",
+    "Pool Cage Repair Largo FL | Rescreen &amp; Lanai | Screen Team",
+    "Pool cage repair Largo FL — Bardmoor, Ridgecrest &amp; mid-county rescreens. Chris Westcott on every job. Call (727) 386-6562.",
     "screen repair Largo, pool cage rescreen Largo FL, lanai screen repair Bardmoor, Ridgecrest pool cage repair",
-    "Pool Cage Rescreen &amp; Screen Repair in Largo, FL",
-    "Mid-county Largo pool cages from Bardmoor to Ridgecrest — full rescreens, lanai doors, and storm patches with Chris Westcott on every job.",
+    "Pool Cage Repair &amp; Rescreen in Largo, FL",
+    "Pool cage repair Largo FL — Bardmoor, Ridgecrest, and mid-county rescreens with Chris Westcott on every job. Call (727) 386-6562.",
     "Largo — mid-county cages between the bridges",
     [
         "Largo sits in the geographic center of Pinellas County — far enough from the Gulf that salt is less aggressive than Clearwater beach stock, but close enough that afternoon squalls and UV oxidation still chew through fiberglass on 1980s ranch cages. Bardmoor, Ridgecrest, and the corridors along East Bay Drive and Ulmerton host thousands of mid-size pool enclosures where the typical call is a full rescreen once mesh turns uniformly chalky, or a lanai door that lost spline after years of dog traffic.",
@@ -709,11 +709,11 @@ PINELLAS_CITIES.append(C(
 # ── 11. Gulfport ──────────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "gulfport-screen-repair", "Gulfport", PIN, PIN_L,
-    "Screen Repair Gulfport FL | Pool Cage &amp; Bungalow Lanais | Screen Team",
-    "Pool cage rescreen, bungalow lanai repair &amp; super gutters in Gulfport, FL. Boca Ciega Bay salt &amp; marina adjacency. Chris Westcott. (727) 386-6562.",
+    "Pool Cage Rescreen Gulfport FL | Salt &amp; Lanai Repair | Screen Team",
+    "Pool cage rescreen Gulfport FL — Boca Ciega salt, bungalow lanais &amp; marina cages. Chris Westcott on every job. Call (727) 386-6562.",
     "screen repair Gulfport, pool cage rescreen Gulfport FL, bungalow lanai repair Boca Ciega Bay, marina screen repair Gulfport",
-    "Screen Repair &amp; Pool Cage Rescreen in Gulfport, FL",
-    "Boca Ciega Bay salt, bungalow lanais, and marina-adjacent enclosures — coastal rescreens from Chris Westcott.",
+    "Pool Cage Rescreen in Gulfport, FL",
+    "Pool cage rescreen Gulfport FL — Boca Ciega salt, bungalow lanais, and marina-adjacent enclosures. Chris Westcott quotes from photos. Call (727) 386-6562.",
     "Gulfport — Boca Ciega salt, bungalows, marina corridors",
     [
         "Gulfport is one of the most character-rich coastal communities in south Pinellas — historic bungalows with compact lanais, waterfront cages along Boca Ciega Bay where salt spray chalks lower horizontals within seasons, and marina-adjacent properties where hardware corrosion outpaces mesh wear. Screen Team serves Gulfport on south-county routes from New Port Richey with Chris Westcott on every ladder — no rotating franchise crews.",
@@ -779,11 +779,11 @@ PINELLAS_CITIES.append(C(
 # ── 12. Belleair ──────────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "belleair-screen-repair", "Belleair", PIN, PIN_L,
-    "Screen Repair Belleair FL | Estate Cages &amp; Visibility Mesh | Screen Team",
-    "Pool cage rescreen, estate lanai repair &amp; visibility mesh in Belleair, FL. Bluffs &amp; country club enclosures. Chris Westcott. (727) 386-6562.",
+    "Pool Cage Rescreen Belleair FL | Estate Lanais | Screen Team",
+    "Pool cage rescreen Belleair FL — Bluffs estates, country club lanais &amp; visibility mesh. Chris Westcott. Call (727) 386-6562.",
     "screen repair Belleair, pool cage rescreen Belleair FL, visibility mesh Belleair Bluffs, country club lanai repair Belleair",
-    "Screen Repair &amp; Pool Cage Rescreen in Belleair, FL",
-    "Belleair Bluffs estates, country club enclosures, and visibility mesh upgrades — premium rescreens from Chris Westcott.",
+    "Pool Cage Rescreen in Belleair, FL",
+    "Pool cage rescreen Belleair FL — Bluffs estates, country club lanais, and visibility mesh. Chris Westcott quotes from photos. Call (727) 386-6562.",
     "Belleair — Bluffs estates, country club cages, visibility mesh",
     [
         "Belleair and Belleair Bluffs sit on some of the most premium real estate in north Pinellas — estate pool cages with golf-course views, country club-adjacent lanais where appearance matters as much as function, and enclosures where homeowners ask about visibility mesh to recover the water view without sacrificing insect protection. Screen Team serves Belleair on north-county routes with Chris Westcott on every job — discreet, owner-direct service without franchise logos on the truck.",
