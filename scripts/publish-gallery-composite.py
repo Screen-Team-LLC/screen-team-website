@@ -5,20 +5,23 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
 import subprocess
 import sys
 from datetime import datetime, timezone
-from html import escape
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from gallery_longform import build_gallery_longform, render_project_page  # noqa: E402
 CONFIG = json.loads((ROOT / "scripts" / "composite-brand.json").read_text(encoding="utf-8"))
 GALLERY_DIR = ROOT / CONFIG["gallery_dir"]
 MANIFEST_PATH = ROOT / CONFIG["job_manifest"]
 DETAIL_DIR = ROOT / "gallery"
 SMM_ROOT = Path(r"E:\KnightLogics-Growth-System\Social\Social-Media-Manager")
 POPULATOR = SMM_ROOT / "scheduled_brand_posting" / "populate_brand_gallery.py"
+MEDIA_LIB = SMM_ROOT / "scheduled_brand_posting" / "media_library" / str(CONFIG.get("brand") or "st")
 
 
 def run(cmd: list[str], *, cwd: Path = ROOT) -> None:
@@ -32,21 +35,41 @@ def load_manifest() -> dict:
     return json.loads(MANIFEST_PATH.read_text(encoding="utf-8-sig"))
 
 
-def update_manifest(base: str, title: str) -> dict:
+def load_facts(path: Path | None) -> dict:
+    if not path or not path.is_file():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
+def update_manifest(base: str, title: str, facts: dict, longform: dict) -> dict:
     manifest = load_manifest()
     projects = manifest.setdefault("projects", [])
+    public = CONFIG["gallery_public_path"]
     entry = {
         "id": base,
         "title": title,
-        "summary": f"Before, process, and after project proof from {CONFIG['company_title']}.",
-        "image": f"{CONFIG['gallery_public_path']}/{base}.webp",
-        "social_image": f"{CONFIG['gallery_public_path']}/{base}-social.jpg",
-        "detail_url": f"gallery/{base}.html",
+        "summary": longform["summary"],
+        "image": f"{public}/{base}.webp",
+        "social_image": f"{public}/{base}-social.jpg",
+        "gbp_image": f"{public}/{base}-gbp.jpg",
+        "detail_url": longform["detail"]["path"],
+        "scope_url": longform["scope"]["path"],
+        "service": longform["service"],
+        "city_name": longform["city_name"],
+        "county_name": longform["county_name"],
+        "photo_before": int(facts.get("photo_before") or 0),
+        "photo_process": int(facts.get("photo_process") or 0),
+        "photo_after": int(facts.get("photo_after") or 0),
         "published_at": datetime.now(timezone.utc).isoformat(),
     }
     existing = next((item for item in projects if item.get("id") == base), None)
     if existing:
         existing.update(entry)
+        entry = existing
     else:
         projects.insert(0, entry)
     MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -54,28 +77,45 @@ def update_manifest(base: str, title: str) -> dict:
     return entry
 
 
-def write_detail(entry: dict) -> Path:
+def write_pages(longform: dict) -> tuple[Path, Path]:
     DETAIL_DIR.mkdir(parents=True, exist_ok=True)
-    path = DETAIL_DIR / f"{entry['id']}.html"
-    title = escape(str(entry["title"]))
-    summary = escape(str(entry["summary"]))
-    company = escape(str(CONFIG["company_title"]))
-    image = escape(f"../{entry['image']}", quote=True)
-    canonical = escape(f"{CONFIG['website_url']}/{entry['detail_url']}", quote=True)
-    social_image = escape(f"{CONFIG['website_url']}/{entry['social_image']}", quote=True)
-    contact_url = escape(str(CONFIG["contact_url"]), quote=True)
-    html = f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title} Project | {company}</title>
-<meta name="description" content="{summary}"><link rel="canonical" href="{canonical}">
-<meta property="og:image" content="{social_image}">
-<style>body{{margin:0;background:{CONFIG['background']};color:{CONFIG['text']};font-family:Arial,sans-serif}}main{{width:min(1120px,calc(100% - 32px));margin:auto;padding:36px 0 64px}}a{{color:{CONFIG['accent']};}}img{{display:block;width:100%;height:auto;border:2px solid {CONFIG['accent']};border-radius:14px}}h1{{font-size:clamp(2rem,6vw,4rem);margin:.35em 0}}.eyebrow{{color:{CONFIG['accent']};font-weight:800;letter-spacing:.12em}}.cta{{display:inline-block;padding:14px 20px;border-radius:8px;background:{CONFIG['accent']};color:{CONFIG['background']};font-weight:800;text-decoration:none}}</style></head>
-<body><main><p class="eyebrow">COMPLETED PROJECT</p><h1>{title}</h1><p>{summary}</p>
-<img src="{image}" alt="{title} before process and after project by {company}" width="1600" height="900">
-<p><a class="cta" href="{contact_url}">Request an estimate</a> &nbsp; <a href="../gallery.html">View all projects</a></p>
-</main></body></html>"""
-    path.write_text(html, encoding="utf-8")
-    return path
+    detail = DETAIL_DIR / f"{longform['id']}.html"
+    scope = DETAIL_DIR / f"{longform['id']}-scope.html"
+    detail.write_text(render_project_page(longform, "detail"), encoding="utf-8")
+    scope.write_text(render_project_page(longform, "scope"), encoding="utf-8")
+    return detail, scope
+
+
+def refresh_ai_indexes(manifest: dict) -> None:
+    lines = []
+    for project in manifest.get("projects") or []:
+        title = str(project.get("title") or project.get("id") or "Project").strip()
+        detail = str(project.get("detail_url") or "").strip()
+        scope = str(project.get("scope_url") or "").strip()
+        if detail:
+            lines.append(f"- [{title}]({CONFIG['website_url']}/{detail})")
+        if scope:
+            lines.append(f"- [{title} scope of work]({CONFIG['website_url']}/{scope})")
+    block = "\n".join(lines) if lines else "- None published yet."
+    section = (
+        "## Completed job pages\n\n"
+        "Each composite has a project page and a separate scope page. "
+        "Streets, customer phones, and invoice amounts are not published.\n\n"
+        f"{block}\n"
+    )
+    for name in ("llms.txt", "ai.txt"):
+        path = ROOT / name
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8")
+        start = "<!-- screen-team-job-pages:start -->"
+        end = "<!-- screen-team-job-pages:end -->"
+        wrapped = f"{start}\n{section}{end}\n"
+        if start in text and end in text:
+            text = re.sub(re.escape(start) + r".*?" + re.escape(end) + r"\n?", wrapped, text, count=1, flags=re.S)
+        else:
+            text = text.rstrip() + "\n\n" + wrapped
+        path.write_text(text, encoding="utf-8")
 
 
 def update_sitemap(detail_url: str) -> None:
@@ -99,29 +139,62 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--basename", required=True)
     parser.add_argument("--title", default="")
+    parser.add_argument("--facts-json", type=Path, default=None)
     parser.add_argument("--fan-out", action="store_true")
     parser.add_argument("--deploy", action="store_true")
     parser.add_argument("--commit-message", default="")
     args = parser.parse_args()
     base = re.sub(r"[^a-z0-9-]+", "-", args.basename.lower()).strip("-")
+    if re.search(r"(^|-)(test|demo)(-|$)", base):
+        raise SystemExit(f"Refusing to publish a test or demo composite: {base}")
     webp = GALLERY_DIR / f"{base}.webp"
     social = GALLERY_DIR / f"{base}-social.jpg"
+    gbp = GALLERY_DIR / f"{base}-gbp.jpg"
     missing = [path for path in (webp, social) if not path.is_file()]
     if missing:
         raise SystemExit(f"Missing required files: {', '.join(str(path) for path in missing)}")
-    title = args.title.strip() or re.sub(r"^before-process-after-", "", base).replace("-", " ").title()
-    entry = update_manifest(base, title)
-    detail = write_detail(entry)
+    facts = load_facts(args.facts_json)
+    title = args.title.strip() or str(facts.get("title") or "").strip()
+    if not title:
+        title = re.sub(r"^before-process-after-", "", base).replace("-", " ").title()
+    longform = build_gallery_longform(
+        {
+            "id": base,
+            "title": title,
+            "city_name": facts.get("city_name") or "",
+            "work_notes": facts.get("work_notes") or "",
+            "photo_before": facts.get("photo_before") or 0,
+            "photo_process": facts.get("photo_process") or 0,
+            "photo_after": facts.get("photo_after") or 0,
+            "image": f"{CONFIG['gallery_public_path']}/{base}.webp",
+        }
+    )
+    entry = update_manifest(base, title, facts, longform)
+    detail, scope = write_pages(longform)
+    refresh_ai_indexes(load_manifest())
+    MEDIA_LIB.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(social, MEDIA_LIB / social.name)
+    if gbp.is_file():
+        shutil.copy2(gbp, MEDIA_LIB / gbp.name)
     if CONFIG.get("build_command"):
         run([sys.executable, str(ROOT / CONFIG["build_command"])])
     update_sitemap(entry["detail_url"])
+    update_sitemap(entry["scope_url"])
     if args.fan_out:
         if not POPULATOR.is_file():
             raise SystemExit(f"Missing Social Ops populator: {POPULATOR}")
         run([sys.executable, str(POPULATOR), "--brand", CONFIG["brand"], "--only", base, "--status", "ready", "--fan-out"], cwd=SMM_ROOT)
     if args.deploy:
-        paths = [webp.relative_to(ROOT), social.relative_to(ROOT), MANIFEST_PATH.relative_to(ROOT), detail.relative_to(ROOT)]
-        for generated in (ROOT / "gallery.html", ROOT / "sitemap.xml"):
+        paths = [
+            webp.relative_to(ROOT),
+            social.relative_to(ROOT),
+            MANIFEST_PATH.relative_to(ROOT),
+            detail.relative_to(ROOT),
+            scope.relative_to(ROOT),
+        ]
+        if gbp.is_file():
+            paths.append(gbp.relative_to(ROOT))
+        for generated in (ROOT / "gallery.html", ROOT / "sitemap.xml", ROOT / "llms.txt", ROOT / "ai.txt"):
             if generated.is_file():
                 paths.append(generated.relative_to(ROOT))
         run(["git", "add", *[str(path) for path in paths]])
@@ -131,7 +204,7 @@ def main() -> int:
         elif staged.returncode != 0:
             raise SystemExit("Unable to inspect staged website changes")
         run(["git", "push", "origin", "main"])
-    print(json.dumps({"status": "ok", "entry": entry, "manifest": str(MANIFEST_PATH), "detail": str(detail)}, indent=2))
+    print(json.dumps({"status": "ok", "entry": entry, "manifest": str(MANIFEST_PATH), "detail": str(detail), "scope": str(scope)}, indent=2))
     return 0
 
 

@@ -609,10 +609,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var grid = document.getElementById('dispatch-job-grid');
         projects.forEach(function(project) {
           var card = document.createElement('figure');
-          card.className = 'gallery-item';
+          card.className = 'gallery-item job-proof-card';
+          card.dataset.jobProof = '1';
+          var detailUrl = project.detail_url;
+          var scopeUrl = project.scope_url || (detailUrl ? detailUrl.replace(/\.html$/, '-scope.html') : detailUrl);
           var link = document.createElement('a');
           link.className = 'gallery-img-link';
-          link.href = project.detail_url;
+          link.href = detailUrl;
           var image = document.createElement('img');
           image.src = project.image;
           image.alt = project.title + ' before, process, and after project by Screen Team LLC';
@@ -620,7 +623,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           image.width = 1600;
           image.height = 900;
           var caption = document.createElement('figcaption');
-          caption.textContent = project.title;
+          caption.appendChild(document.createTextNode(project.title));
+          var actions = document.createElement('span');
+          actions.className = 'job-proof-actions';
+          function pageLink(href, label) {
+            var anchor = document.createElement('a');
+            anchor.href = href;
+            anchor.textContent = label;
+            return anchor;
+          }
+          actions.appendChild(pageLink(detailUrl, 'Project details'));
+          actions.appendChild(document.createTextNode(' · '));
+          actions.appendChild(pageLink(scopeUrl, 'Scope of work'));
+          caption.appendChild(document.createElement('br'));
+          caption.appendChild(actions);
           link.appendChild(image);
           card.appendChild(link);
           card.appendChild(caption);
@@ -696,7 +712,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     // Attach click to each gallery item (not just the link, so full card is clickable)
     allItems.forEach(function(item) {
-      item.querySelector('.gallery-img-link').addEventListener('click', function(e) {
+      var imageLink = item.querySelector('.gallery-img-link');
+      if (!imageLink || item.classList.contains('job-proof-card')) return;
+      imageLink.addEventListener('click', function(e) {
         e.preventDefault();
         openLightbox(item);
       });
