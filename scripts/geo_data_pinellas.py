@@ -9,7 +9,7 @@ PINELLAS_CITIES: list[dict] = []
 # ── 1. Clearwater ─────────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "clearwater-screen-repair", "Clearwater", PIN, PIN_L,
-    "Screen Repair Clearwater FL | Pool Cage Rescreen &amp; Lanai | Screen Team",
+    "Screen Repair Clearwater FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Clearwater, FL — beach salt to Countryside tall cages. Chris Westcott. (727) 386-6562.",
     "screen repair Clearwater, pool cage rescreen Clearwater FL, lanai screen repair Island Estates, Countryside pool cage",
     "Pool Cage Repair &amp; Rescreens in Clearwater, FL",
@@ -219,7 +219,7 @@ PINELLAS_CITIES.append(C(
 # ── 4. Palm Harbor ────────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "palm-harbor-screen-repair", "Palm Harbor", PIN, PIN_L,
-    "Screen Repair Palm Harbor FL | Pool Cage &amp; Tall Cages | Screen Team",
+    "Screen Repair Palm Harbor FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, tall enclosure repair &amp; super gutters in Palm Harbor, FL. East Lake to coastal pockets. Chris Westcott. (727) 386-6562.",
     "screen repair Palm Harbor, pool cage rescreen Palm Harbor FL, tall cage repair East Lake, lanai screen repair Palm Harbor",
     "Pool Cage Rescreen &amp; Screen Repair in Palm Harbor, FL",
@@ -359,7 +359,7 @@ PINELLAS_CITIES.append(C(
 # ── 6. Dunedin ────────────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "dunedin-screen-repair", "Dunedin", PIN, PIN_L,
-    "Screen Repair Dunedin FL | Pool Cage &amp; Porch Screens | Screen Team",
+    "Screen Repair Dunedin FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, downtown porch screens &amp; super gutters in Dunedin, FL. North-county oxidation rescreens. Chris Westcott. (727) 386-6562.",
     "screen repair Dunedin, pool cage rescreen Dunedin FL, porch screen repair downtown Dunedin, north Pinellas lanai repair",
     "Screen Repair &amp; Pool Cage Rescreen in Dunedin, FL",
@@ -499,7 +499,7 @@ PINELLAS_CITIES.append(C(
 # ── 8. Tarpon Springs ─────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "tarpon-springs-screen-repair", "Tarpon Springs", PIN, PIN_L,
-    "Screen Repair Tarpon Springs FL | Pool Cage &amp; Spa Wings | Screen Team",
+    "Screen Repair Tarpon Springs FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, spa wings &amp; super gutters in Tarpon Springs, FL. Sponge docks to Keystone border. Chris Westcott. (727) 386-6562.",
     "screen repair Tarpon Springs, pool cage rescreen Tarpon Springs FL, spa wing screen repair, sponge docks lanai repair north Pinellas",
     "Screen Repair &amp; Pool Cage Rescreen in Tarpon Springs, FL",
@@ -639,7 +639,7 @@ PINELLAS_CITIES.append(C(
 # ── 10. Pinellas Park ─────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "pinellas-park-screen-repair", "Pinellas Park", PIN, PIN_L,
-    "Screen Repair Pinellas Park FL | Pool Cage &amp; Working Cages | Screen Team",
+    "Screen Repair Pinellas Park FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, working-class cage repair &amp; super gutters in Pinellas Park, FL. Park Blvd corridor. Chris Westcott. (727) 386-6562.",
     "screen repair Pinellas Park, pool cage rescreen Pinellas Park FL, lanai repair Park Boulevard, Kenneth City border screen repair",
     "Screen Repair &amp; Pool Cage Rescreen in Pinellas Park, FL",
@@ -919,7 +919,7 @@ PINELLAS_CITIES.append(C(
 # ── 14. Madeira Beach ─────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "madeira-beach-screen-repair", "Madeira Beach", PIN, PIN_L,
-    "Screen Repair Madeira Beach FL | Barrier Island Cages | Screen Team",
+    "Screen Repair Madeira Beach FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen &amp; lanai repair on Madeira Beach, FL — barrier island salt, wind &amp; John&apos;s Pass area. Chris Westcott. (727) 386-6562.",
     "screen repair Madeira Beach, pool cage rescreen Madeira Beach FL, barrier island lanai repair, Johns Pass screen repair",
     "Screen Repair &amp; Pool Cage Rescreen in Madeira Beach, FL",
@@ -989,7 +989,7 @@ PINELLAS_CITIES.append(C(
 # ── 15. Treasure Island ───────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "treasure-island-screen-repair", "Treasure Island", PIN, PIN_L,
-    "Screen Repair Treasure Island FL | Gulf Barrier Island | Screen Team",
+    "Screen Repair Treasure Island FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen &amp; condo lanai repair on Treasure Island, FL — extreme Gulf salt &amp; barrier island wind. Chris Westcott. (727) 386-6562.",
     "screen repair Treasure Island, pool cage rescreen Treasure Island FL, condo lanai repair barrier island, Gulf salt screen repair Treasure Island",
     "Screen Repair &amp; Pool Cage Rescreen in Treasure Island, FL",
@@ -1059,7 +1059,7 @@ PINELLAS_CITIES.append(C(
 # ── 16. East Lake ─────────────────────────────────────────────────────────
 PINELLAS_CITIES.append(C(
     "east-lake-screen-repair", "East Lake", PIN, PIN_L,
-    "Screen Repair East Lake FL | Tall Cages &amp; East Lake Rd | Screen Team",
+    "Screen Repair East Lake FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen &amp; tall enclosure repair in East Lake, FL — unincorporated north Pinellas, East Lake Rd corridor. Chris Westcott. (727) 386-6562.",
     "screen repair East Lake, pool cage rescreen East Lake FL, tall cage repair East Lake Road, Highland Lakes screen repair north Pinellas",
     "Screen Repair &amp; Tall Pool Cage Rescreen in East Lake, FL",

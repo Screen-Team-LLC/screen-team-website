@@ -6,7 +6,7 @@ HILLSBOROUGH_CITIES = []
 
 HILLSBOROUGH_CITIES.append(C(
     "tampa-screen-repair", "Tampa", HILL, HILL_L,
-    "Screen Repair Tampa FL | Pool Cage Rescreen &amp; Super Gutters | Screen Team",
+    "Screen Repair Tampa FL | Pool Cage Rescreen | Screen Team",
     "Full pool cage rescreen, new enclosure inquiries &amp; super gutters in Tampa, FL. Owner Chris Westcott crosses from NPR. (727) 386-6562.",
     "screen repair Tampa FL, pool cage rescreen Tampa, tall pool cage Tampa, lanai screen repair Hillsborough, super gutters Tampa",
     "Screen Repair, Pool Cages &amp; Super Gutters in Tampa, FL",
@@ -76,7 +76,7 @@ HILLSBOROUGH_CITIES.append(C(
 
 HILLSBOROUGH_CITIES.append(C(
     "brandon-screen-repair", "Brandon", HILL, HILL_L,
-    "Screen Repair Brandon FL | Pool Cage Rescreen &amp; Tall Cages | Screen Team",
+    "Screen Repair Brandon FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Brandon, FL. East Hillsborough storms, Bloomingdale cages. Chris Westcott. (727) 386-6562.",
     "screen repair Brandon FL, pool cage rescreen Brandon, Bloomingdale screen repair, FishHawk screen repair, tall pool cage Brandon",
     "Screen Repair, Pool Cages &amp; Super Gutters in Brandon, FL",
@@ -146,7 +146,7 @@ HILLSBOROUGH_CITIES.append(C(
 
 HILLSBOROUGH_CITIES.append(C(
     "carrollwood-screen-repair", "Carrollwood", HILL, HILL_L,
-    "Screen Repair Carrollwood FL | Pool Cage Rescreen &amp; Oak Canopy | Screen Team",
+    "Screen Repair Carrollwood FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Carrollwood, FL. Mature oaks, 80s–2000s cages. Chris Westcott. (727) 386-6562.",
     "screen repair Carrollwood FL, pool cage rescreen Carrollwood, Northdale screen repair, Carrollwood Village screen enclosure",
     "Screen Repair, Pool Cages &amp; Super Gutters in Carrollwood, FL",
@@ -216,7 +216,7 @@ HILLSBOROUGH_CITIES.append(C(
 
 HILLSBOROUGH_CITIES.append(C(
     "town-n-country-screen-repair", "Town 'n' Country", HILL, HILL_L,
-    "Screen Repair Town 'n' Country FL | Pool Cage &amp; Lanai | Screen Team",
+    "Screen Repair Town 'n' Country FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Town 'n' Country, FL. West Hillsborough cages, hurricane-season wear. (727) 386-6562.",
     "screen repair Town n Country FL, pool cage rescreen Town n Country, west Hillsborough screen repair, lanai repair Town n Country",
     "Screen Repair, Pool Cages &amp; Super Gutters in Town 'n' Country, FL",
@@ -286,7 +286,7 @@ HILLSBOROUGH_CITIES.append(C(
 
 HILLSBOROUGH_CITIES.append(C(
     "riverview-screen-repair", "Riverview", HILL, HILL_L,
-    "Screen Repair Riverview FL | Pool Cage Rescreen &amp; Family Cages | Screen Team",
+    "Screen Repair Riverview FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Riverview, FL. South county growth, master-planned pools. Chris Westcott. (727) 386-6562.",
     "screen repair Riverview FL, pool cage rescreen Riverview, Boyette screen repair, Apollo Beach screen repair, family pool cage Riverview",
     "Screen Repair, Pool Cages &amp; Super Gutters in Riverview, FL",
@@ -356,7 +356,7 @@ HILLSBOROUGH_CITIES.append(C(
 
 HILLSBOROUGH_CITIES.append(C(
     "valrico-screen-repair", "Valrico", HILL, HILL_L,
-    "Screen Repair Valrico FL | Pool Cage Rescreen &amp; Suburban Cages | Screen Team",
+    "Screen Repair Valrico FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Valrico, FL. East of Brandon, Lithia border. Chris Westcott. (727) 386-6562.",
     "screen repair Valrico FL, pool cage rescreen Valrico, Lithia screen repair, east Hillsborough pool cage",
     "Screen Repair, Pool Cages &amp; Super Gutters in Valrico, FL",
@@ -496,7 +496,7 @@ HILLSBOROUGH_CITIES.append(C(
 
 HILLSBOROUGH_CITIES.append(C(
     "lutz-screen-repair", "Lutz", HILL, HILL_L,
-    "Screen Repair Lutz FL | Pool Cage Rescreen &amp; Lake Communities | Screen Team",
+    "Screen Repair Lutz FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Lutz, FL. North Hillsborough, Land O Lakes adjacency. Chris Westcott. (727) 386-6562.",
     "screen repair Lutz FL, pool cage rescreen Lutz, Land O Lakes screen repair, north Hillsborough pool cage, lake community screen repair",
     "Screen Repair, Pool Cages &amp; Super Gutters in Lutz, FL",
@@ -566,7 +566,7 @@ HILLSBOROUGH_CITIES.append(C(
 
 HILLSBOROUGH_CITIES.append(C(
     "citrus-park-screen-repair", "Citrus Park", HILL, HILL_L,
-    "Screen Repair Citrus Park FL | Pool Cage &amp; Shopping Corridor | Screen Team",
+    "Screen Repair Citrus Park FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Citrus Park, FL. NW Hillsborough near Carrollwood. Chris Westcott. (727) 386-6562.",
     "screen repair Citrus Park FL, pool cage rescreen Citrus Park, Westchase screen repair, NW Hillsborough screen enclosure",
     "Screen Repair, Pool Cages &amp; Super Gutters in Citrus Park, FL",
@@ -636,7 +636,7 @@ HILLSBOROUGH_CITIES.append(C(
 
 HILLSBOROUGH_CITIES.append(C(
     "temple-terrace-screen-repair", "Temple Terrace", HILL, HILL_L,
-    "Screen Repair Temple Terrace FL | Pool Cage &amp; Tree City | Screen Team",
+    "Screen Repair Temple Terrace FL | Pool Cage Rescreen | Screen Team",
     "Pool cage rescreen, lanai repair &amp; super gutters in Temple Terrace, FL. Tree City, USF area, mature canopy. Chris Westcott. (727) 386-6562.",
     "screen repair Temple Terrace FL, pool cage rescreen Temple Terrace, USF screen repair, Tree City screen enclosure",
     "Screen Repair, Pool Cages &amp; Super Gutters in Temple Terrace, FL",
