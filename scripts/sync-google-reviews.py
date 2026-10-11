@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Sync Screen Team LLC GBP reviews into data/google-reviews.json."""
+"""Sync Screen Team LLC GBP reviews into data/google-reviews.json.
+
+The JSON feeds the visible on-page review carousel only. No review/rating
+structured data is written to index.html (see strip_homepage_review_schema).
+"""
 
 from __future__ import annotations
 
@@ -159,82 +163,34 @@ def to_carousel(raw_reviews: list[dict]) -> list[dict]:
     return candidates
 
 
-def update_homepage_schema(rating: float, count: int, reviews: list[dict]) -> None:
-    """Keep index.html AggregateRating + Review graph in sync with GBP feed."""
+def strip_homepage_review_schema() -> None:
+    """Make sure index.html carries no AggregateRating/Review JSON-LD.
+
+    Google treats self-served review markup on a LocalBusiness as ineligible
+    self-serving reviews (Search Console review-snippet warnings). The reviews
+    stay visible on the page via data/google-reviews.json + script.js; they are
+    intentionally NOT copied into structured data. Do not re-add them here.
+    """
     index_path = ROOT / "index.html"
-    html = index_path.read_text(encoding="utf-8")
-
-    review_objs: list[str] = []
-    for item in reviews[:12]:
-        name = (
-            str(item.get("name") or "Google reviewer")
-            .replace("\\", "\\\\")
-            .replace('"', '\\"')
-        )
-        text = (
-            str(item.get("text") or "")
-            .replace("\\", "\\\\")
-            .replace('"', '\\"')
-            .replace("\n", " ")
-        )
-        stars = int(item.get("stars") or 5)
-        review_objs.append(
-            "          {\n"
-            '            "@type": "Review",\n'
-            f'            "author": {{"@type": "Person", "name": "{name}"}},\n'
-            f'            "reviewBody": "{text}",\n'
-            "            \"reviewRating\": {\n"
-            '              "@type": "Rating",\n'
-            f'              "ratingValue": "{stars}",\n'
-            '              "bestRating": "5"\n'
-            "            }\n"
-            "          }"
-        )
-
-    if float(rating) == int(rating):
-        rating_str = str(int(rating))
-    else:
-        rating_str = f"{float(rating):.1f}"
-
-    rating_block = (
-        '"aggregateRating": {\n'
-        '          "@type": "AggregateRating",\n'
-        f'          "ratingValue": "{rating_str}",\n'
-        f'          "reviewCount": "{count}",\n'
-        '          "bestRating": "5"\n'
-        "        }"
-    )
-    review_block = (
-        '"review": [\n' + ",\n".join(review_objs) + "\n        ]"
-        if review_objs
-        else '"review": []'
-    )
-
-    html2, n1 = re.subn(
-        r'"aggregateRating":\s*\{.*?\n\s*\}',
-        rating_block,
+    raw = index_path.read_bytes()
+    html = raw.decode("utf-8")
+    cleaned, n1 = re.subn(
+        r'\r?\n[ \t]*"aggregateRating":\s*\{.*?\r?\n[ \t]*\},(?=\r?\n)',
+        "",
         html,
         count=1,
         flags=re.S,
     )
-    html3, n2 = re.subn(
-        r'"review":\s*\[.*?\]',
-        review_block,
-        html2,
+    cleaned, n2 = re.subn(
+        r'\r?\n[ \t]*"review":\s*\[.*?\r?\n[ \t]*\],(?=\r?\n)',
+        "",
+        cleaned,
         count=1,
         flags=re.S,
     )
-    if n1 and n2:
-        index_path.write_text(html3, encoding="utf-8")
-        print(
-            f"Updated index.html schema — {rating_str} · {count} reviews "
-            f"({len(review_objs)} listed)"
-        )
-    else:
-        print(
-            f"Warning: could not patch index.html schema "
-            f"(aggregate={n1}, review={n2})"
-        )
+    if n1 or n2:
+        index_path.write_bytes(cleaned.encode("utf-8"))
+        print(f"Removed review schema from index.html (aggregate={n1}, review={n2})")
 
 
 def main() -> int:
@@ -260,7 +216,7 @@ def main() -> int:
         f"Wrote {REVIEWS_OUT.relative_to(ROOT)} — {rating} · {count} reviews "
         f"({len(carousel)} carousel)"
     )
-    update_homepage_schema(rating, count, carousel)
+    strip_homepage_review_schema()
     return 0
 
 
