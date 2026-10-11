@@ -70,7 +70,7 @@ PAGES_2B.append({
   ],
   "images": {
     "hero_left": "Images/preview/services/gutter-work.jpg",
-    "hero_top": "Images/st-gutters.png",
+    "hero_top": "Images/st-gutters.webp",
     "hero_bottom": "Images/gallery/20221223_163807.jpg",
     "hero_right": "Images/gallery/20220816_113149.jpg",
     "alt_left": "Pool cage gutter replacement Tampa Bay",
@@ -155,7 +155,7 @@ PAGES_2B.append({
   ],
   "images": {
     "hero_left": "Images/preview/services/gutter-work.jpg",
-    "hero_top": "Images/st-gutters.png",
+    "hero_top": "Images/st-gutters.webp",
     "hero_bottom": "Images/gallery/20220702_131643.jpg",
     "hero_right": "Images/preview/services/screen-lanais.jpg",
     "alt_left": "Seamless gutters Tampa Bay home exterior",

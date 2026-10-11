@@ -70,7 +70,7 @@ PAGES_2A.append({
   ],
   "images": {
     "hero_left": "Images/preview/services/gutter-work.jpg",
-    "hero_top": "Images/st-gutters.png",
+    "hero_top": "Images/st-gutters.webp",
     "hero_bottom": "Images/gallery/20220801_110201.jpg",
     "hero_right": "Images/gallery/20221223_163807.jpg",
     "alt_left": "Super gutters on Tampa Bay screen enclosure",
@@ -155,7 +155,7 @@ PAGES_2A.append({
   ],
   "images": {
     "hero_left": "Images/preview/services/gutter-work.jpg",
-    "hero_top": "Images/st-gutters.png",
+    "hero_top": "Images/st-gutters.webp",
     "hero_bottom": "Images/gallery/20220702_131643.jpg",
     "hero_right": "Images/preview/services/pool-enclosures.jpg",
     "alt_left": "Super gutter installation on screen enclosure",
@@ -240,7 +240,7 @@ PAGES_2A.append({
   ],
   "images": {
     "hero_left": "Images/preview/services/gutter-work.jpg",
-    "hero_top": "Images/st-gutters.png",
+    "hero_top": "Images/st-gutters.webp",
     "hero_bottom": "Images/gallery/IMG_2641.jpeg",
     "hero_right": "Images/gallery/20220406_152213.jpg",
     "alt_left": "Super gutter repair on pool cage",

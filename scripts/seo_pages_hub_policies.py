@@ -79,7 +79,7 @@ SERVICES_HUB = {
     "alt_bottom": "Super gutter and gutter services",
     "alt_right": "Lanai screen services",
     "grid1": "Images/gallery/20221223_163807.jpg",
-    "grid2": "Images/st-gutters.png",
+    "grid2": "Images/st-gutters.webp",
     "grid1_alt": "Enclosure service project gallery",
     "grid2_alt": "Gutter service alongside screening",
     "grid1_cap": "Enclosure cluster",
