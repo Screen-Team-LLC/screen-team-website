@@ -530,6 +530,7 @@ PASCO_CITIES.append(C(
         ("zephyrhills-screen-repair.html", "Zephyrhills"),
         ("trinity-screen-repair.html", "Trinity"),
         ("tampa-screen-repair.html", "Tampa"),
+        ("dade-city-screen-repair.html", "Dade City"),
         ("pasco-county-screen-repair.html", "Pasco hub"),
         ("rescreens.html", "Rescreens"),
         ("pool-enclosures.html", "New enclosures"),
