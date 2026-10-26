@@ -68,7 +68,7 @@ def all_cities() -> list[dict]:
     # ── PASCO existing ────────────────────────────────────────────────────
     cities.append(C(
         "new-port-richey-screen-repair", "New Port Richey", PASCO, PASCO_L,
-        "Screen Repair New Port Richey FL | Pool Cage Rescreen | Screen Team",
+        "Screen Repair New Port Richey FL | Pool Cage Rescreen",
         "Pool cage rescreen, new enclosure inquiries &amp; super gutters in New Port Richey, FL. Owner Chris Westcott. (727) 386-6562.",
         "screen repair New Port Richey, pool cage rescreen NPR, super gutters New Port Richey, lanai screen repair Pasco",
         "Screen Repair, Pool Cages &amp; Super Gutters in New Port Richey, FL",

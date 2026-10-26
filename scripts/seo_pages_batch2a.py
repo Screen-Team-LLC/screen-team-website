@@ -88,7 +88,7 @@ PAGES_2A.append({
 
 PAGES_2A.append({
   "slug": "super-gutter-installation.html",
-  "title": "Super Gutter Installation | 7-Inch Enclosure Gutters | Screen Team",
+  "title": "Super Gutter Installation | 7-Inch Enclosure Gutters",
   "description": "Super gutter installation for Tampa Bay pool cages & screen enclosures. Sized for Florida storm volume. Call (727) 386-6562.",
   "keywords": "super gutter installation, 7 inch super gutter, pool cage gutter install Tampa Bay",
   "service_name": "Super Gutter Installation",
@@ -173,7 +173,7 @@ PAGES_2A.append({
 
 PAGES_2A.append({
   "slug": "super-gutter-repair.html",
-  "title": "Super Gutter Repair | Sagging Pool Cage Gutters | Screen Team",
+  "title": "Super Gutter Repair | Sagging Pool Cage Gutters",
   "description": "Super gutter repair for sagging, leaking, overflowing pool cage gutters in Tampa Bay. Honest repair vs replace. (727) 386-6562.",
   "keywords": "super gutter repair, sagging pool cage gutter, enclosure gutter repair Tampa Bay",
   "service_name": "Super Gutter Repair",

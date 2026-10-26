@@ -3,7 +3,7 @@ PAGES_1 = []
 
 PAGES_1.append({
   "slug": "full-pool-cage-rescreen.html",
-  "title": "Full Pool Cage Rescreen Tampa Bay | From ~$1,995 | Screen Team",
+  "title": "Full Pool Cage Rescreen Tampa Bay | From ~$1,995",
   "description": "Full pool cage rescreen Tampa Bay — every panel, fresh spline, owner on site. Chris Westcott quotes from photos. Call (727) 386-6562.",
   "keywords": "full pool cage rescreen Tampa Bay, large pool cage rescreen, complete pool enclosure rescreen, full cage rescreening",
   "service_name": "Full Pool Cage Rescreen",

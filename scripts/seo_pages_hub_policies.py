@@ -3,7 +3,7 @@ from seo_expansion_shell import render_service_page, render_policy_page, service
 
 SERVICES_HUB = {
   "slug": "services.html",
-  "title": "Screen Enclosure & Super Gutter Services Tampa Bay | Screen Team",
+  "title": "Screen Enclosure & Super Gutter Services Tampa Bay",
   "description": "Screen enclosure services Tampa Bay — pool cage rescreens, new builds coordinated with partners, super gutters, and small screen jobs. Call (727) 386-6562.",
   "keywords": "screen enclosure services Tampa Bay, pool cage and gutter services, Screen Team services",
   "service_name": "Screen Enclosure & Gutter Services",

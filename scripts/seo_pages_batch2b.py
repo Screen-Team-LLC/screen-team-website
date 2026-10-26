@@ -3,7 +3,7 @@ PAGES_2B = []
 
 PAGES_2B.append({
   "slug": "pool-cage-gutter-replacement.html",
-  "title": "Pool Cage Gutter Replacement | Enclosure Gutters | Screen Team",
+  "title": "Pool Cage Gutter Replacement | Enclosure Gutters",
   "description": "Pool cage gutter replacement across Tampa Bay. Upsize to enclosure-ready super gutters. Call Chris at (727) 386-6562.",
   "keywords": "pool cage gutter replacement, lanai gutter replacement, screen enclosure gutter replace Tampa Bay",
   "service_name": "Pool Cage Gutter Replacement",
@@ -173,7 +173,7 @@ PAGES_2B.append({
 
 PAGES_2B.append({
   "slug": "screen-door-repair.html",
-  "title": "Screen Door Repair Tampa Bay | Sliders & Hinged | Screen Team",
+  "title": "Screen Door Repair Tampa Bay | Sliders & Hinged",
   "description": "Screen door repair Tampa Bay — pool cage doors, lanai sliders, torn mesh & sticky tracks. Call (727) 386-6562.",
   "keywords": "screen door repair Tampa Bay, pool cage screen door, lanai sliding screen door repair",
   "service_name": "Screen Door Repair",

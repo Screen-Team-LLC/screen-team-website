@@ -3,7 +3,7 @@ PAGES_1C = []
 
 PAGES_1C.append({
   "slug": "new-pool-cage-installation.html",
-  "title": "New Pool Cage Installation Tampa Bay | Partner-Coordinated | Screen Team",
+  "title": "New Pool Cage Installation Tampa Bay | Partner-Coordinated",
   "description": "New pool cage installation Tampa Bay — Screen Team scopes & coordinates; permit-heavy engineering via licensed partners. Call (727) 386-6562.",
   "keywords": "new pool cage installation Tampa Bay, pool cage installation, new screen pool enclosure Florida",
   "service_name": "New Pool Cage Installation",
@@ -256,7 +256,7 @@ PAGES_1C.append({
 
 PAGES_1C.append({
   "slug": "custom-screen-enclosure.html",
-  "title": "Custom Screen Enclosure Tampa Bay | Unique Layouts | Screen Team",
+  "title": "Custom Screen Enclosure Tampa Bay | Unique Layouts",
   "description": "Custom screen enclosure planning for odd footprints & unique Tampa Bay lots. Partner-honest builds. Call (727) 386-6562.",
   "keywords": "custom screen enclosure, custom pool cage Tampa Bay, custom screen room Florida",
   "service_name": "Custom Screen Enclosure",

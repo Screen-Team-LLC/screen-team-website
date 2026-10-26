@@ -6,7 +6,7 @@ PASCO_CITIES: list[dict] = []
 
 PASCO_CITIES.append(C(
     "port-richey-screen-repair", "Port Richey", PASCO, PASCO_L,
-    "Pool Cage Rescreen Port Richey FL | Super Gutters | Screen Team",
+    "Pool Cage Rescreen Port Richey FL | Super Gutters",
     "Pool cage rescreen, lanai repair &amp; super gutters in Port Richey, FL. Minutes from our NPR base. Chris Westcott. (727) 386-6562.",
     "pool cage rescreen Port Richey FL, screen repair Port Richey, super gutters Port Richey, lanai repair west Pasco",
     "Pool Cage Rescreen &amp; Super Gutters in Port Richey, FL",
@@ -67,7 +67,7 @@ PASCO_CITIES.append(C(
 
 PASCO_CITIES.append(C(
     "trinity-screen-repair", "Trinity", PASCO, PASCO_L,
-    "Screen Repair Trinity FL | Mitchell Ranch Cages | Screen Team",
+    "Screen Repair Trinity FL | Mitchell Ranch Cages",
     "Pool cage rescreen &amp; lanai repair in Trinity, FL — Mitchell Ranch, Trinity Oaks &amp; inland Pasco HOAs. Chris Westcott. (727) 386-6562.",
     "screen repair Trinity FL, pool cage rescreen Trinity, lanai screen repair Mitchell Ranch, screen enclosure inland Pasco",
     "Screen Repair &amp; Pool Cage Rescreens in Trinity, FL",
@@ -128,7 +128,7 @@ PASCO_CITIES.append(C(
 
 PASCO_CITIES.append(C(
     "odessa-screen-repair", "Odessa", PASCO, PASCO_L,
-    "Pool Cage Rescreen Odessa FL | Tall Cages & Lakes | Screen Team",
+    "Pool Cage Rescreen Odessa FL | Tall Cages & Lakes",
     "Pool cage rescreen &amp; tall enclosure repair in Odessa, FL — Keystone-Odessa lakes, large lots &amp; rural-suburban cages. (727) 386-6562.",
     "pool cage rescreen Odessa FL, screen repair Odessa, tall pool cage Odessa, screen enclosure Keystone Odessa lakes",
     "Pool Cage Rescreen &amp; Tall Enclosures in Odessa, FL",
@@ -189,7 +189,7 @@ PASCO_CITIES.append(C(
 
 PASCO_CITIES.append(C(
     "zephyrhills-screen-repair", "Zephyrhills", PASCO, PASCO_L,
-    "Screen Repair Zephyrhills FL | East Pasco Cages | Screen Team",
+    "Screen Repair Zephyrhills FL | East Pasco Cages",
     "Pool cage rescreen &amp; lanai repair in Zephyrhills, FL — downtown stock, east Pasco subdivisions &amp; storm wear. Chris Westcott. (727) 386-6562.",
     "screen repair Zephyrhills FL, pool cage rescreen Zephyrhills, lanai screen repair east Pasco, screen enclosure Zephyrhills",
     "Screen Repair &amp; Pool Cage Rescreens in Zephyrhills, FL",
@@ -433,7 +433,7 @@ PASCO_CITIES.append(C(
 
 PASCO_CITIES.append(C(
     "land-o-lakes-screen-repair", "Land O Lakes", PASCO, PASCO_L,
-    "Screen Repair Land O Lakes FL | Connerton Cages | Screen Team",
+    "Screen Repair Land O Lakes FL | Connerton Cages",
     "Pool cage rescreen &amp; lanai repair in Land O Lakes, FL — Connerton, Oakstead &amp; east Pasco family pools. (727) 386-6562.",
     "screen repair Land O Lakes, pool cage rescreen Land O Lakes FL, lanai repair Connerton, pet door screen Land O Lakes",
     "Screen Repair &amp; Pool Cage Rescreens in Land O Lakes, FL",

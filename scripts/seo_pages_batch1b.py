@@ -3,7 +3,7 @@ PAGES_1B = []
 
 PAGES_1B.append({
   "slug": "pool-cage-door-repair.html",
-  "title": "Pool Cage Door Repair Tampa Bay | Screen & Hardware | Screen Team",
+  "title": "Pool Cage Door Repair Tampa Bay | Screen & Hardware",
   "description": "Pool cage door repair — torn mesh, sticky latches, dragging leaves. Chris fixes doors on Tampa Bay cages. Call (727) 386-6562.",
   "keywords": "pool cage door repair, lanai door screen repair, pool enclosure door rescreen Tampa Bay",
   "service_name": "Pool Cage Door Repair",
@@ -88,7 +88,7 @@ PAGES_1B.append({
 
 PAGES_1B.append({
   "slug": "spa-enclosure-rescreen.html",
-  "title": "Spa Enclosure Rescreen Tampa Bay | Spa Wing Screens | Screen Team",
+  "title": "Spa Enclosure Rescreen Tampa Bay | Spa Wing Screens",
   "description": "Spa enclosure rescreen and spa wing screen repair across Tampa Bay. Quote with the main cage or alone. Call (727) 386-6562.",
   "keywords": "spa enclosure rescreen, spa wing screen repair, hot tub screen enclosure Tampa Bay",
   "service_name": "Spa Enclosure Rescreen",
