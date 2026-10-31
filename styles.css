@@ -4649,3 +4649,13 @@ body.home-landing .faq-answer p {
   }
 }
 
+
+/* 2026-10-31 LCP: hero text appears almost immediately (was 1.0-1.7 s delayed; LCP element was .hero-sub) */
+body.home-landing .hero-enter--d1  { animation-delay: 0.1s; }
+body.home-landing .hero-enter--d14 { animation-delay: 0.15s; }
+body.home-landing .hero-enter--d17 { animation-delay: 0.25s; }
+body.home-landing .hero.hero-panels-ready .hero-enter { animation-duration: 0.5s; }
+body.home-landing .hero-sub { opacity: 1; animation: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  body.home-landing .hero-enter { opacity: 1; animation: none !important; transform: none; }
+}
