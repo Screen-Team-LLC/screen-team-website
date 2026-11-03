@@ -286,13 +286,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <section class="sp-hero sp-hero--panels hero" aria-label="{p["breadcrumb"]}">
       <div class="hero-panels" aria-hidden="true">
-        <div class="hero-panel hero-panel--left hero-panel--photo"><img src="{imgs["hero_left"]}" alt="{imgs["alt_left"]}" width="800" height="600" decoding="async"></div>
-        <div class="hero-panel hero-panel--top hero-panel--photo"><img src="{imgs["hero_top"]}" alt="{imgs["alt_top"]}" width="800" height="600" decoding="async"></div>
+        <div class="hero-panel hero-panel--left hero-panel--photo"><img src="{imgs["hero_left"]}" alt="{imgs["alt_left"]}" width="800" height="600" loading="lazy" decoding="async"></div>
+        <div class="hero-panel hero-panel--top hero-panel--photo"><img src="{imgs["hero_top"]}" alt="{imgs["alt_top"]}" width="800" height="600" loading="lazy" decoding="async"></div>
         <div class="hero-panel hero-panel--bottom hero-panel--photo">
-          <img class="hero-panel-img--desktop" src="{imgs["hero_bottom"]}" alt="{imgs["alt_bottom"]}" width="800" height="600" decoding="async">
-          <img class="hero-panel-img--mobile" src="{imgs["hero_top"]}" alt="{imgs["alt_top"]}" width="800" height="600" decoding="async">
+          <img class="hero-panel-img--desktop" src="{imgs["hero_bottom"]}" alt="{imgs["alt_bottom"]}" width="800" height="600" loading="lazy" decoding="async">
+          <img class="hero-panel-img--mobile" src="{imgs["hero_top"]}" alt="{imgs["alt_top"]}" width="800" height="600" fetchpriority="high" decoding="async">
         </div>
-        <div class="hero-panel hero-panel--right hero-panel--photo"><img src="{imgs["hero_right"]}" alt="{imgs["alt_right"]}" width="800" height="600" decoding="async"></div>
+        <div class="hero-panel hero-panel--right hero-panel--photo"><img src="{imgs["hero_right"]}" alt="{imgs["alt_right"]}" width="800" height="600" loading="lazy" decoding="async"></div>
       </div>
       <div class="sp-hero-overlay" aria-hidden="true"></div>
       <div class="container">
