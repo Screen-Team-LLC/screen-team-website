@@ -6,7 +6,9 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDE = {"header.html", "footer.html", "404.html", "thank-you.html"}
+# noindex policy pages stay out of sitemap.xml (Ahrefs: noindex page in sitemap)
+NOINDEX_POLICY = {"image-use-policy.html", "payment-policy.html", "privacy-policy.html", "terms-of-service.html", "warranty-terms.html"}
+EXCLUDE = {"header.html", "footer.html", "404.html", "thank-you.html"} | NOINDEX_POLICY
 today = date.today().isoformat()
 
 pages = sorted(p.name for p in ROOT.glob("*.html") if p.name not in EXCLUDE)
@@ -246,7 +248,7 @@ city_count = sum(1 for p in pages if p.endswith("-screen-repair.html") and "coun
 data["sitemap"] = {
     "url": "https://screenteamllc.com/sitemap.xml",
     "indexable_pages": len(pages),
-    "excluded_noindex": ["404.html", "thank-you.html"],
+    "excluded_noindex": ["404.html", "thank-you.html"] + sorted(NOINDEX_POLICY),
 }
 data["prepush_checklist"] = data.get("prepush_checklist", {})
 data["prepush_checklist"]["sitemap_urls"] = len(pages)
@@ -264,7 +266,7 @@ data["prepush_checklist"]["indexed_pages"] = [
     f"{city_count} city pages",
     "policy pages",
 ]
-data["prepush_checklist"]["excluded_noindex"] = ["404.html", "thank-you.html"]
+data["prepush_checklist"]["excluded_noindex"] = ["404.html", "thank-you.html"] + sorted(NOINDEX_POLICY)
 kw_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 print(f"seo-keywords pages: {len(existing)} (added {added})")
 print(f"city pages: {city_count}")
